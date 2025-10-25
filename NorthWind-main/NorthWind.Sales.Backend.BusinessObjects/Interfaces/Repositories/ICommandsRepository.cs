@@ -1,6 +1,8 @@
 ﻿//using NorthWind.Sales.Backend.BusinessObjects.Aggregates;
 //using NorthWind.Sales.Backend.BusinessObjects.Interfaces.Common;
 
+using NorthWind.Sales.Backend.BusinessObjects.Entities;
+
 namespace NorthWind.Sales.Backend.BusinessObjects.Interfaces.Repositories;
 
 // ************************************
@@ -39,9 +41,11 @@ namespace NorthWind.Sales.Backend.BusinessObjects.Interfaces.Repositories;
 //  Por lo tanto se crea un "Repositorio" para los Comandos: INSERT, DELETE, UPDATE. 
 public interface ICommandsRepository : IUnitOfWork
 {
-  //  El método "CreateOrder" no regresa ni un "bool" o un "int", no regresa nada porque es la
-  //  clase que implemente la interfaz "IUnitOfWork" la que debe realizar este proceso.  
-  //  Además se regresa un "Task" para que se implente de forma síncrona o asíncrona.
-  //  OrderAggregate: Contiene solo los datos que se va a utilizar para la persistencia de datos.
-  Task CreateOrder(OrderAggregate order);
+    //  El método "CreateOrder" no regresa ni un "bool" o un "int", no regresa nada porque es la
+    //  clase que implemente la interfaz "IUnitOfWork" la que debe realizar este proceso.  
+    //  Además se regresa un "Task" para que se implente de forma síncrona o asíncrona.
+    //  OrderAggregate: Contiene solo los datos que se va a utilizar para la persistencia de datos.
+
+    Task CreateProduct(Product product);
+    Task CreateOrder(OrderAggregate order);
 }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "sevAkvOpyT0=",
+  "dgSpecHash": "4485xejZs+M=",
   "success": true,
-  "projectFilePath": "C:\\Users\\BAR KARAOKE\\Desktop\\ProyectoMoviles\\Northwind\\NorthWind-main\\NorthWind.Sales.Backend.Presenters\\NorthWind.Sales.Backend.Presenters.csproj",
+  "projectFilePath": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Northwind\\NorthWind-main\\NorthWind.Sales.Backend.Presenters\\NorthWind.Sales.Backend.Presenters.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\BAR KARAOKE\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\10.0.0-preview.3.25171.5\\microsoft.extensions.dependencyinjection.abstractions.10.0.0-preview.3.25171.5.nupkg.sha512",
     "C:\\Users\\BAR KARAOKE\\.nuget\\packages\\northwind.validation.entities\\1.0.0\\northwind.validation.entities.1.0.0.nupkg.sha512"

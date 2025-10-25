@@ -8,3 +8,4 @@ C:\Northwind\NorthWind-main\NorthWind.RazorComponents\obj\Debug\net8.0\staticweb
 C:\Northwind\NorthWind-main\NorthWind.RazorComponents\obj\Debug\net8.0\staticwebassets.build.json
 C:\Northwind\NorthWind-main\NorthWind.RazorComponents\obj\Debug\net8.0\staticwebassets.build.json
 D:\aplicacionesmoviles\Northwind\NorthWind-main\NorthWind.RazorComponents\obj\Debug\net8.0\staticwebassets.build.json
+D:\PROYECTOS_ESCRITORIO\ProyectoMoviles\Northwind\NorthWind-main\NorthWind.RazorComponents\obj\Debug\net8.0\staticwebassets.build.json

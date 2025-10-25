@@ -18,3 +18,5 @@ C:\Northwind\NorthWind-main\NorthWind.RazorComponents\obj\Debug\net8.0\staticweb
 C:\Northwind\NorthWind-main\NorthWind.Sales.Frontend.Views\obj\Debug\net8.0\staticwebassets.build.json
 D:\aplicacionesmoviles\Northwind\NorthWind-main\NorthWind.RazorComponents\obj\Debug\net8.0\staticwebassets.build.json
 D:\aplicacionesmoviles\Northwind\NorthWind-main\NorthWind.Sales.Frontend.Views\obj\Debug\net8.0\staticwebassets.build.json
+D:\PROYECTOS_ESCRITORIO\ProyectoMoviles\Northwind\NorthWind-main\NorthWind.RazorComponents\obj\Debug\net8.0\staticwebassets.build.json
+D:\PROYECTOS_ESCRITORIO\ProyectoMoviles\Northwind\NorthWind-main\NorthWind.Sales.Frontend.Views\obj\Debug\net8.0\staticwebassets.build.json

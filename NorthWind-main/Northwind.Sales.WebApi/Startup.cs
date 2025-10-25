@@ -36,13 +36,8 @@ internal static class Startup
         builder.Services.AddNorthWindSalesServices(dbObtions =>
             builder.Configuration.GetSection(DBOptions.SectionKey).Bind(dbObtions),
             smtpOptions => builder.Configuration.GetSection(SmtpOptions.SectionKey).Bind(smtpOptions),
-            membershipDBOptions =>
-builder.Configuration.GetSection(MembershipDBOptions.SectionKey)
-.Bind(membershipDBOptions),
-            jwtOptions =>
-builder.Configuration
-.GetSection(JwtOptions.SectionKey)
-.Bind(jwtOptions)
+            membershipDBOptions => builder.Configuration.GetSection(MembershipDBOptions.SectionKey).Bind(membershipDBOptions),
+            jwtOptions => builder.Configuration.GetSection(JwtOptions.SectionKey).Bind(jwtOptions)
         );
 
         //  Configurar CORS.
@@ -59,9 +54,8 @@ builder.Configuration
             });
         });
 
-        builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
- .AddJwtBearer(options =>
- {
+        builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options =>
+       {
      // Establecer la configuración del Token.
      builder.Configuration.GetSection(JwtOptions.SectionKey)
      .Bind(options.TokenValidationParameters);

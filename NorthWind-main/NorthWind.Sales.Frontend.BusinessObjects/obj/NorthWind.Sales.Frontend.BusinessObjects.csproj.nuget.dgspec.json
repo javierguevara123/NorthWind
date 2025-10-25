@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\BAR KARAOKE\\Desktop\\ProyectoMoviles\\Northwind\\NorthWind-main\\NorthWind.Sales.Frontend.BusinessObjects\\NorthWind.Sales.Frontend.BusinessObjects.csproj": {}
+    "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Northwind\\NorthWind-main\\NorthWind.Sales.Frontend.BusinessObjects\\NorthWind.Sales.Frontend.BusinessObjects.csproj": {}
   },
   "projects": {
-    "C:\\Users\\BAR KARAOKE\\Desktop\\ProyectoMoviles\\Northwind\\NorthWind-main\\NorthWind.Sales.Entities\\NorthWind.Sales.Entities.csproj": {
+    "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Northwind\\NorthWind-main\\NorthWind.Sales.Entities\\NorthWind.Sales.Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\BAR KARAOKE\\Desktop\\ProyectoMoviles\\Northwind\\NorthWind-main\\NorthWind.Sales.Entities\\NorthWind.Sales.Entities.csproj",
+        "projectUniqueName": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Northwind\\NorthWind-main\\NorthWind.Sales.Entities\\NorthWind.Sales.Entities.csproj",
         "projectName": "NorthWind.Sales.Entities",
-        "projectPath": "C:\\Users\\BAR KARAOKE\\Desktop\\ProyectoMoviles\\Northwind\\NorthWind-main\\NorthWind.Sales.Entities\\NorthWind.Sales.Entities.csproj",
+        "projectPath": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Northwind\\NorthWind-main\\NorthWind.Sales.Entities\\NorthWind.Sales.Entities.csproj",
         "packagesPath": "C:\\Users\\BAR KARAOKE\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\BAR KARAOKE\\Desktop\\ProyectoMoviles\\Northwind\\NorthWind-main\\NorthWind.Sales.Entities\\obj\\",
+        "outputPath": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Northwind\\NorthWind-main\\NorthWind.Sales.Entities\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -70,14 +70,14 @@
         }
       }
     },
-    "C:\\Users\\BAR KARAOKE\\Desktop\\ProyectoMoviles\\Northwind\\NorthWind-main\\NorthWind.Sales.Frontend.BusinessObjects\\NorthWind.Sales.Frontend.BusinessObjects.csproj": {
+    "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Northwind\\NorthWind-main\\NorthWind.Sales.Frontend.BusinessObjects\\NorthWind.Sales.Frontend.BusinessObjects.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\BAR KARAOKE\\Desktop\\ProyectoMoviles\\Northwind\\NorthWind-main\\NorthWind.Sales.Frontend.BusinessObjects\\NorthWind.Sales.Frontend.BusinessObjects.csproj",
+        "projectUniqueName": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Northwind\\NorthWind-main\\NorthWind.Sales.Frontend.BusinessObjects\\NorthWind.Sales.Frontend.BusinessObjects.csproj",
         "projectName": "NorthWind.Sales.Frontend.BusinessObjects",
-        "projectPath": "C:\\Users\\BAR KARAOKE\\Desktop\\ProyectoMoviles\\Northwind\\NorthWind-main\\NorthWind.Sales.Frontend.BusinessObjects\\NorthWind.Sales.Frontend.BusinessObjects.csproj",
+        "projectPath": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Northwind\\NorthWind-main\\NorthWind.Sales.Frontend.BusinessObjects\\NorthWind.Sales.Frontend.BusinessObjects.csproj",
         "packagesPath": "C:\\Users\\BAR KARAOKE\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\BAR KARAOKE\\Desktop\\ProyectoMoviles\\Northwind\\NorthWind-main\\NorthWind.Sales.Frontend.BusinessObjects\\obj\\",
+        "outputPath": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Northwind\\NorthWind-main\\NorthWind.Sales.Frontend.BusinessObjects\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -99,8 +99,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\BAR KARAOKE\\Desktop\\ProyectoMoviles\\Northwind\\NorthWind-main\\NorthWind.Sales.Entities\\NorthWind.Sales.Entities.csproj": {
-                "projectPath": "C:\\Users\\BAR KARAOKE\\Desktop\\ProyectoMoviles\\Northwind\\NorthWind-main\\NorthWind.Sales.Entities\\NorthWind.Sales.Entities.csproj"
+              "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Northwind\\NorthWind-main\\NorthWind.Sales.Entities\\NorthWind.Sales.Entities.csproj": {
+                "projectPath": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Northwind\\NorthWind-main\\NorthWind.Sales.Entities\\NorthWind.Sales.Entities.csproj"
               }
             }
           }

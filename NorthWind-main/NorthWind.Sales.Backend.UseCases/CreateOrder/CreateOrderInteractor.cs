@@ -55,12 +55,12 @@ namespace NorthWind.Sales.Backend.UseCases.CreateOrder;
 //             constructor", "outputPort, repository".
 
 internal class CreateOrderInteractor(ICreateOrderOutputPort outputPort,
-ICommandsRepository repository,
-IModelValidatorHub<CreateOrderDto> modelValidatorHub,
-IDomainEventHub<SpecialOrderCreatedEvent> domainEventHub,
-IDomainLogger domainLogger,
-IDomainTransaction domainTransaction,
-IUserService userService) : ICreateOrderInputPort
+                                     ICommandsRepository repository,
+                                     IModelValidatorHub<CreateOrderDto> modelValidatorHub,
+                                     IDomainEventHub<SpecialOrderCreatedEvent> domainEventHub,
+                                     IDomainLogger domainLogger,
+                                     IDomainTransaction domainTransaction,
+                                     IUserService userService) : ICreateOrderInputPort
 {
 
   //  1).- El "Controller" le pasa los datos al "InputPort", esos "Datos" se pasan en un "Dto"
@@ -71,9 +71,7 @@ IUserService userService) : ICreateOrderInputPort
 
 
         await GuardModel.AgainstNotValid(modelValidatorHub, orderDto);
-        await domainLogger.LogInformation(new DomainLog(
- CreateOrderMessages.StartingPurchaseOrderCreation,
-userService.UserName));
+        await domainLogger.LogInformation(new DomainLog(CreateOrderMessages.StartingPurchaseOrderCreation, userService.UserName));
 
 
         //  2).- Una vez que se recibe los datos necesarios para realizar el proceso (desde un "Dto" se mapea(transforma) a un objeto
@@ -84,7 +82,6 @@ userService.UserName));
             // Iniciar la transacción
             domainTransaction.BeginTransaction();
 
-
             //  3).- Guardar la orden (agregado).
             await repository.CreateOrder(Order);
 
@@ -93,12 +90,9 @@ userService.UserName));
             //       "Unit Of Work" es decir como un "Commit".
             await repository.SaveChanges();
 
-            await domainLogger.LogInformation(
-  new DomainLog(string.Format(
- CreateOrderMessages.PurchaseOrderCreatedTemplate,
- Order.Id), userService.UserName));
-
-
+            await domainLogger.LogInformation(new DomainLog(string.Format(
+                                                                          CreateOrderMessages.PurchaseOrderCreatedTemplate,
+                                                                          Order.Id), userService.UserName));
 
 
             //  5).- Enviar la respuesta al "OuputPort" que se ha creado la orden para que pase la
@@ -109,9 +103,7 @@ userService.UserName));
 
             if (new SpecialOrderSpecification().IsSatisfiedBy(Order))
             {
-                await domainEventHub.Raise(
-               new SpecialOrderCreatedEvent(
-               Order.Id, Order.OrderDetails.Count));
+               await domainEventHub.Raise(new SpecialOrderCreatedEvent(Order.Id, Order.OrderDetails.Count));
             }
 
             // Aceptar la transacción
@@ -121,9 +113,7 @@ userService.UserName));
         {
             // Cancelar la transacción
             domainTransaction.RollbackTransaction();
-            string Information = string.Format(
-           CreateOrderMessages.OrderCreationCancelledTemplate,
-           Order.Id);
+            string Information = string.Format(CreateOrderMessages.OrderCreationCancelledTemplate, Order.Id);
             await domainLogger.LogInformation(new DomainLog(Information, userService.UserName));
             throw;
         }

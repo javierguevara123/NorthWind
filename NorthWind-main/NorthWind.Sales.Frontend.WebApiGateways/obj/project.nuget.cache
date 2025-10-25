@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vm6bUuN+n3k=",
+  "dgSpecHash": "PmhqAP2kmos=",
   "success": true,
-  "projectFilePath": "C:\\Users\\BAR KARAOKE\\Desktop\\ProyectoMoviles\\Northwind\\NorthWind-main\\NorthWind.Sales.Frontend.WebApiGateways\\NorthWind.Sales.Frontend.WebApiGateways.csproj",
+  "projectFilePath": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Northwind\\NorthWind-main\\NorthWind.Sales.Frontend.WebApiGateways\\NorthWind.Sales.Frontend.WebApiGateways.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\BAR KARAOKE\\.nuget\\packages\\microsoft.extensions.configuration\\9.0.5\\microsoft.extensions.configuration.9.0.5.nupkg.sha512",
     "C:\\Users\\BAR KARAOKE\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\9.0.5\\microsoft.extensions.configuration.abstractions.9.0.5.nupkg.sha512",

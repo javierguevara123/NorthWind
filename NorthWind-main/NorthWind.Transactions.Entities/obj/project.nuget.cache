@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "F2ZJlG7y4PI=",
+  "dgSpecHash": "CbKy6vOKHyg=",
   "success": true,
-  "projectFilePath": "C:\\Users\\BAR KARAOKE\\Desktop\\ProyectoMoviles\\Northwind\\NorthWind-main\\NorthWind.Transactions.Entities\\NorthWind.Transactions.Entities.csproj",
+  "projectFilePath": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Northwind\\NorthWind-main\\NorthWind.Transactions.Entities\\NorthWind.Transactions.Entities.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\BAR KARAOKE\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\9.0.8\\microsoft.extensions.dependencyinjection.abstractions.9.0.8.nupkg.sha512"
   ],
