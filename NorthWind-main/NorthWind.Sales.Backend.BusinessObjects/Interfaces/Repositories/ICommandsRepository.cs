@@ -46,6 +46,7 @@ public interface ICommandsRepository : IUnitOfWork
     //  Además se regresa un "Task" para que se implente de forma síncrona o asíncrona.
     //  OrderAggregate: Contiene solo los datos que se va a utilizar para la persistencia de datos.
 
-    Task CreateProduct(Product product);
+    Task<int> CreateProduct(Product product);
     Task CreateOrder(OrderAggregate order);
+    Task UpdateProduct(Product product);
 }

@@ -92,4 +92,26 @@ IValidationRules<T, TProperty>
         .WithMessage(errorMessage);
         return ThisAsStringValidationRules;
     }
+
+    public IValidationRules<T, TProperty> GreaterThanOrEqualTo<TValue>(
+        TValue valueToCompare, string errorMessage)
+        where TValue : TProperty, IComparable<TValue>, IComparable
+    {
+        IRuleBuilder<T, TValue> Builder = (IRuleBuilder<T, TValue>)ruleBuilderInitial;
+        Builder
+            .GreaterThanOrEqualTo(valueToCompare)
+            .WithMessage(errorMessage);
+        return this;
+    }
+
+    public IValidationRules<T, TProperty> LessThanOrEqualTo<TValue>(
+        TValue valueToCompare, string errorMessage)
+        where TValue : TProperty, IComparable<TValue>, IComparable
+    {
+        IRuleBuilder<T, TValue> Builder = (IRuleBuilder<T, TValue>)ruleBuilderInitial;
+        Builder
+            .LessThanOrEqualTo(valueToCompare)
+            .WithMessage(errorMessage);
+        return this;
+    }
 }

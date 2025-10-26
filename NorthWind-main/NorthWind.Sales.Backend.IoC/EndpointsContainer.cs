@@ -7,6 +7,7 @@ public static class EndpointsContainer
     {
         app.UseCreateOrderController();
         app.UseCreateProductController();
+        app.UseUpdateProductController();
         app.UseMembershipEndpoints();
 
         return app;

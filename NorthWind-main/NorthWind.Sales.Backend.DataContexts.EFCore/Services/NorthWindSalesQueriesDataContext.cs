@@ -9,16 +9,15 @@ internal class NorthWindSalesQueriesDataContext :
     public NorthWindSalesQueriesDataContext(IOptions<DBOptions> dbOptions)
    : base(dbOptions)
     {
-        ChangeTracker.QueryTrackingBehavior =
-        QueryTrackingBehavior.NoTracking;
+        ChangeTracker.QueryTrackingBehavior = QueryTrackingBehavior.NoTracking;
     }
     public new IQueryable<Customer> Customers => base.Customers;
     public new IQueryable<Product> Products => base.Products;
-    public Task<ReturnType> FirstOrDefaultAync<ReturnType>(
-   IQueryable<ReturnType> queryable) =>
-   queryable.FirstOrDefaultAsync();
-    public async Task<IEnumerable<ReturnType>> ToListAsync<ReturnType>(
-IQueryable<ReturnType> queryable) =>
-await queryable.ToListAsync();
+    public new IQueryable<OrderDetail> OrderDetails => base.OrderDetails;
+
+    public Task<ReturnType> FirstOrDefaultAync<ReturnType>(IQueryable<ReturnType> queryable) => queryable.FirstOrDefaultAsync();
+    public async Task<IEnumerable<ReturnType>> ToListAsync<ReturnType>(IQueryable<ReturnType> queryable) => await queryable.ToListAsync();
+    public Task<bool> AnyAsync<T>(IQueryable<T> queryable) => queryable.AnyAsync();
+    public Task<int> SumAsync(IQueryable<int> queryable) => queryable.SumAsync();
 }
 

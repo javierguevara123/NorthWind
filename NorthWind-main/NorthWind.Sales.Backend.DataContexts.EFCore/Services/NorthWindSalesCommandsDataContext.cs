@@ -18,12 +18,12 @@ internal class NorthWindSalesCommandsDataContext(IOptions<DBOptions> dbOptions)
         await base.Set<TEntity>().AddRangeAsync(entities);
     }
 
-    public void Update<TEntity>(TEntity entity) where TEntity : class
+    public new void Update<TEntity>(TEntity entity) where TEntity : class
     {
         base.Set<TEntity>().Update(entity);
     }
 
-    public void Remove<TEntity>(TEntity entity) where TEntity : class
+    public new void Remove<TEntity>(TEntity entity) where TEntity : class
     {
         base.Set<TEntity>().Remove(entity);
     }

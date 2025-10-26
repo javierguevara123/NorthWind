@@ -25,11 +25,10 @@ internal class CommandsRepository(INorthWindSalesCommandsDataContext context) : 
         Console.WriteLine($"🕒 Tiempo CreateOrder en CommandsRepository: {sw.ElapsedMilliseconds} ms");
     }
 
-    public async Task CreateProduct(Product product) // Este es BusinessObjects.Product
+    public async Task<int> CreateProduct(Product product)
     {
         var sw = Stopwatch.StartNew();
 
-        // Mapear de BusinessObjects.Product a Repositories.Entities.Product
         var productEntity = new Entities.Product
         {
             Name = product.Name,
@@ -37,10 +36,32 @@ internal class CommandsRepository(INorthWindSalesCommandsDataContext context) : 
             UnitsInStock = product.UnitsInStock,
         };
 
-        await context.AddAsync(productEntity); // Ahora pasa la entidad correcta
+        await context.AddAsync(productEntity);
 
         sw.Stop();
-        Console.WriteLine($"🕒 Tiempo CreateProduct: {sw.ElapsedMilliseconds} ms");
+        Console.WriteLine($"🕒 Tiempo CreateProduct en CommandsRepository: {sw.ElapsedMilliseconds} ms");
+
+        return productEntity.Id;
+    }
+
+    public Task UpdateProduct(Product product)
+    {
+        var sw = Stopwatch.StartNew();
+
+        var productEntity = new Entities.Product
+        {
+            Id = product.Id,
+            Name = product.Name,
+            UnitPrice = product.UnitPrice,
+            UnitsInStock = product.UnitsInStock,
+        };
+
+        context.Update(productEntity);
+
+        sw.Stop();
+        Console.WriteLine($"🕒 Tiempo UpdateProduct en CommandsRepository: {sw.ElapsedMilliseconds} ms");
+
+        return Task.CompletedTask;
     }
 
     public async Task SaveChanges()

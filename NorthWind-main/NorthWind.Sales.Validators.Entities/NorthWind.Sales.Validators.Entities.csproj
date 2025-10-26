@@ -17,12 +17,21 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>CreateOrderMessages.resx</DependentUpon>
     </Compile>
+    <Compile Update="Resources\UpdateProductMessages.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>UpdateProductMessages.resx</DependentUpon>
+    </Compile>
   </ItemGroup>
 
   <ItemGroup>
     <EmbeddedResource Update="Resources\CreateOrderMessages.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>CreateOrderMessages.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\UpdateProductMessages.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>UpdateProductMessages.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
 

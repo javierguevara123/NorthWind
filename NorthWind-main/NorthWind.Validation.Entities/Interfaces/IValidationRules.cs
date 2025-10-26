@@ -12,6 +12,12 @@ public interface IValidationRules<T, TProperty>
     IValidationRules<T, TProperty> GreaterThan<TValue>(
    TValue valueToCompare, string errorMessage)
         where TValue : TProperty, IComparable<TValue>, IComparable;
+
+    IValidationRules<T, TProperty> GreaterThanOrEqualTo<TValue>(TValue valueToCompare, string errorMessage)
+        where TValue : TProperty, IComparable<TValue>, IComparable;
+
+    IValidationRules<T, TProperty> LessThanOrEqualTo<TValue>(TValue valueToCompare, string errorMessage)
+        where TValue : TProperty, IComparable<TValue>, IComparable;
     IValidationRules<T, TProperty> Equal(
    Expression<Func<T, TProperty>> expression, string errorMessage);
     IValidationRules<T, string> Length(int length, string errorMessage);

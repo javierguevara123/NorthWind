@@ -44,7 +44,8 @@ namespace NorthWind.Sales.Backend.UseCases.CreateProduct
                 domainTransaction.BeginTransaction();
 
                 // ⬅️ Repository mapea internamente Dominio → Persistencia
-                await repository.CreateProduct(product);
+                int generatedId = await repository.CreateProduct(product);
+                product.Id = generatedId; // ⬅️ Actualiza manualmente
                 await repository.SaveChanges();
 
                 await domainLogger.LogInformation(
