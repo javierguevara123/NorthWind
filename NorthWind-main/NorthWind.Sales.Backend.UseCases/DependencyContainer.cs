@@ -2,11 +2,17 @@
 using NorthWind.Events.Entities.Interfaces;
 using NorthWind.Sales.Backend.BusinessObjects.Interfaces.CreateOrder;
 using NorthWind.Sales.Backend.BusinessObjects.Interfaces.CreateProduct;
+using NorthWind.Sales.Backend.BusinessObjects.Interfaces.DeleteProduct;
+using NorthWind.Sales.Backend.BusinessObjects.Interfaces.GetProductById;
 using NorthWind.Sales.Backend.BusinessObjects.Interfaces.UpdateProduct;
 using NorthWind.Sales.Backend.UseCases.CreateOrder;
 using NorthWind.Sales.Backend.UseCases.CreateProduct;
+using NorthWind.Sales.Backend.UseCases.DeleteProduct;
+using NorthWind.Sales.Backend.UseCases.GetProductById;
 using NorthWind.Sales.Backend.UseCases.UpdateProduct;
 using NorthWind.Sales.Entities.Dtos.CreateOrder;
+using NorthWind.Sales.Entities.Dtos.DeleteProduct;
+using NorthWind.Sales.Entities.Dtos.GetProductById;
 using NorthWind.Sales.Entities.Dtos.UpdateProduct;
 using NorthWind.Validation.Entities;
 
@@ -17,12 +23,17 @@ public static class DependencyContainer
     public static IServiceCollection AddUseCasesServices(this IServiceCollection services)
     {
         services.AddScoped<ICreateOrderInputPort, CreateOrderInteractor>();
-        services.AddScoped<ICreateProductInputPort, CreateProductInteractor>(); 
+        services.AddScoped<ICreateProductInputPort, CreateProductInteractor>();
         services.AddScoped<IUpdateProductInputPort, UpdateProductInteractor>();
+        services.AddScoped<IDeleteProductInputPort, DeleteProductInteractor>();
+        services.AddScoped<IGetProductByIdInputPort, GetProductByIdInteractor>();
 
         services.AddModelValidator<CreateOrderDto, CreateOrderCustomerValidator>();
         services.AddModelValidator<CreateOrderDto, CreateOrderProductValidator>();
+        //services.AddModelValidator<CreateProductDto, CreateOrderProductValidator>();
         services.AddModelValidator<UpdateProductDto, UpdateProductBusinessValidator>();
+        services.AddModelValidator<DeleteProductDto, DeleteProductBusinessValidator>();
+        services.AddModelValidator<GetProductByIdDto, GetProductByIdValidator>();
 
         services.AddScoped<IDomainEventHandler<SpecialOrderCreatedEvent>, SendEMailWhenSpecialOrderCreatedEventHandler>();
 

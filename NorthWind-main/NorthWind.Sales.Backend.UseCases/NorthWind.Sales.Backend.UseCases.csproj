@@ -26,6 +26,11 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>CreateProductMessages.resx</DependentUpon>
     </Compile>
+    <Compile Update="Resources\DeleteProductMessages.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>DeleteProductMessages.resx</DependentUpon>
+    </Compile>
     <Compile Update="Resources\UpdateProductMessages.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
@@ -41,6 +46,10 @@
     <EmbeddedResource Update="Resources\CreateProductMessages.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>CreateProductMessages.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\DeleteProductMessages.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>DeleteProductMessages.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Update="Resources\UpdateProductMessages.resx">
       <Generator>ResXFileCodeGenerator</Generator>

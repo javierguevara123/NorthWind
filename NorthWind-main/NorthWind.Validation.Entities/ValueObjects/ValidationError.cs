@@ -1,8 +1,8 @@
 ﻿
 namespace NorthWind.Validation.Entities.ValueObjects;
 
-public class ValidationError(string propertyName, string message)
+public class ValidationError(string propertyName, string errorMessage)
 {
     public string PropertyName => propertyName;
-    public string Message => message;
+    public string ErrorMessage => errorMessage;
 }

@@ -48,6 +48,53 @@
     ]
   },
   {
+    "ContainingType": "Microsoft.AspNetCore.Builder.DeleteProductController",
+    "Method": "DeleteProduct",
+    "RelativePath": "DeleteProduct/{id:int}",
+    "HttpMethod": "DELETE",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Object",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "DeleteProduct"
+  },
+  {
+    "ContainingType": "Microsoft.AspNetCore.Builder.GetProductByIdController",
+    "Method": "GetProductById",
+    "RelativePath": "GetProductById/{id:int}",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "Microsoft.AspNetCore.Builder.UpdateProductController",
     "Method": "UpdateProduct",
     "RelativePath": "UpdateProduct/{id:int}",

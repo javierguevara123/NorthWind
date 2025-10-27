@@ -1,7 +1,11 @@
 ﻿
 using NorthWind.Sales.Backend.BusinessObjects.Interfaces.CreateProduct;
+using NorthWind.Sales.Backend.BusinessObjects.Interfaces.DeleteProduct;
+using NorthWind.Sales.Backend.BusinessObjects.Interfaces.GetProductById;
 using NorthWind.Sales.Backend.BusinessObjects.Interfaces.UpdateProduct;
 using NorthWind.Sales.Backend.Presenters.CreateProduct;
+using NorthWind.Sales.Backend.Presenters.DeleteProduct;
+using NorthWind.Sales.Backend.Presenters.GetProductById;
 using NorthWind.Sales.Backend.Presenters.UpdateProduct;
 
 namespace Microsoft.Extensions.DependencyInjection;
@@ -12,6 +16,8 @@ public static class DependencyContainer
         services.AddScoped<ICreateOrderOutputPort, CreateOrderPresenter>();
         services.AddScoped<ICreateProductOutputPort, CreateProductPresenter>();
         services.AddScoped<IUpdateProductOutputPort, UpdateProductPresenter>();
+        services.AddScoped<IDeleteProductOutputPort, DeleteProductPresenter>();
+        services.AddScoped<IGetProductByIdOutputPort, GetProductByIdPresenter>();
 
         return services;
     }

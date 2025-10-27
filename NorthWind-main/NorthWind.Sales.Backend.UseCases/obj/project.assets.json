@@ -87,6 +87,23 @@
           "bin/placeholder/NorthWind.Events.Entities.dll": {}
         }
       },
+      "NorthWind.Exceptions.Entities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.6",
+          "NorthWind.Validation.Entities": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/NorthWind.Exceptions.Entities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NorthWind.Exceptions.Entities.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "NorthWind.Sales.Backend.BusinessObjects/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
@@ -94,6 +111,7 @@
           "NorthWind.DomainLogs.Entities": "1.0.0",
           "NorthWind.Entities": "1.0.0",
           "NorthWind.Events.Entities": "1.0.0",
+          "NorthWind.Exceptions.Entities": "1.0.0",
           "NorthWind.Sales.Entities": "1.0.0",
           "NorthWind.Transactions.Entities": "1.0.0",
           "NorthWind.Validation.Entities": "1.0.0"
@@ -237,6 +255,11 @@
       "type": "project",
       "path": "../NorthWind.Events.Entities/NorthWind.Events.Entities.csproj",
       "msbuildProject": "../NorthWind.Events.Entities/NorthWind.Events.Entities.csproj"
+    },
+    "NorthWind.Exceptions.Entities/1.0.0": {
+      "type": "project",
+      "path": "../NorthWind.Exceptions.Entities/NorthWind.Exceptions.Entities.csproj",
+      "msbuildProject": "../NorthWind.Exceptions.Entities/NorthWind.Exceptions.Entities.csproj"
     },
     "NorthWind.Sales.Backend.BusinessObjects/1.0.0": {
       "type": "project",

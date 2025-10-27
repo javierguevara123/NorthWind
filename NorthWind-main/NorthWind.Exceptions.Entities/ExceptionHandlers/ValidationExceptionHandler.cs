@@ -23,7 +23,11 @@ namespace NorthWind.Exceptions.Entities.ExceptionHandlers
                 Details.Detail = ExceptionMessages.ValidationExceptionDetail;
                 Details.Instance = $"{nameof(ProblemDetails)}/{nameof(ValidationException)}";
 
-                Details.Extensions.Add("errors", Ex.Errors);
+                Details.Extensions.Add("errors", Ex.Errors.Select(e => new
+                {
+                    propertyName = e.PropertyName,
+                    errorMessage = e.ErrorMessage
+                }));
 
                 await httpContext.WriteProblemDetailsAsync(Details);
                 Handled = true;

@@ -54,11 +54,24 @@
           }
         }
       },
+      "NorthWind.Exceptions.Entities/1.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.0-preview.3.25171.5",
+          "NorthWind.Validation.Entities": "1.0.0"
+        },
+        "runtime": {
+          "NorthWind.Exceptions.Entities.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "NorthWind.Sales.Backend.BusinessObjects/1.0.0": {
         "dependencies": {
           "NorthWind.DomainLogs.Entities": "1.0.0",
           "NorthWind.Entities": "1.0.0",
           "NorthWind.Events.Entities": "1.0.0",
+          "NorthWind.Exceptions.Entities": "1.0.0",
           "NorthWind.Sales.Entities": "1.0.0",
           "NorthWind.Transactions.Entities": "1.0.0",
           "NorthWind.Validation.Entities": "1.0.0"
@@ -126,6 +139,11 @@
       "sha512": ""
     },
     "NorthWind.Events.Entities/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "NorthWind.Exceptions.Entities/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

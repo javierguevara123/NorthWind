@@ -108,3 +108,5 @@ D:\PROYECTOS_ESCRITORIO\ProyectoMoviles\Northwind\NorthWind-main\Northwind.Sales
 D:\PROYECTOS_ESCRITORIO\ProyectoMoviles\Northwind\NorthWind-main\Northwind.Sales.Backend.Repositories\obj\Debug\net8.0\refint\NorthWind.Sales.Backend.Repositories.dll
 D:\PROYECTOS_ESCRITORIO\ProyectoMoviles\Northwind\NorthWind-main\Northwind.Sales.Backend.Repositories\obj\Debug\net8.0\NorthWind.Sales.Backend.Repositories.pdb
 D:\PROYECTOS_ESCRITORIO\ProyectoMoviles\Northwind\NorthWind-main\Northwind.Sales.Backend.Repositories\obj\Debug\net8.0\ref\NorthWind.Sales.Backend.Repositories.dll
+D:\PROYECTOS_ESCRITORIO\ProyectoMoviles\Northwind\NorthWind-main\Northwind.Sales.Backend.Repositories\bin\Debug\net8.0\NorthWind.Exceptions.Entities.dll
+D:\PROYECTOS_ESCRITORIO\ProyectoMoviles\Northwind\NorthWind-main\Northwind.Sales.Backend.Repositories\bin\Debug\net8.0\NorthWind.Exceptions.Entities.pdb

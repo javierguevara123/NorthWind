@@ -49,4 +49,5 @@ public interface ICommandsRepository : IUnitOfWork
     Task<int> CreateProduct(Product product);
     Task CreateOrder(OrderAggregate order);
     Task UpdateProduct(Product product);
+    Task DeleteProduct(int productId);
 }

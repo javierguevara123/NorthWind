@@ -1035,6 +1035,7 @@
           "NorthWind.DomainLogs.Entities": "1.0.0",
           "NorthWind.Entities": "1.0.0",
           "NorthWind.Events.Entities": "1.0.0",
+          "NorthWind.Exceptions.Entities": "1.0.0",
           "NorthWind.Sales.Entities": "1.0.0",
           "NorthWind.Transactions.Entities": "1.0.0",
           "NorthWind.Validation.Entities": "1.0.0"
