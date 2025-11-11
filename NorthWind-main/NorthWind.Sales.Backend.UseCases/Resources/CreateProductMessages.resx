@@ -123,6 +123,9 @@
   <data name="ProductCreationCancelledTemplate" xml:space="preserve">
     <value>Plantilla de producto creado cancelada</value>
   </data>
+  <data name="ProductNameAlreadyExistsErrorTemplate" xml:space="preserve">
+    <value>Ya existe un producto con el nombre '{0}'</value>
+  </data>
   <data name="StartingProductCreation" xml:space="preserve">
     <value>Empezando creacion del producto</value>
   </data>

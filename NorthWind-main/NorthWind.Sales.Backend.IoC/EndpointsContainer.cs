@@ -10,6 +10,7 @@ public static class EndpointsContainer
         app.UseUpdateProductController();
         app.UseDeleteProductController();
         app.UseGetProductByIdController();
+        app.UseGetProductsController();
         app.UseMembershipEndpoints();
 
         return app;

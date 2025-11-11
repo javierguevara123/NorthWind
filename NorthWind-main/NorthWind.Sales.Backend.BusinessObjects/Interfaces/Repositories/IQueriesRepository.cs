@@ -8,11 +8,14 @@ namespace NorthWind.Sales.Backend.BusinessObjects.Interfaces.Repositories
         Task<IEnumerable<ProductDto>> GetAllProducts();
         Task<ProductDto?> GetProductById(int productId);
         Task<bool> ProductExists(int productId);
+        Task<PagedResultDto<ProductDto>> GetProductsPaged(GetProductsQueryDto query);  // ⬅️ NUEVO
 
-        // ⬅️ NUEVOS MÉTODOS para validación de UpdateProduct
+        // Métodos adicionales (si los tienes)
         Task<short> GetCommittedUnits(int productId);
         Task<bool> ProductNameExists(string name, int excludeProductId);
+        Task<bool> ProductNameExists(string name);
 
+        // ========== CUSTOMERS & PRODUCTS (EXISTENTES) ==========
         Task<decimal?> GetCustomerCurrentBalance(string customerId);
         Task<IEnumerable<ProductUnitsInStock>> GetProductsUnitsInStock(IEnumerable<int> productIds);
 

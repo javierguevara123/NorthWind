@@ -79,6 +79,15 @@ namespace NorthWind.Sales.Backend.UseCases.Resources {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Ya existe un producto con el nombre &apos;{0}&apos;.
+        /// </summary>
+        internal static string ProductNameAlreadyExistsErrorTemplate {
+            get {
+                return ResourceManager.GetString("ProductNameAlreadyExistsErrorTemplate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Empezando creacion del producto.
         /// </summary>
         internal static string StartingProductCreation {

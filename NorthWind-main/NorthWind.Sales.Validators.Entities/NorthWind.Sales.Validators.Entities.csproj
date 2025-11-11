@@ -17,6 +17,11 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>CreateOrderMessages.resx</DependentUpon>
     </Compile>
+    <Compile Update="Resources\CreateProductMessages.Designer.cs">
+      <DependentUpon>CreateProductMessages.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
     <Compile Update="Resources\UpdateProductMessages.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
@@ -28,6 +33,10 @@
     <EmbeddedResource Update="Resources\CreateOrderMessages.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>CreateOrderMessages.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\CreateProductMessages.resx">
+      <LastGenOutput>CreateProductMessages.Designer.cs</LastGenOutput>
+      <Generator>ResXFileCodeGenerator</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Resources\UpdateProductMessages.resx">
       <Generator>ResXFileCodeGenerator</Generator>
