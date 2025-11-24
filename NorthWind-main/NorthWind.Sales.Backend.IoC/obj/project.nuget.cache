@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "sJLbw5PMvOg=",
+  "dgSpecHash": "OpXRw2jocmQ=",
   "success": true,
   "projectFilePath": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Northwind\\NorthWind-main\\NorthWind.Sales.Backend.IoC\\NorthWind.Sales.Backend.IoC.csproj",
   "expectedPackageFiles": [
@@ -40,9 +40,9 @@
     "C:\\Users\\BAR KARAOKE\\.nuget\\packages\\microsoft.identitymodel.protocols.openidconnect\\7.7.1\\microsoft.identitymodel.protocols.openidconnect.7.7.1.nupkg.sha512",
     "C:\\Users\\BAR KARAOKE\\.nuget\\packages\\microsoft.identitymodel.tokens\\8.14.0\\microsoft.identitymodel.tokens.8.14.0.nupkg.sha512",
     "C:\\Users\\BAR KARAOKE\\.nuget\\packages\\microsoft.sqlserver.server\\1.0.0\\microsoft.sqlserver.server.1.0.0.nupkg.sha512",
-    "C:\\Users\\BAR KARAOKE\\.nuget\\packages\\northwind.membership.backend.aspnetidentity\\1.0.4\\northwind.membership.backend.aspnetidentity.1.0.4.nupkg.sha512",
-    "C:\\Users\\BAR KARAOKE\\.nuget\\packages\\northwind.membership.backend.core\\1.0.5\\northwind.membership.backend.core.1.0.5.nupkg.sha512",
-    "C:\\Users\\BAR KARAOKE\\.nuget\\packages\\northwind.membership.entities\\1.0.3\\northwind.membership.entities.1.0.3.nupkg.sha512",
+    "C:\\Users\\BAR KARAOKE\\.nuget\\packages\\northwind.membership.backend.aspnetidentity\\1.0.6\\northwind.membership.backend.aspnetidentity.1.0.6.nupkg.sha512",
+    "C:\\Users\\BAR KARAOKE\\.nuget\\packages\\northwind.membership.backend.core\\1.0.8\\northwind.membership.backend.core.1.0.8.nupkg.sha512",
+    "C:\\Users\\BAR KARAOKE\\.nuget\\packages\\northwind.membership.entities\\1.0.8\\northwind.membership.entities.1.0.8.nupkg.sha512",
     "C:\\Users\\BAR KARAOKE\\.nuget\\packages\\northwind.result.entities\\1.0.0\\northwind.result.entities.1.0.0.nupkg.sha512",
     "C:\\Users\\BAR KARAOKE\\.nuget\\packages\\system.clientmodel\\1.1.0\\system.clientmodel.1.1.0.nupkg.sha512",
     "C:\\Users\\BAR KARAOKE\\.nuget\\packages\\system.configuration.configurationmanager\\8.0.1\\system.configuration.configurationmanager.8.0.1.nupkg.sha512",

@@ -1,6 +1,8 @@
 ﻿using NorthWind.Sales.Backend.BusinessObjects.ValueObjects;
 using NorthWind.Sales.Entities.Dtos.Customers.GetCustomerById;
 using NorthWind.Sales.Entities.Dtos.Customers.GetCustomers;
+using NorthWind.Sales.Entities.Dtos.Orders.GetOrderById;
+using NorthWind.Sales.Entities.Dtos.Orders.GetOrders;
 using NorthWind.Sales.Entities.Dtos.Products.GetProducts;
 
 namespace NorthWind.Sales.Backend.Repositories.Repositories
@@ -232,6 +234,166 @@ namespace NorthWind.Sales.Backend.Repositories.Repositories
                                    .Where(c => c.Name.ToLower() == name.ToLower() &&
                                                c.Id != excludeCustomerId);
             return await context.AnyAsync(queryable);
+        }
+
+        public async Task<OrderWithDetailsDto?> GetOrderById(int orderId)
+        {
+            // 1. Query principal - obtener datos de la orden
+            var queryable =
+                from order in context.Orders
+                where order.Id == orderId
+                join customer in context.Customers on order.CustomerId equals customer.Id
+                select new
+                {
+                    order.Id,
+                    order.CustomerId,
+                    CustomerName = customer.Name,
+                    order.OrderDate,
+                    order.ShipAddress,
+                    order.ShipCity,
+                    order.ShipCountry,
+                    order.ShipPostalCode
+                };
+
+            var orderData = await context.FirstOrDefaultAync(queryable);
+
+            if (orderData == null)
+                return null;
+
+            // 2. Obtener los detalles (SIN od.Id porque no existe)
+            var detailsQuery =
+                from od in context.OrderDetails
+                where od.OrderId == orderId
+                join product in context.Products on od.ProductId equals product.Id
+                select new OrderDetailItemDto(
+                    od.ProductId,                      // ✅ 1
+                    product.Name,                      // ✅ 2
+                    od.Quantity,                       // ✅ 3
+                    od.UnitPrice,                      // ✅ 4
+                    od.Quantity * od.UnitPrice         // ✅ 5 - Subtotal
+                );
+
+            var details = await context.ToListAsync(detailsQuery);
+
+            // 3. Calcular totales
+            decimal totalAmount = details.Sum(d => d.Subtotal);
+            int itemCount = details.Count();
+
+            // 4. Construir DTO final
+            return new OrderWithDetailsDto(
+                orderData.Id,
+                orderData.CustomerId,
+                orderData.CustomerName,
+                orderData.OrderDate,
+                orderData.ShipAddress,
+                orderData.ShipCity,
+                orderData.ShipCountry,
+                orderData.ShipPostalCode,
+                totalAmount,
+                itemCount,
+                details
+            );
+        }
+
+        public async Task<bool> OrderExists(int orderId)
+        {
+            var queryable = context.Orders.Where(o => o.Id == orderId);
+            return await context.AnyAsync(queryable);
+        }
+
+        public async Task<OrderPagedResultDto> GetOrdersPaged(GetOrdersQueryDto query)
+        {
+            // 1. Query base con totales calculados
+            var baseQuery =
+                from order in context.Orders
+                join customer in context.Customers on order.CustomerId equals customer.Id
+                let totalAmount = context.OrderDetails
+                    .Where(od => od.OrderId == order.Id)
+                    .Sum(od => od.Quantity * od.UnitPrice)
+                let itemCount = context.OrderDetails
+                    .Where(od => od.OrderId == order.Id)
+                    .Count()
+                select new
+                {
+                    order.Id,
+                    order.CustomerId,
+                    CustomerName = customer.Name,
+                    order.OrderDate,
+                    order.ShipCity,
+                    order.ShipCountry,
+                    TotalAmount = totalAmount,
+                    ItemCount = itemCount
+                };
+
+            // 2. Aplicar filtros
+            if (!string.IsNullOrWhiteSpace(query.CustomerId))
+            {
+                baseQuery = baseQuery.Where(x => x.CustomerId == query.CustomerId);
+            }
+
+            if (query.FromDate.HasValue)
+            {
+                baseQuery = baseQuery.Where(x => x.OrderDate >= query.FromDate.Value);
+            }
+
+            if (query.ToDate.HasValue)
+            {
+                baseQuery = baseQuery.Where(x => x.OrderDate <= query.ToDate.Value);
+            }
+
+            if (query.MinAmount.HasValue)
+            {
+                baseQuery = baseQuery.Where(x => x.TotalAmount >= query.MinAmount.Value);
+            }
+
+            if (query.MaxAmount.HasValue)
+            {
+                baseQuery = baseQuery.Where(x => x.TotalAmount <= query.MaxAmount.Value);
+            }
+
+            // 3. Contar total
+            var totalCount = await context.CountAsync(baseQuery);
+
+            // 4. Aplicar ordenamiento
+            baseQuery = query.OrderBy?.ToLower() switch
+            {
+                "customer" => query.OrderDescending
+                    ? baseQuery.OrderByDescending(x => x.CustomerName)
+                    : baseQuery.OrderBy(x => x.CustomerName),
+                "amount" => query.OrderDescending
+                    ? baseQuery.OrderByDescending(x => x.TotalAmount)
+                    : baseQuery.OrderBy(x => x.TotalAmount),
+                "date" or _ => query.OrderDescending
+                    ? baseQuery.OrderByDescending(x => x.OrderDate)
+                    : baseQuery.OrderBy(x => x.OrderDate)
+            };
+
+            // 5. Aplicar paginación
+            var pagedQuery = baseQuery
+                .Skip((query.PageNumber - 1) * query.PageSize)
+                .Take(query.PageSize);
+
+            // 6. Ejecutar y mapear
+            var ordersData = await context.ToListAsync(pagedQuery);
+
+            var items = ordersData.Select(o => new OrderListItemDto(
+                o.Id,
+                o.CustomerId,
+                o.CustomerName,
+                o.OrderDate,
+                o.ShipCity,
+                o.ShipCountry,
+                o.TotalAmount,
+                o.ItemCount
+            ));
+
+            return new OrderPagedResultDto
+            {
+                Items = items,
+                PageNumber = query.PageNumber,
+                PageSize = query.PageSize,
+                TotalCount = totalCount
+            };
         }
     }
 

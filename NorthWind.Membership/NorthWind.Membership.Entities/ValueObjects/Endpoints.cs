@@ -16,5 +16,8 @@
         public const string UpdateUser = $"/user/{nameof(UpdateUser)}";
         public const string DeleteUser = $"/user/{nameof(DeleteUser)}";
 
+        public const string GetUserById = "/api/users/{userId}";
+        public const string Logout = "/api/auth/logout";
+
     }
 }

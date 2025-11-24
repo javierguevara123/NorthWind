@@ -5,7 +5,7 @@
     <version>1.0.3</version>
     <authors>NorthWind.Membership.Entities</authors>
     <description>Package Description</description>
-    <repository type="git" commit="9727e3f4c4b132a59ec2dd43bbdf78331975daef" />
+    <repository type="git" commit="cdea9799b2cd549eb638f70c497af7551338f141" />
     <dependencies>
       <group targetFramework="net8.0">
         <dependency id="Microsoft.Extensions.DependencyInjection.Abstractions" version="9.0.8" exclude="Build,Analyzers" />
@@ -19,6 +19,8 @@
     <file src="D:\PROYECTOS_ESCRITORIO\ProyectoMoviles\Northwind\NorthWind.Membership\NorthWind.Membership.Entities\DependencyContainer.cs" target="src\NorthWind.Membership.Entities\DependencyContainer.cs" />
     <file src="D:\PROYECTOS_ESCRITORIO\ProyectoMoviles\Northwind\NorthWind.Membership\NorthWind.Membership.Entities\Dtos\UserManagement\ChangeUserRoleDto.cs" target="src\NorthWind.Membership.Entities\Dtos\UserManagement\ChangeUserRoleDto.cs" />
     <file src="D:\PROYECTOS_ESCRITORIO\ProyectoMoviles\Northwind\NorthWind.Membership\NorthWind.Membership.Entities\Dtos\UserManagement\DeleteUserDto.cs" target="src\NorthWind.Membership.Entities\Dtos\UserManagement\DeleteUserDto.cs" />
+    <file src="D:\PROYECTOS_ESCRITORIO\ProyectoMoviles\Northwind\NorthWind.Membership\NorthWind.Membership.Entities\Dtos\UserManagement\GetUserByIdDto.cs" target="src\NorthWind.Membership.Entities\Dtos\UserManagement\GetUserByIdDto.cs" />
+    <file src="D:\PROYECTOS_ESCRITORIO\ProyectoMoviles\Northwind\NorthWind.Membership\NorthWind.Membership.Entities\Dtos\UserManagement\LogoutDto.cs" target="src\NorthWind.Membership.Entities\Dtos\UserManagement\LogoutDto.cs" />
     <file src="D:\PROYECTOS_ESCRITORIO\ProyectoMoviles\Northwind\NorthWind.Membership\NorthWind.Membership.Entities\Dtos\UserManagement\UnlockUserDto.cs" target="src\NorthWind.Membership.Entities\Dtos\UserManagement\UnlockUserDto.cs" />
     <file src="D:\PROYECTOS_ESCRITORIO\ProyectoMoviles\Northwind\NorthWind.Membership\NorthWind.Membership.Entities\Dtos\UserManagement\UpdateUserDto.cs" target="src\NorthWind.Membership.Entities\Dtos\UserManagement\UpdateUserDto.cs" />
     <file src="D:\PROYECTOS_ESCRITORIO\ProyectoMoviles\Northwind\NorthWind.Membership\NorthWind.Membership.Entities\Dtos\UserManagement\UserInfoDto.cs" target="src\NorthWind.Membership.Entities\Dtos\UserManagement\UserInfoDto.cs" />
@@ -29,6 +31,7 @@
     <file src="D:\PROYECTOS_ESCRITORIO\ProyectoMoviles\Northwind\NorthWind.Membership\NorthWind.Membership.Entities\UserLogin\UserLogin.cs" target="src\NorthWind.Membership.Entities\UserLogin\UserLogin.cs" />
     <file src="D:\PROYECTOS_ESCRITORIO\ProyectoMoviles\Northwind\NorthWind.Membership\NorthWind.Membership.Entities\Validators\CedulaEcuatorianaValidator.cs" target="src\NorthWind.Membership.Entities\Validators\CedulaEcuatorianaValidator.cs" />
     <file src="D:\PROYECTOS_ESCRITORIO\ProyectoMoviles\Northwind\NorthWind.Membership\NorthWind.Membership.Entities\Validators\UserLogin\UserCredentialsDtoValidator.cs" target="src\NorthWind.Membership.Entities\Validators\UserLogin\UserCredentialsDtoValidator.cs" />
+    <file src="D:\PROYECTOS_ESCRITORIO\ProyectoMoviles\Northwind\NorthWind.Membership\NorthWind.Membership.Entities\Validators\UserManagement\UpdateUserDtoValidator.cs" target="src\NorthWind.Membership.Entities\Validators\UserManagement\UpdateUserDtoValidator.cs" />
     <file src="D:\PROYECTOS_ESCRITORIO\ProyectoMoviles\Northwind\NorthWind.Membership\NorthWind.Membership.Entities\Validators\UserRegistration\UserRegistrationDtoValidator.cs" target="src\NorthWind.Membership.Entities\Validators\UserRegistration\UserRegistrationDtoValidator.cs" />
     <file src="D:\PROYECTOS_ESCRITORIO\ProyectoMoviles\Northwind\NorthWind.Membership\NorthWind.Membership.Entities\ValueObjects\Endpoints.cs" target="src\NorthWind.Membership.Entities\ValueObjects\Endpoints.cs" />
     <file src="D:\PROYECTOS_ESCRITORIO\ProyectoMoviles\Northwind\NorthWind.Membership\NorthWind.Membership.Entities\obj\Release\net8.0\NorthWind.Membership.Entities.GlobalUsings.g.cs" target="src\NorthWind.Membership.Entities\obj\Release\net8.0\NorthWind.Membership.Entities.GlobalUsings.g.cs" />

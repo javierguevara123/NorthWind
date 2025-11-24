@@ -86,7 +86,7 @@
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
-    "version": "1.0.3",
+    "version": "1.0.8",
     "restore": {
       "projectUniqueName": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Entities\\NorthWind.Membership.Entities.csproj",
       "projectName": "NorthWind.Membership.Entities",

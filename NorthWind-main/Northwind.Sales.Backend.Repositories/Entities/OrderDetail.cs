@@ -8,4 +8,5 @@ public class OrderDetail
     public int ProductId { get; set; } // Id del Producto
     public decimal UnitPrice { get; set; }
     public short Quantity { get; set; }
+    public Product Product { get; set; } = null!;
 }

@@ -5,7 +5,7 @@
   },
   "projects": {
     "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Backend.Core\\NorthWind.Membership.Backend.Core.csproj": {
-      "version": "1.0.5",
+      "version": "1.0.8",
       "restore": {
         "projectUniqueName": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Backend.Core\\NorthWind.Membership.Backend.Core.csproj",
         "projectName": "NorthWind.Membership.Backend.Core",
@@ -57,7 +57,7 @@
             },
             "NorthWind.Membership.Entities": {
               "target": "Package",
-              "version": "[1.0.3, )"
+              "version": "[1.0.8, )"
             },
             "NorthWind.Result.Entities": {
               "target": "Package",

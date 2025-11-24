@@ -1,12 +1,13 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using NorthWind.Sales.Backend.BusinessObjects.Interfaces.Products.CreateProduct;
 using NorthWind.Sales.Backend.BusinessObjects.Interfaces.Products.DeleteProduct;
 using NorthWind.Sales.Backend.BusinessObjects.Interfaces.Products.GetProductById;
 using NorthWind.Sales.Backend.BusinessObjects.Interfaces.Products.GetProducts;
 using NorthWind.Sales.Backend.BusinessObjects.Interfaces.Products.UpdateProduct;
+using NorthWind.Sales.Entities.Dtos.Products.CreateProduct;
 using NorthWind.Sales.Entities.Dtos.Products.DeleteProduct;
 using NorthWind.Sales.Entities.Dtos.Products.GetProductById;
-using NorthWind.Sales.Entities.Dtos.Products.CreateProduct;
 using NorthWind.Sales.Entities.Dtos.Products.GetProducts;
 using NorthWind.Sales.Entities.Dtos.Products.UpdateProduct;
 
@@ -35,8 +36,8 @@ public static class ProductsController
         // POST: Crear nuevo producto
         app.MapPost(Endpoints.CreateProduct, CreateProduct)
             .WithName("CreateProduct")
-            .RequireAuthorization()
-            .Produces<int>(StatusCodes.Status201Created);
+            .Produces<int>(StatusCodes.Status201Created)
+            .RequireAuthorization(new AuthorizeAttribute { Roles = "Administrator" });
 
         // PUT: Actualizar producto existente
         app.MapPut(Endpoints.UpdateProduct, UpdateProduct)

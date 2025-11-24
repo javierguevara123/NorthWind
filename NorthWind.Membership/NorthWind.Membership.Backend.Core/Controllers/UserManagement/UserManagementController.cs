@@ -21,6 +21,30 @@ internal static class UserManagementController
             })
             .RequireAuthorization();
 
+        // GET: Obtener usuario por ID
+        app.MapGet(Endpoints.GetUserById,
+            [Authorize]
+        async (string userId,
+            HttpContext httpContext,
+            IGetUserByIdInputPort inputPort,
+            IGetUserByIdOutputPort presenter) =>
+            {
+                // Obtener el email del usuario autenticado
+                var currentUserEmail = httpContext.User.FindFirst(ClaimTypes.Name)?.Value;
+                var currentUserRole = httpContext.User.FindFirst(ClaimTypes.Role)?.Value;
+
+                var getUserData = new GetUserByIdDto
+                {
+                    UserId = userId,
+                    CurrentUserEmail = currentUserEmail,
+                    CurrentUserRole = currentUserRole
+                };
+
+                await inputPort.Handle(getUserData);
+                return presenter.Result;
+            })
+            .RequireAuthorization();
+
         // GET: Obtener usuarios bloqueados (Solo Admin y SuperUser)
         app.MapGet(Endpoints.GetLockedOutUsers,
             [Authorize(Roles = "Administrator,SuperUser")]
@@ -94,6 +118,28 @@ internal static class UserManagementController
                 return presenter.Result;
             })
             .RequireAuthorization();
+
+        // POST: Logout - Invalidar token
+        app.MapPost(Endpoints.Logout,
+            [Authorize]
+        async (HttpContext httpContext,
+            ILogoutInputPort inputPort,
+            ILogoutOutputPort presenter) =>
+            {
+                var currentUserEmail = httpContext.User.FindFirst(ClaimTypes.Name)?.Value;
+                var token = httpContext.Request.Headers["Authorization"].ToString().Replace("Bearer ", "");
+
+                var logoutData = new LogoutDto
+                {
+                    Email = currentUserEmail,
+                    Token = token
+                };
+
+                await inputPort.Handle(logoutData);
+                return presenter.Result;
+            })
+            .RequireAuthorization();
+
 
         return app;
     }

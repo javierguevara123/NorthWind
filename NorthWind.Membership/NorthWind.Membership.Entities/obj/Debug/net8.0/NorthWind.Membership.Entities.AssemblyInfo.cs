@@ -13,11 +13,11 @@ using System.Reflection;
 
 [assembly: System.Reflection.AssemblyCompanyAttribute("NorthWind.Membership.Entities")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
-[assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.3.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.3+9727e3f4c4b132a59ec2dd43bbdf78331975daef")]
+[assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.8.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.8+cdea9799b2cd549eb638f70c497af7551338f141")]
 [assembly: System.Reflection.AssemblyProductAttribute("NorthWind.Membership.Entities")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NorthWind.Membership.Entities")]
-[assembly: System.Reflection.AssemblyVersionAttribute("1.0.3.0")]
+[assembly: System.Reflection.AssemblyVersionAttribute("1.0.8.0")]
 
 // Generado por la clase WriteCodeFragment de MSBuild.
 

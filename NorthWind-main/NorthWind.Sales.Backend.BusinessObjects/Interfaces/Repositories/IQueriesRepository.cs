@@ -1,51 +1,46 @@
 ﻿using NorthWind.Sales.Entities.Dtos.Customers.GetCustomerById;
 using NorthWind.Sales.Entities.Dtos.Customers.GetCustomers;
+using NorthWind.Sales.Entities.Dtos.Orders.GetOrderById;  // ← AGREGAR
+using NorthWind.Sales.Entities.Dtos.Orders.GetOrders;
 using NorthWind.Sales.Entities.Dtos.Products.GetProducts;
 
 namespace NorthWind.Sales.Backend.BusinessObjects.Interfaces.Repositories
 {
     public interface IQueriesRepository
     {
+
+        Task<OrderPagedResultDto> GetOrdersPaged(GetOrdersQueryDto query);
+
         // ========== PRODUCTS ==========
         Task<IEnumerable<ProductDto>> GetAllProducts();
         Task<ProductDto?> GetProductById(int productId);
         Task<bool> ProductExists(int productId);
-        Task<PagedResultDto<ProductDto>> GetProductsPaged(GetProductsQueryDto query);  // ⬅️ NUEVO
-
-        // Métodos adicionales (si los tienes)
+        Task<PagedResultDto<ProductDto>> GetProductsPaged(GetProductsQueryDto query);
         Task<short> GetCommittedUnits(int productId);
         Task<bool> ProductNameExists(string name, int excludeProductId);
         Task<bool> ProductNameExists(string name);
 
-        // ========== CUSTOMERS & PRODUCTS (EXISTENTES) ==========
+        // ========== CUSTOMERS ==========
         Task<decimal?> GetCustomerCurrentBalance(string customerId);
-        Task<IEnumerable<ProductUnitsInStock>> GetProductsUnitsInStock(IEnumerable<int> productIds);
         Task<bool> CustomerHasPendingOrders(string customerId);
-        /// <summary>
-        /// Obtiene la lista de clientes paginada.
-        /// </summary>
-        //Task<PagedResultDto<CustomerListDto>> GetCustomersPaged(GetCustomersQueryDto query);
         Task<CustomerPagedResultDto> GetCustomersPaged(GetCustomersQueryDto query);
-
-
-        /// <summary>
-        /// Obtiene un cliente por ID, retorna null si no existe.
-        /// </summary>
         Task<CustomerDetailDto?> GetCustomerById(string customerId);
-
-        /// <summary>
-        /// Verifica si un cliente existe por su ID.
-        /// </summary>
         Task<bool> CustomerExists(string customerId);
-
-        /// <summary>
-        /// Verifica si ya existe un cliente con el nombre especificado.
-        /// </summary>
         Task<bool> CustomerNameExists(string name);
+        Task<bool> CustomerNameExists(string name, string excludeCustomerId);
+
+        // ========== PRODUCTS & CUSTOMERS (HELPERS) ==========
+        Task<IEnumerable<ProductUnitsInStock>> GetProductsUnitsInStock(IEnumerable<int> productIds);
+
+        // ========== ORDERS ========== ← AGREGAR ESTA SECCIÓN
+        /// <summary>
+        /// Obtiene una orden por ID con todos sus detalles.
+        /// </summary>
+        Task<OrderWithDetailsDto?> GetOrderById(int orderId);
 
         /// <summary>
-        /// Verifica si ya existe un cliente con ese nombre, excluyendo un ID (para Update).
+        /// Verifica si una orden existe por su ID.
         /// </summary>
-        Task<bool> CustomerNameExists(string name, string excludeCustomerId);
+        Task<bool> OrderExists(int orderId);
     }
 }

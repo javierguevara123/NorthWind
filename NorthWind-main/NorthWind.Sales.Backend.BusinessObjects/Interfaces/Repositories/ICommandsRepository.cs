@@ -53,4 +53,5 @@ public interface ICommandsRepository : IUnitOfWork
     Task<string> CreateCustomer(Customer customer);
     Task UpdateCustomer(Customer customer);
     Task DeleteCustomer(string customerId);
+    Task DeleteOrder(int orderId);
 }

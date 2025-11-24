@@ -3,6 +3,7 @@ using Microsoft.IdentityModel.Tokens;
 using Northwind.Sales.WebApi.Extensions;
 using NorthWind.Membership.Backend.AspNetIdentity.Options;
 using NorthWind.Membership.Backend.AspNetIdentity.Services;
+using NorthWind.Membership.Backend.Core.Middleware;
 using NorthWind.Membership.Backend.Core.Options;
 using NorthWind.Sales.Backend.DataContexts.EFCore.Options;
 using NorthWind.Sales.Backend.IoC;
@@ -107,6 +108,7 @@ internal static class Startup
         app.MapNorthWindSalesEndpoints();
         app.UseCors();
         app.UseAuthentication();
+        app.UseMiddleware<TokenBlacklistMiddleware>();
         app.UseAuthorization();
 
         return app;

@@ -7,6 +7,7 @@ namespace NorthWind.Sales.Backend.Repositories.Interfaces
         // ========== DbSets ==========
         IQueryable<Customer> Customers { get; }
         IQueryable<Product> Products { get; }
+        IQueryable<Order> Orders { get; }
         IQueryable<OrderDetail> OrderDetails { get; }
 
         // ========== Métodos Helper para Queries ==========

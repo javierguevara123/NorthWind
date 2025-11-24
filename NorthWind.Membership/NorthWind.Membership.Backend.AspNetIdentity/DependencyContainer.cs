@@ -19,19 +19,22 @@ namespace NorthWind.Membership.Backend.AspNetIdentity
             // Configurar Identity con opciones de bloqueo
             services.AddIdentityCore<NorthWindUser>(options =>
             {
-                // Configuración de bloqueo de cuenta
+                // ========== Configuración de bloqueo de cuenta ==========
                 options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(15);
                 options.Lockout.MaxFailedAccessAttempts = 3;
                 options.Lockout.AllowedForNewUsers = true;
 
-                // Opcional: Configuración de contraseñas
+                // ========== Configuración de contraseñas ==========
                 options.Password.RequireDigit = true;
                 options.Password.RequireLowercase = true;
                 options.Password.RequireUppercase = true;
                 options.Password.RequireNonAlphanumeric = true;
-                options.Password.RequiredLength = 8;
+                options.Password.RequiredLength = 6; // ← Cambiado a 6 para ser consistente con tu validación
+
+                // ========== Configuración de usuario ==========
+                options.User.RequireUniqueEmail = true; // ← RECOMENDADO: Email único
             })
-            .AddRoles<Microsoft.AspNetCore.Identity.IdentityRole>()
+            .AddRoles<IdentityRole>() // ← Simplificado
             .AddEntityFrameworkStores<NorthWindMembershipContext>()
             .AddDefaultTokenProviders();
 

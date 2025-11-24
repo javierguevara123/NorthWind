@@ -374,5 +374,59 @@ namespace NorthWind.Membership.Backend.AspNetIdentity.Services
             return new Result<IEnumerable<ValidationError>>(
                 deleteResult.Errors.ToValidationErrors());
         }
+
+        // Agregar al final de MembershipService.cs
+
+        public async Task<UserInfoDto> GetUserById(string userId)
+        {
+            var user = await manager.FindByIdAsync(userId);
+
+            if (user == null)
+            {
+                return null;
+            }
+
+            var roles = await manager.GetRolesAsync(user);
+            var isLockedOut = await manager.IsLockedOutAsync(user);
+
+            return new UserInfoDto
+            {
+                Id = user.Id,  // ← Asegúrate de que UserInfoDto tenga esta propiedad
+                Email = user.Email,
+                FirstName = user.FirstName,
+                LastName = user.LastName,
+                Cedula = user.Cedula,
+                IsLockedOut = isLockedOut,
+                LockoutEnd = user.LockoutEnd,
+                AccessFailedCount = user.AccessFailedCount,
+                Roles = roles
+            };
+        }
+
+        public async Task<UserInfoDto> GetUserByEmail(string email)
+        {
+            var user = await manager.FindByNameAsync(email);
+
+            if (user == null)
+            {
+                return null;
+            }
+
+            var roles = await manager.GetRolesAsync(user);
+            var isLockedOut = await manager.IsLockedOutAsync(user);
+
+            return new UserInfoDto
+            {
+                Id = user.Id,  // ← Asegúrate de que UserInfoDto tenga esta propiedad
+                Email = user.Email,
+                FirstName = user.FirstName,
+                LastName = user.LastName,
+                Cedula = user.Cedula,
+                IsLockedOut = isLockedOut,
+                LockoutEnd = user.LockoutEnd,
+                AccessFailedCount = user.AccessFailedCount,
+                Roles = roles
+            };
+        }
     }
 }

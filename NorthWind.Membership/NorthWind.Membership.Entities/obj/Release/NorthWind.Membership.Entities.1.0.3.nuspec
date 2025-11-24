@@ -5,7 +5,7 @@
     <version>1.0.3</version>
     <authors>NorthWind.Membership.Entities</authors>
     <description>Package Description</description>
-    <repository type="git" commit="9727e3f4c4b132a59ec2dd43bbdf78331975daef" />
+    <repository type="git" commit="cdea9799b2cd549eb638f70c497af7551338f141" />
     <dependencies>
       <group targetFramework="net8.0">
         <dependency id="Microsoft.Extensions.DependencyInjection.Abstractions" version="9.0.8" exclude="Build,Analyzers" />

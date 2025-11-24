@@ -132,6 +132,19 @@ internal class CommandsRepository(INorthWindSalesCommandsDataContext context) : 
         return Task.CompletedTask;
     }
 
+    public Task DeleteOrder(int orderId)
+    {
+        var sw = Stopwatch.StartNew();
+
+        var entity = new Order { Id = orderId };
+        context.Remove(entity);
+
+        sw.Stop();
+        Console.WriteLine($"🕒 Tiempo DeleteOrder en CommandsRepository: {sw.ElapsedMilliseconds} ms");
+
+        return Task.CompletedTask;
+    }
+
     public async Task SaveChanges()
     {
         var sw = Stopwatch.StartNew();

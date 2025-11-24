@@ -5,7 +5,7 @@
   },
   "projects": {
     "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Backend.AspNetIdentity\\NorthWind.Membership.Backend.AspNetIdentity.csproj": {
-      "version": "1.0.4",
+      "version": "1.0.6",
       "restore": {
         "projectUniqueName": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Backend.AspNetIdentity\\NorthWind.Membership.Backend.AspNetIdentity.csproj",
         "projectName": "NorthWind.Membership.Backend.AspNetIdentity",
@@ -67,7 +67,7 @@
             },
             "NorthWind.Membership.Backend.Core": {
               "target": "Package",
-              "version": "[1.0.5, )"
+              "version": "[1.0.8, )"
             }
           },
           "imports": [
