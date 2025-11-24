@@ -25,7 +25,9 @@ internal class NorthWindSalesCommandsDataContext(IOptions<DBOptions> dbOptions)
 
     public new void Remove<TEntity>(TEntity entity) where TEntity : class
     {
-        base.Set<TEntity>().Remove(entity);
+        // ✅ Attach + Estado Deleted explícito
+        base.Attach(entity);
+        base.Entry(entity).State = EntityState.Deleted;
     }
 
     //  Agrega un objeto "Order" al contexto para ser persistido en la BD.

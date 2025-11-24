@@ -5,8 +5,7 @@ using NorthWind.Membership.Entities.ValueObjects;
 namespace Microsoft.AspNetCore.Builder;
 internal static class UserLoginController
 {
-    public static WebApplication UseUserLoginController(
-   this WebApplication app)
+    public static WebApplication UseUserLoginController(this WebApplication app)
     {
         app.MapPost(Endpoints.Login,
         async (UserCredentialsDto userCredentials,

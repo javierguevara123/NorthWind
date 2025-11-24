@@ -3,6 +3,8 @@
 //using NorthWind.Sales.Backend.BusinessObjects.ValueObjects;
 //using NorthWind.Sales.Entities.Dtos.CreateOrder;
 
+using NorthWind.Sales.Entities.Dtos.Orders.CreateOrder;
+
 namespace NorthWind.Sales.Backend.BusinessObjects.Aggregates;
 
 // ************************************

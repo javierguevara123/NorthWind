@@ -78,6 +78,60 @@ internal class CommandsRepository(INorthWindSalesCommandsDataContext context) : 
         return Task.CompletedTask;
     }
 
+    
+
+    // CommandsRepository.cs (fragmento a sustituir o añadir)
+    public async Task<string> CreateCustomer(Customer customer)
+    {
+        var sw = Stopwatch.StartNew();
+
+        var entity = new Entities.Customer
+        {
+            Id = customer.Id,
+            Name = customer.Name,
+            CurrentBalance = customer.CurrentBalance
+        };
+
+        await context.AddAsync(entity);
+
+        sw.Stop();
+        Console.WriteLine($"🕒 Tiempo CreateCustomer en CommandsRepository: {sw.ElapsedMilliseconds} ms");
+
+        return entity.Id;
+    }
+
+    public Task UpdateCustomer(Customer customer)
+    {
+        var sw = Stopwatch.StartNew();
+
+        var entity = new Entities.Customer
+        {
+            Id = customer.Id,
+            Name = customer.Name,
+            CurrentBalance = customer.CurrentBalance
+        };
+
+        context.Update(entity);
+
+        sw.Stop();
+        Console.WriteLine($"🕒 Tiempo UpdateCustomer en CommandsRepository: {sw.ElapsedMilliseconds} ms");
+
+        return Task.CompletedTask;
+    }
+
+    public Task DeleteCustomer(string customerId)
+    {
+        var sw = Stopwatch.StartNew();
+
+        var entity = new Entities.Customer { Id = customerId };
+        context.Remove(entity);
+
+        sw.Stop();
+        Console.WriteLine($"🕒 Tiempo DeleteCustomer en CommandsRepository: {sw.ElapsedMilliseconds} ms");
+
+        return Task.CompletedTask;
+    }
+
     public async Task SaveChanges()
     {
         var sw = Stopwatch.StartNew();

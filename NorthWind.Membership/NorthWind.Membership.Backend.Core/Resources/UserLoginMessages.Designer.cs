@@ -70,6 +70,15 @@ namespace NorthWind.Membership.Backend.Core.Resources {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Su cuenta ha sido bloqueada debido a múltiples intentos fallidos de inicio de sesión. Por favor, contacte a un administrador para desbloquear su cuenta..
+        /// </summary>
+        internal static string UserAccountLockedErrorMessage {
+            get {
+                return ResourceManager.GetString("UserAccountLockedErrorMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a El correo o la contraseña son incorrectos..
         /// </summary>
         internal static string UserLoginErrorDetail {

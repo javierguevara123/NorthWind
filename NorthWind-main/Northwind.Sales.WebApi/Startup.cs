@@ -2,10 +2,12 @@
 using Microsoft.IdentityModel.Tokens;
 using Northwind.Sales.WebApi.Extensions;
 using NorthWind.Membership.Backend.AspNetIdentity.Options;
+using NorthWind.Membership.Backend.AspNetIdentity.Services;
 using NorthWind.Membership.Backend.Core.Options;
 using NorthWind.Sales.Backend.DataContexts.EFCore.Options;
 using NorthWind.Sales.Backend.IoC;
 using NorthWind.Sales.Backend.SmtpGateways.Options;
+using NorthWind.Sales.WebApi;
 using System.Text;
 
 namespace Northwind.Sales.WebApi;
@@ -79,26 +81,30 @@ internal static class Startup
     //  -Mapear los endpoints de la aplicación
     public static WebApplication ConfigureWebApplication(this WebApplication app)
     {
-        //  Middleware que permite ejecutar un delegado luego que se haya ejecutado
-        //  los manejadores de excepciones.
         app.UseExceptionHandler(builder => { });
 
-        //  Solo cuando el entorno es "Development", se activa Swagger para ver la documentación
-        //  de la API y la interfaz UI de Swagger en el navegador.
         if (app.Environment.IsDevelopment())
         {
             app.UseSwagger();
-            //  Activa la interfaz (UI) de Swagger para probar la API en desarrollo
             app.UseSwaggerUI();
         }
 
-        //  Registra todos los servicios necesarios usando Clean Architecture (casos de uso,
-        //  repositorios, presenters, etc.)
-        //  Mapea los controladores implementados, como el de crear órdenes "CreateOrders"
-        app.MapNorthWindSalesEndpoints();
+        // Inicializar roles y SuperUser
+        using (var scope = app.Services.CreateScope())
+        {
+            var services = scope.ServiceProvider;
+            try
+            {
+                RoleSeeder.SeedRolesAndSuperUser(services).Wait();
+            }
+            catch (Exception ex)
+            {
+                var logger = services.GetRequiredService<ILogger<Program>>();
+                logger.LogError(ex, "Error al inicializar roles y SuperUser");
+            }
+        }
 
-        //  Agregar el Middleware CORS
-        //  Habilita CORS en tiempo de ejecución para aceptar solicitudes de cualquier origen.
+        app.MapNorthWindSalesEndpoints();
         app.UseCors();
         app.UseAuthentication();
         app.UseAuthorization();

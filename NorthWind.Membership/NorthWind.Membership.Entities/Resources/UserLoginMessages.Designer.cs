@@ -61,6 +61,24 @@ namespace NorthWind.Membership.Entities.Resources {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a La cédula ya está registrada.
+        /// </summary>
+        internal static string DuplicateCedulaErrorMessage {
+            get {
+                return ResourceManager.GetString("DuplicateCedulaErrorMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a La cédula ecuatoriana no es válida.
+        /// </summary>
+        internal static string InvalidCedulaErrorMessage {
+            get {
+                return ResourceManager.GetString("InvalidCedulaErrorMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a El formato de correo no es válido..
         /// </summary>
         internal static string InvalidEmailErrorMessage {

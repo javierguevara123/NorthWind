@@ -1,8 +1,7 @@
-﻿
-using NorthWind.Sales.Entities.Dtos.CreateOrder;
-using NorthWind.Sales.Frontend.BusinessObjects.Interfaces;
+﻿using NorthWind.Sales.Frontend.BusinessObjects.Interfaces;
 using NorthWind.Sales.Entities.ValueObjects;
 using System.Net.Http.Json;
+using NorthWind.Sales.Entities.Dtos.Orders.CreateOrder;
 
 namespace NorthWind.Sales.Frontend.WebApiGateways;
 

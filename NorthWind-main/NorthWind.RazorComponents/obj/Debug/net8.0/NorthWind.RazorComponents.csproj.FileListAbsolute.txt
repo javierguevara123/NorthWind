@@ -113,8 +113,8 @@ D:\aplicacionesmoviles\Northwind\NorthWind-main\NorthWind.RazorComponents\obj\De
 D:\aplicacionesmoviles\Northwind\NorthWind-main\NorthWind.RazorComponents\obj\Debug\net8.0\refint\NorthWind.RazorComponents.dll
 D:\aplicacionesmoviles\Northwind\NorthWind-main\NorthWind.RazorComponents\obj\Debug\net8.0\NorthWind.RazorComponents.pdb
 D:\aplicacionesmoviles\Northwind\NorthWind-main\NorthWind.RazorComponents\obj\Debug\net8.0\ref\NorthWind.RazorComponents.dll
-D:\PROYECTOS_ESCRITORIO\ProyectoMoviles\Northwind\NorthWind-main\NorthWind.RazorComponents\bin\Debug\net8.0\NorthWind.RazorComponents.staticwebassets.endpoints.json
 D:\PROYECTOS_ESCRITORIO\ProyectoMoviles\Northwind\NorthWind-main\NorthWind.RazorComponents\bin\Debug\net8.0\NorthWind.RazorComponents.staticwebassets.runtime.json
+D:\PROYECTOS_ESCRITORIO\ProyectoMoviles\Northwind\NorthWind-main\NorthWind.RazorComponents\bin\Debug\net8.0\NorthWind.RazorComponents.staticwebassets.endpoints.json
 D:\PROYECTOS_ESCRITORIO\ProyectoMoviles\Northwind\NorthWind-main\NorthWind.RazorComponents\bin\Debug\net8.0\NorthWind.RazorComponents.deps.json
 D:\PROYECTOS_ESCRITORIO\ProyectoMoviles\Northwind\NorthWind-main\NorthWind.RazorComponents\bin\Debug\net8.0\NorthWind.RazorComponents.dll
 D:\PROYECTOS_ESCRITORIO\ProyectoMoviles\Northwind\NorthWind-main\NorthWind.RazorComponents\bin\Debug\net8.0\NorthWind.RazorComponents.pdb

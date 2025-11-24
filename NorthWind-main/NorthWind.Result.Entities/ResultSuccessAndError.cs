@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace NorthWind.Result.Entities
+﻿namespace NorthWind.Result.Entities
 {
     public class Result<SuccessResultType, ErrorResultType> :
  Result<ErrorResultType>

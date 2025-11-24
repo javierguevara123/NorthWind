@@ -1,24 +1,4 @@
-﻿using Microsoft.Extensions.DependencyInjection;
-using NorthWind.Events.Entities.Interfaces;
-using NorthWind.Sales.Backend.BusinessObjects.Interfaces.CreateOrder;
-using NorthWind.Sales.Backend.BusinessObjects.Interfaces.CreateProduct;
-using NorthWind.Sales.Backend.BusinessObjects.Interfaces.DeleteProduct;
-using NorthWind.Sales.Backend.BusinessObjects.Interfaces.GetProductById;
-using NorthWind.Sales.Backend.BusinessObjects.Interfaces.GetProducts;
-using NorthWind.Sales.Backend.BusinessObjects.Interfaces.UpdateProduct;
-using NorthWind.Sales.Backend.UseCases.CreateOrder;
-using NorthWind.Sales.Backend.UseCases.CreateProduct;
-using NorthWind.Sales.Backend.UseCases.DeleteProduct;
-using NorthWind.Sales.Backend.UseCases.GetProductById;
-using NorthWind.Sales.Backend.UseCases.GetProducts;
-using NorthWind.Sales.Backend.UseCases.UpdateProduct;
-using NorthWind.Sales.Entities.Dtos.CreateOrder;
-using NorthWind.Sales.Entities.Dtos.CreateProduct;
-using NorthWind.Sales.Entities.Dtos.DeleteProduct;
-using NorthWind.Sales.Entities.Dtos.GetProductById;
-using NorthWind.Sales.Entities.Dtos.UpdateProduct;
-using NorthWind.Validation.Entities;
-
+﻿
 namespace NorthWind.Sales.Backend.UseCases;
 
 public static class DependencyContainer
@@ -32,13 +12,28 @@ public static class DependencyContainer
         services.AddScoped<IGetProductByIdInputPort, GetProductByIdInteractor>();
         services.AddScoped<IGetProductsInputPort, GetProductsInteractor>();
 
+        //CUSTOMERS
+        services.AddScoped<ICreateCustomerInputPort, CreateCustomerInteractor>();
+        services.AddScoped<IUpdateCustomerInputPort, UpdateCustomerInteractor>();
+        services.AddScoped<IDeleteCustomerInputPort, DeleteCustomerInteractor>();
+        services.AddScoped<IGetCustomerByIdInputPort, GetCustomerByIdInteractor>();
+        services.AddScoped<IGetCustomersInputPort, GetCustomersInteractor>();
+
+
         services.AddModelValidator<CreateOrderDto, CreateOrderCustomerValidator>();
         services.AddModelValidator<CreateOrderDto, CreateOrderProductValidator>();
         services.AddModelValidator<CreateProductDto, CreateProductBusinessValidator>();
         services.AddModelValidator<UpdateProductDto, UpdateProductBusinessValidator>();
         services.AddModelValidator<DeleteProductDto, DeleteProductBusinessValidator>();
         services.AddModelValidator<GetProductByIdDto, GetProductByIdValidator>();
-        
+
+        //CUSTOMERS
+
+        services.AddModelValidator<CreateCustomerDto, CreateCustomerBusinessValidator>();
+        services.AddModelValidator<UpdateCustomerDto, UpdateCustomerBusinessValidator>();
+        services.AddModelValidator<DeleteCustomerDto, DeleteCustomerBusinessValidator>();
+        services.AddModelValidator<GetCustomerByIdDto, GetCustomerByIdValidator>();
+
 
         services.AddScoped<IDomainEventHandler<SpecialOrderCreatedEvent>, SendEMailWhenSpecialOrderCreatedEventHandler>();
 

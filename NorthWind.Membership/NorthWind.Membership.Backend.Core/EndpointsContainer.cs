@@ -5,6 +5,7 @@ public static class EndpointsContainer
     {
         app.UseUserRegistrationController();
         app.UseUserLoginController();
+        app.UseUserManagementController();
 
         return app;
     }

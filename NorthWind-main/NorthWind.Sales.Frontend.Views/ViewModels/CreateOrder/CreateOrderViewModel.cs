@@ -1,5 +1,5 @@
 ﻿using NorthWind.RazorComponents.Validators;
-using NorthWind.Sales.Entities.Dtos.CreateOrder;
+using NorthWind.Sales.Entities.Dtos.Orders.CreateOrder;
 using NorthWind.Sales.Frontend.BusinessObjects.Interfaces;
 using NorthWind.Sales.Frontend.Views.Resources;
 using NorthWind.Validation.Entities.Interfaces;

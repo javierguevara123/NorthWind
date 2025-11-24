@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "NorthWind.Sales.BlazorClient",
   "resources": {
-    "hash": "sha256-fd33HVC3D/82MaebdbDd5zLICjdKG6bCKFTqLdDVIo0=",
+    "hash": "sha256-G322y3wd0eTCGP+O5/4hbbx5vANnMi+5YDJ0mhrpBeE=",
     "jsModuleNative": {
       "dotnet.native.js": "sha256-O/NCYcAN9uPocD7ns7AzF/cqx7f5vL1PTJCQs0vEXyk="
     },
@@ -221,30 +221,30 @@
       "mscorlib.wasm": "sha256-RLW/7NVuhoPfq151II3kX2kWHgBwQgpCw9aemQNg3to=",
       "netstandard.wasm": "sha256-lAg5WvTiA8wbsIwlr51xh0YWpXT9F5EX3Cnv+11O/mU=",
       "System.Private.CoreLib.wasm": "sha256-3O3muuRQwoLRecYRjfIFWUURvTjP4EmD2O8wYg2UDNY=",
-      "NorthWind.HttpDelegatingHandlers.wasm": "sha256-k+6AkHQ4u6TOdfSyQ4BBFwye85UJv5Nh+B0JOp7CJeM=",
-      "NorthWind.RazorComponents.wasm": "sha256-UxeMyTr6DTt1Z1U7UEfb4BUS0wcIqdG/TPC9Cb6Ly+M=",
-      "NorthWind.Sales.Entities.wasm": "sha256-9sxKMxKW73FXH7Y3HLp5CtGWFg16UZjK0jiGf73rxT0=",
-      "NorthWind.Sales.Frontend.BusinessObjects.wasm": "sha256-sJRTHiz/BqA/yf/NPP4+hXxg15+qqsV/RMgOzbWToSo=",
-      "NorthWind.Sales.Frontend.IoC.wasm": "sha256-m0D4B7gPp7dbEDTYQUA52aK+abgTxxyrappu0GFJLL0=",
-      "NorthWind.Sales.Frontend.Views.wasm": "sha256-VzFzwElhU23h9GXFlIP8JTUBzfdk3AR561aaTsapDuY=",
-      "NorthWind.Sales.Frontend.WebApiGateways.wasm": "sha256-wgVTn6PEiTNxxM8w6c2sXpW3AjhTYNNTNBe2Jpckn64=",
-      "NorthWind.Sales.Validators.Entities.wasm": "sha256-V7/1xYS8cRLn/1mvJAIag1s7T23PNnRhEzbPJ7BB8ew=",
-      "NorthWind.Validation.Entities.wasm": "sha256-EkDVy0atv4MqCeaoQiB2+962EHV+oj3L1ieTeNuInEM=",
-      "NorthWind.ValidationService.FluentValidation.wasm": "sha256-X1RVJSM5ifP1Bvz5v7Hlig7lU3FKb4yf29aMB60SMPU=",
-      "NorthWind.Sales.BlazorClient.wasm": "sha256-yAaPNW4AvnD0UTA0cz5PPo4vfRXY+tjFPQTzEUWo7Hc="
+      "NorthWind.HttpDelegatingHandlers.wasm": "sha256-UUBzAKMQvqcgodFUJDFhUmp3DWCuEHajmOs9n9i3osQ=",
+      "NorthWind.RazorComponents.wasm": "sha256-9sSZVct2prcGjc/1n8adFJwRSl8XMbPBkFf/6Se9DIU=",
+      "NorthWind.Sales.Entities.wasm": "sha256-0WT/pHVXyL5SJz7Knc+ndVqca8r/v7Hs4M6IrR4JXeA=",
+      "NorthWind.Sales.Frontend.BusinessObjects.wasm": "sha256-Zy8E4pYasCG/ZIphpDC11MJiKT/zP4xFI6Og7+svF2E=",
+      "NorthWind.Sales.Frontend.IoC.wasm": "sha256-70A2MvQpSITsmdcImh9UmrsQK2EzDRSCLlyUsEJhbZ4=",
+      "NorthWind.Sales.Frontend.Views.wasm": "sha256-oxxGD46hnZlcmBAStT3ZjpCrl+H+r0WyBKBt8da4rS4=",
+      "NorthWind.Sales.Frontend.WebApiGateways.wasm": "sha256-UMx4eiTT53thnk+vfZ5y2UdvbNiZKOuWx2tEROtnHAQ=",
+      "NorthWind.Sales.Validators.Entities.wasm": "sha256-77hCt7ABWrJtVMD0+oR1ZKgRLXuI76Kksawm9xeHabI=",
+      "NorthWind.Validation.Entities.wasm": "sha256-+Um+akS4RAVlhrZlWmWvxr68kLujOL4K2TcmWbxvJnI=",
+      "NorthWind.ValidationService.FluentValidation.wasm": "sha256-iLXZvM14VocSKmHJruTuwfktjOQcbzTLPTERApqhb8Y=",
+      "NorthWind.Sales.BlazorClient.wasm": "sha256-zLV9alm61VkNKAOoCLgnSgCIC832bOBkWxEnAezYq6Q="
     },
     "pdb": {
-      "NorthWind.Sales.Frontend.IoC.pdb": "sha256-/3U7lhhpONGd+JQYinC80FZwndUqITB4l1bJbQIQ2Oc=",
-      "NorthWind.HttpDelegatingHandlers.pdb": "sha256-h2tJzx4ig7RIdpDj5r/8KE7CoLwb3EeOQa/sHswV7OM=",
-      "NorthWind.RazorComponents.pdb": "sha256-wbJHLR91pjjJzcfGO5Ktwo8mJK6Y4sRoWw71JlZaPK0=",
-      "NorthWind.Sales.Entities.pdb": "sha256-TAYk1TwQDnBpdOQhHOMd3lmjwmJd2/KzcHLcOnrSB4Y=",
-      "NorthWind.Sales.Frontend.BusinessObjects.pdb": "sha256-94EKUipWUcXOUxc0cfLR72BT6ahDQgaCURXPcY8fSJo=",
-      "NorthWind.Sales.Frontend.Views.pdb": "sha256-pYH81UhhGON8+hp4dpUMZ38zdiHgRWTKUZxVEPxs6v0=",
-      "NorthWind.Sales.Frontend.WebApiGateways.pdb": "sha256-wdt/eSKjdf5fvHW02N+Mxdi2mtbl1eveOUoel6MkA40=",
-      "NorthWind.Sales.Validators.Entities.pdb": "sha256-JXdlx+4X+yESX9I3yrVYK+angzgurMr8OcGS902L9Mw=",
-      "NorthWind.Validation.Entities.pdb": "sha256-Kap7Nbku/OwbQ7NAdilT8DFqMao/yFEWUlvrQmHR0kg=",
-      "NorthWind.ValidationService.FluentValidation.pdb": "sha256-em0lE28Ki2QK86XPqru7bFeqWdUv9rY36tcHC8EZQ6g=",
-      "NorthWind.Sales.BlazorClient.pdb": "sha256-Q9EeVywsG+9ScQrPARWSu5xfehnuP7EyhgISAepDIMs="
+      "NorthWind.Sales.Frontend.IoC.pdb": "sha256-92SiDA/DZR/9IGS1uzNiKAm3csr2Uehedhod1JO54aI=",
+      "NorthWind.HttpDelegatingHandlers.pdb": "sha256-DhOIea6NryyhCR5CNf7wm5kzEttgUpVoeuYZ4aBTW3I=",
+      "NorthWind.RazorComponents.pdb": "sha256-trunazu8qWwXIaMvGriJD69KCBVbAdRoGjrt6yTNiP0=",
+      "NorthWind.Sales.Entities.pdb": "sha256-vRGy44Oo0aimR1zvsiwhtwvpywPtk7FhMRLaT2RnnvY=",
+      "NorthWind.Sales.Frontend.BusinessObjects.pdb": "sha256-paSF1NITcyFjqN3yihOxY4NPThvBAtP8Qrsx2gu6rog=",
+      "NorthWind.Sales.Frontend.Views.pdb": "sha256-Gw3A6b4mHBx2W9S5VllIO6Wuf62rGsBwxjbyxPwe0ZE=",
+      "NorthWind.Sales.Frontend.WebApiGateways.pdb": "sha256-pxWnnIpj50vC3XxA9xmOVYD/4kkNhdA7mQ5KVdqX/YQ=",
+      "NorthWind.Sales.Validators.Entities.pdb": "sha256-90okBmoFBjrPvAi8PCxggEmdg13io6+kZdOqyj1Uo+4=",
+      "NorthWind.Validation.Entities.pdb": "sha256-Aa6RtVB8vKcCZVKxYvk0wHdJnt86D+1PHTG/XgDhQMs=",
+      "NorthWind.ValidationService.FluentValidation.pdb": "sha256-KG2QsjWfV+0o2fs60BElcJpHRTbBOGjBN8qKxJJC1VI=",
+      "NorthWind.Sales.BlazorClient.pdb": "sha256-eKHhECOZ9xEX3U4+lqUwnJwZrmfVEZmey6oLABLyx0E="
     }
   },
   "cacheBootResources": true,

@@ -137,10 +137,10 @@ D:\aplicacionesmoviles\Northwind\NorthWind-main\NorthWind.Sales.Frontend.Views\o
 D:\aplicacionesmoviles\Northwind\NorthWind-main\NorthWind.Sales.Frontend.Views\obj\Debug\net8.0\refint\NorthWind.Sales.Frontend.Views.dll
 D:\aplicacionesmoviles\Northwind\NorthWind-main\NorthWind.Sales.Frontend.Views\obj\Debug\net8.0\NorthWind.Sales.Frontend.Views.pdb
 D:\aplicacionesmoviles\Northwind\NorthWind-main\NorthWind.Sales.Frontend.Views\obj\Debug\net8.0\ref\NorthWind.Sales.Frontend.Views.dll
-D:\PROYECTOS_ESCRITORIO\ProyectoMoviles\Northwind\NorthWind-main\NorthWind.Sales.Frontend.Views\bin\Debug\net8.0\NorthWind.RazorComponents.staticwebassets.endpoints.json
-D:\PROYECTOS_ESCRITORIO\ProyectoMoviles\Northwind\NorthWind-main\NorthWind.Sales.Frontend.Views\bin\Debug\net8.0\NorthWind.Sales.Frontend.Views.staticwebassets.endpoints.json
 D:\PROYECTOS_ESCRITORIO\ProyectoMoviles\Northwind\NorthWind-main\NorthWind.Sales.Frontend.Views\bin\Debug\net8.0\NorthWind.RazorComponents.staticwebassets.runtime.json
+D:\PROYECTOS_ESCRITORIO\ProyectoMoviles\Northwind\NorthWind-main\NorthWind.Sales.Frontend.Views\bin\Debug\net8.0\NorthWind.RazorComponents.staticwebassets.endpoints.json
 D:\PROYECTOS_ESCRITORIO\ProyectoMoviles\Northwind\NorthWind-main\NorthWind.Sales.Frontend.Views\bin\Debug\net8.0\NorthWind.Sales.Frontend.Views.staticwebassets.runtime.json
+D:\PROYECTOS_ESCRITORIO\ProyectoMoviles\Northwind\NorthWind-main\NorthWind.Sales.Frontend.Views\bin\Debug\net8.0\NorthWind.Sales.Frontend.Views.staticwebassets.endpoints.json
 D:\PROYECTOS_ESCRITORIO\ProyectoMoviles\Northwind\NorthWind-main\NorthWind.Sales.Frontend.Views\bin\Debug\net8.0\NorthWind.Sales.Frontend.Views.deps.json
 D:\PROYECTOS_ESCRITORIO\ProyectoMoviles\Northwind\NorthWind-main\NorthWind.Sales.Frontend.Views\bin\Debug\net8.0\NorthWind.Sales.Frontend.Views.dll
 D:\PROYECTOS_ESCRITORIO\ProyectoMoviles\Northwind\NorthWind-main\NorthWind.Sales.Frontend.Views\bin\Debug\net8.0\NorthWind.Sales.Frontend.Views.pdb

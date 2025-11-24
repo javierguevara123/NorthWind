@@ -10,7 +10,7 @@
         "dependencies": {
           "NorthWind.DomainLogs.Entities": "1.0.0",
           "NorthWind.Events.Entities": "1.0.0",
-          "NorthWind.Membership.Backend.AspNetIdentity": "1.0.0",
+          "NorthWind.Membership.Backend.AspNetIdentity": "1.0.4",
           "NorthWind.Sales.Backend.Controllers": "1.0.0",
           "NorthWind.Sales.Backend.DataContexts.EFCore": "1.0.0",
           "NorthWind.Sales.Backend.Presenters": "1.0.0",
@@ -497,41 +497,41 @@
           }
         }
       },
-      "NorthWind.Membership.Backend.AspNetIdentity/1.0.0": {
+      "NorthWind.Membership.Backend.AspNetIdentity/1.0.4": {
         "dependencies": {
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.1",
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.8",
-          "NorthWind.Membership.Backend.Core": "1.0.0"
+          "NorthWind.Membership.Backend.Core": "1.0.5"
         },
         "runtime": {
           "lib/net8.0/NorthWind.Membership.Backend.AspNetIdentity.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
+            "assemblyVersion": "1.0.4.0",
+            "fileVersion": "1.0.4.0"
           }
         }
       },
-      "NorthWind.Membership.Backend.Core/1.0.0": {
+      "NorthWind.Membership.Backend.Core/1.0.5": {
         "dependencies": {
           "Microsoft.IdentityModel.JsonWebTokens": "8.14.0",
-          "NorthWind.Membership.Entities": "1.0.0",
+          "NorthWind.Membership.Entities": "1.0.3",
           "NorthWind.Result.Entities": "1.0.0"
         },
         "runtime": {
           "lib/net8.0/NorthWind.Membership.Backend.Core.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
+            "assemblyVersion": "1.0.5.0",
+            "fileVersion": "1.0.5.0"
           }
         }
       },
-      "NorthWind.Membership.Entities/1.0.0": {
+      "NorthWind.Membership.Entities/1.0.3": {
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.0-preview.3.25171.5",
           "NorthWind.Validation.Entities": "1.0.0"
         },
         "runtime": {
           "lib/net8.0/NorthWind.Membership.Entities.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
+            "assemblyVersion": "1.0.3.0",
+            "fileVersion": "1.0.3.0"
           }
         }
       },
@@ -1145,26 +1145,26 @@
       "path": "microsoft.sqlserver.server/1.0.0",
       "hashPath": "microsoft.sqlserver.server.1.0.0.nupkg.sha512"
     },
-    "NorthWind.Membership.Backend.AspNetIdentity/1.0.0": {
+    "NorthWind.Membership.Backend.AspNetIdentity/1.0.4": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-nm58Om6EVX+XXyGvDjO+u89PRHPBNO2BdH/BmNXFGbLgBJ3vFeiI5ENpmodySj6uBitRfMl2UYHLl/HN1YZgQg==",
-      "path": "northwind.membership.backend.aspnetidentity/1.0.0",
-      "hashPath": "northwind.membership.backend.aspnetidentity.1.0.0.nupkg.sha512"
+      "sha512": "sha512-qdYX+m0wTT189UJowXSlyJHQCMCxwyvfjKy/N2I4cZX2B+aulc+V0sVO2NFuqXixT7G30GlGMidSZWsyaqttWQ==",
+      "path": "northwind.membership.backend.aspnetidentity/1.0.4",
+      "hashPath": "northwind.membership.backend.aspnetidentity.1.0.4.nupkg.sha512"
     },
-    "NorthWind.Membership.Backend.Core/1.0.0": {
+    "NorthWind.Membership.Backend.Core/1.0.5": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-/Pv+yDyBGXw/A1kru3sm7h6izjNgzNoF61T6JYZE14eo2asDjdkeV+T0yDUyY67uF5PouCDnyCqmXmIAs/ZVOQ==",
-      "path": "northwind.membership.backend.core/1.0.0",
-      "hashPath": "northwind.membership.backend.core.1.0.0.nupkg.sha512"
+      "sha512": "sha512-WWrqoW7IANhGd4WKyZTY4k/6giSvjUNTYSS0BS8GFjYpLk4hJ/jVoi0KPzVdNoEO1c0ZxvIXB1/LQiBPzldoPQ==",
+      "path": "northwind.membership.backend.core/1.0.5",
+      "hashPath": "northwind.membership.backend.core.1.0.5.nupkg.sha512"
     },
-    "NorthWind.Membership.Entities/1.0.0": {
+    "NorthWind.Membership.Entities/1.0.3": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-7pwWgOGTpltVKyUhwlTASm27IxnsEF814+ygcnbxvZj9Rbj53G+UUdyU6C7u1kuiZOHX29QrCv7fpBPBzxnusA==",
-      "path": "northwind.membership.entities/1.0.0",
-      "hashPath": "northwind.membership.entities.1.0.0.nupkg.sha512"
+      "sha512": "sha512-3FZ7Zn4Tm5lTnaGTyW9R35Y46DY9nPdywDLenV9QUMrf+4HbUZtb3ZxaVggAIhtx1GkmB3wY3Ceve+uzh8CssA==",
+      "path": "northwind.membership.entities/1.0.3",
+      "hashPath": "northwind.membership.entities.1.0.3.nupkg.sha512"
     },
     "NorthWind.Result.Entities/1.0.0": {
       "type": "package",

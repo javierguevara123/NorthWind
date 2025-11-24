@@ -1,4 +1,4 @@
-﻿using NorthWind.Sales.Entities.Dtos.CreateOrder;
+﻿using NorthWind.Sales.Entities.Dtos.Orders.CreateOrder;
 using NorthWind.Validation.Entities.Abstractions;
 using NorthWind.Validation.Entities.Enums;
 using NorthWind.Validation.Entities.Interfaces;

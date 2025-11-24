@@ -78,7 +78,7 @@ Convert.ChangeType(Token, IndexerType);
         {
             var FieldIdentifier =
             GetFieldIdentifier(EditContext.Model, Error.PropertyName);
-            ValidationMessageStore.Add(FieldIdentifier, Error.Message);
+            ValidationMessageStore.Add(FieldIdentifier, Error.ErrorMessage);
         }
         EditContext.NotifyValidationStateChanged();
     }
@@ -115,7 +115,7 @@ Convert.ChangeType(Token, IndexerType);
                 if (FieldIdentifier.FieldName == e.FieldIdentifier.FieldName &&
                 FieldIdentifier.Model == e.FieldIdentifier.Model)
                 {
-                    ValidationMessageStore.Add(FieldIdentifier, Item.Message);
+                    ValidationMessageStore.Add(FieldIdentifier, Item.ErrorMessage);
                 }
             }
         }

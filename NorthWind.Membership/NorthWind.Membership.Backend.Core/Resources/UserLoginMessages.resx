@@ -120,6 +120,9 @@
   <data name="InvalidUserCredentialsErrorMessage" xml:space="preserve">
     <value>Las credenciales de usuario proporcionadas son incorrectas.</value>
   </data>
+  <data name="UserAccountLockedErrorMessage" xml:space="preserve">
+    <value>Su cuenta ha sido bloqueada debido a múltiples intentos fallidos de inicio de sesión. Por favor, contacte a un administrador para desbloquear su cuenta.</value>
+  </data>
   <data name="UserLoginErrorDetail" xml:space="preserve">
     <value>El correo o la contraseña son incorrectos.</value>
   </data>

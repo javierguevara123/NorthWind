@@ -12,6 +12,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="Resources\CreateCustomerMessages.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>CreateCustomerMessages.resx</DependentUpon>
+    </Compile>
     <Compile Update="Resources\CreateOrderMessages.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
@@ -22,6 +27,11 @@
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
     </Compile>
+    <Compile Update="Resources\UpdateCustomerMessages.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>UpdateCustomerMessages.resx</DependentUpon>
+    </Compile>
     <Compile Update="Resources\UpdateProductMessages.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
@@ -30,6 +40,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Update="Resources\CreateCustomerMessages.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CreateCustomerMessages.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Update="Resources\CreateOrderMessages.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>CreateOrderMessages.Designer.cs</LastGenOutput>
@@ -37,6 +51,10 @@
     <EmbeddedResource Update="Resources\CreateProductMessages.resx">
       <LastGenOutput>CreateProductMessages.Designer.cs</LastGenOutput>
       <Generator>ResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\UpdateCustomerMessages.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>UpdateCustomerMessages.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Update="Resources\UpdateProductMessages.resx">
       <Generator>ResXFileCodeGenerator</Generator>

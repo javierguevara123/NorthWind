@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "nS/qKaKs3Uo=",
+  "dgSpecHash": "NfjRPklWI3I=",
   "success": true,
-  "projectFilePath": "C:\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Frontend.RazorViews\\NorthWind.Membership.Frontend.RazorViews.csproj",
+  "projectFilePath": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Frontend.RazorViews\\NorthWind.Membership.Frontend.RazorViews.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\BAR KARAOKE\\.nuget\\packages\\microsoft.aspnetcore.authorization\\8.0.19\\microsoft.aspnetcore.authorization.8.0.19.nupkg.sha512",
     "C:\\Users\\BAR KARAOKE\\.nuget\\packages\\microsoft.aspnetcore.components\\8.0.19\\microsoft.aspnetcore.components.8.0.19.nupkg.sha512",

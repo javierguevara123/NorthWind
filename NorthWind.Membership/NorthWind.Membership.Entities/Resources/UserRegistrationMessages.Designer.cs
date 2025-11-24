@@ -61,6 +61,24 @@ namespace NorthWind.Membership.Entities.Resources {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a La cédula ecuatoriana no es válida.
+        /// </summary>
+        internal static string InvalidCedulaErrorMessage {
+            get {
+                return ResourceManager.GetString("InvalidCedulaErrorMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a La cédula debe tener 10 dígitos.
+        /// </summary>
+        internal static string InvalidCedulaLengthErrorMessage {
+            get {
+                return ResourceManager.GetString("InvalidCedulaLengthErrorMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a El formato de correo no es válido..
         /// </summary>
         internal static string InvalidEmailErrorMessage {
@@ -111,6 +129,15 @@ namespace NorthWind.Membership.Entities.Resources {
         internal static string PasswordTooShortErrorMessage {
             get {
                 return ResourceManager.GetString("PasswordTooShortErrorMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a La cédula es requerida.
+        /// </summary>
+        internal static string RequiredCedulaErrorMessage {
+            get {
+                return ResourceManager.GetString("RequiredCedulaErrorMessage", resourceCulture);
             }
         }
         

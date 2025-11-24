@@ -17,7 +17,7 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <FileLength>275</FileLength>
-      <LastWriteTime>Thu, 04 Sep 2025 16:50:51 GMT</LastWriteTime>
+      <LastWriteTime>Sun, 23 Nov 2025 18:31:08 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\NorthWind.Sales.Frontend.Views.dl264rvf41.bundle.scp.css'))</OriginalItemSpec>
     </StaticWebAsset>
   </ItemGroup>

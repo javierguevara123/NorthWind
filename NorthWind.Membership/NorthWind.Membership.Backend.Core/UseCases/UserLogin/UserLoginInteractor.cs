@@ -10,35 +10,51 @@ using NorthWind.Validation.Entities.ValueObjects;
 namespace NorthWind.Membership.Backend.Core.UseCases.UserLogin
 {
     internal class UserLoginInteractor(
- IMembershipService membershipService,
- IUserLoginOutputPort presenter,
- IModelValidatorHub<UserCredentialsDto> validationService)
- : IUserLoginInputPort
+        IMembershipService membershipService,
+        IUserLoginOutputPort presenter,
+        IModelValidatorHub<UserCredentialsDto> validationService)
+        : IUserLoginInputPort
     {
         public async Task Handle(UserCredentialsDto userData)
         {
             Result<UserDto, IEnumerable<ValidationError>> Result;
+
             if (!await validationService.Validate(userData))
             {
                 Result = new(validationService.Errors);
             }
             else
             {
-                var User = await membershipService.GetUserByCredentials(userData);
-                if (User == null)
+                // Verificar si el usuario está bloqueado ANTES de validar credenciales
+                var isLockedOut = await membershipService.IsUserLockedOut(userData.Email);
+
+                if (isLockedOut)
                 {
                     Result = new(
-                    [new ValidationError(
-nameof(userData.Password),
-UserLoginMessages
-.InvalidUserCredentialsErrorMessage)
-                    ]);
+                        [new ValidationError(
+                            nameof(userData.Email),
+                            UserLoginMessages.UserAccountLockedErrorMessage)
+                        ]);
                 }
                 else
                 {
-                    Result = new(User);
+                    var User = await membershipService.GetUserByCredentials(userData);
+
+                    if (User == null)
+                    {
+                        Result = new(
+                            [new ValidationError(
+                                nameof(userData.Password),
+                                UserLoginMessages.InvalidUserCredentialsErrorMessage)
+                            ]);
+                    }
+                    else
+                    {
+                        Result = new(User);
+                    }
                 }
             }
+
             await presenter.Handle(Result);
         }
     }

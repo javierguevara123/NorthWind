@@ -1037,11 +1037,11 @@
           "buildTransitive/Mono.TextTemplating.targets": {}
         }
       },
-      "NorthWind.Membership.Backend.Core/1.0.0": {
+      "NorthWind.Membership.Backend.Core/1.0.5": {
         "type": "package",
         "dependencies": {
           "Microsoft.IdentityModel.JsonWebTokens": "8.14.0",
-          "NorthWind.Membership.Entities": "1.0.0",
+          "NorthWind.Membership.Entities": "1.0.3",
           "NorthWind.Result.Entities": "1.0.0"
         },
         "compile": {
@@ -1054,7 +1054,7 @@
           "Microsoft.AspNetCore.App"
         ]
       },
-      "NorthWind.Membership.Entities/1.0.0": {
+      "NorthWind.Membership.Entities/1.0.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.8",
@@ -3593,25 +3593,25 @@
         "readme.md"
       ]
     },
-    "NorthWind.Membership.Backend.Core/1.0.0": {
-      "sha512": "/Pv+yDyBGXw/A1kru3sm7h6izjNgzNoF61T6JYZE14eo2asDjdkeV+T0yDUyY67uF5PouCDnyCqmXmIAs/ZVOQ==",
+    "NorthWind.Membership.Backend.Core/1.0.5": {
+      "sha512": "WWrqoW7IANhGd4WKyZTY4k/6giSvjUNTYSS0BS8GFjYpLk4hJ/jVoi0KPzVdNoEO1c0ZxvIXB1/LQiBPzldoPQ==",
       "type": "package",
-      "path": "northwind.membership.backend.core/1.0.0",
+      "path": "northwind.membership.backend.core/1.0.5",
       "files": [
         ".nupkg.metadata",
         "lib/net8.0/NorthWind.Membership.Backend.Core.dll",
-        "northwind.membership.backend.core.1.0.0.nupkg.sha512",
+        "northwind.membership.backend.core.1.0.5.nupkg.sha512",
         "northwind.membership.backend.core.nuspec"
       ]
     },
-    "NorthWind.Membership.Entities/1.0.0": {
-      "sha512": "7pwWgOGTpltVKyUhwlTASm27IxnsEF814+ygcnbxvZj9Rbj53G+UUdyU6C7u1kuiZOHX29QrCv7fpBPBzxnusA==",
+    "NorthWind.Membership.Entities/1.0.3": {
+      "sha512": "3FZ7Zn4Tm5lTnaGTyW9R35Y46DY9nPdywDLenV9QUMrf+4HbUZtb3ZxaVggAIhtx1GkmB3wY3Ceve+uzh8CssA==",
       "type": "package",
-      "path": "northwind.membership.entities/1.0.0",
+      "path": "northwind.membership.entities/1.0.3",
       "files": [
         ".nupkg.metadata",
         "lib/net8.0/NorthWind.Membership.Entities.dll",
-        "northwind.membership.entities.1.0.0.nupkg.sha512",
+        "northwind.membership.entities.1.0.3.nupkg.sha512",
         "northwind.membership.entities.nuspec"
       ]
     },
@@ -4677,7 +4677,7 @@
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 8.0.1",
       "Microsoft.EntityFrameworkCore.SqlServer >= 9.0.8",
       "Microsoft.EntityFrameworkCore.Tools >= 9.0.8",
-      "NorthWind.Membership.Backend.Core >= 1.0.0"
+      "NorthWind.Membership.Backend.Core >= 1.0.5"
     ]
   },
   "packageFolders": {
@@ -4685,13 +4685,13 @@
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
-    "version": "1.0.0",
+    "version": "1.0.4",
     "restore": {
-      "projectUniqueName": "C:\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Backend.AspNetIdentity\\NorthWind.Membership.Backend.AspNetIdentity.csproj",
+      "projectUniqueName": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Backend.AspNetIdentity\\NorthWind.Membership.Backend.AspNetIdentity.csproj",
       "projectName": "NorthWind.Membership.Backend.AspNetIdentity",
-      "projectPath": "C:\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Backend.AspNetIdentity\\NorthWind.Membership.Backend.AspNetIdentity.csproj",
+      "projectPath": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Backend.AspNetIdentity\\NorthWind.Membership.Backend.AspNetIdentity.csproj",
       "packagesPath": "C:\\Users\\BAR KARAOKE\\.nuget\\packages\\",
-      "outputPath": "C:\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Backend.AspNetIdentity\\obj\\",
+      "outputPath": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Backend.AspNetIdentity\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -4705,8 +4705,8 @@
         "net8.0"
       ],
       "sources": {
-        "C:\\Northwind\\NorthWind.Packages": {},
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Northwind\\NorthWind.Packages": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -4747,7 +4747,7 @@
           },
           "NorthWind.Membership.Backend.Core": {
             "target": "Package",
-            "version": "[1.0.0, )"
+            "version": "[1.0.5, )"
           }
         },
         "imports": [

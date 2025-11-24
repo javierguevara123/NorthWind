@@ -126,4 +126,10 @@
   <data name="RequiredPasswordErrorMessage" xml:space="preserve">
     <value>La contraseña es requerida.</value>
   </data>
+  <data name="InvalidCedulaErrorMessage" xml:space="preserve">
+    <value>La cédula ecuatoriana no es válida</value>
+  </data>
+  <data name="DuplicateCedulaErrorMessage" xml:space="preserve">
+    <value>La cédula ya está registrada</value>
+  </data>
 </root>

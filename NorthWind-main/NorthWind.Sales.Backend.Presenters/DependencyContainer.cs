@@ -1,14 +1,23 @@
-﻿
-using NorthWind.Sales.Backend.BusinessObjects.Interfaces.CreateProduct;
-using NorthWind.Sales.Backend.BusinessObjects.Interfaces.DeleteProduct;
-using NorthWind.Sales.Backend.BusinessObjects.Interfaces.GetProductById;
-using NorthWind.Sales.Backend.BusinessObjects.Interfaces.GetProducts;
-using NorthWind.Sales.Backend.BusinessObjects.Interfaces.UpdateProduct;
-using NorthWind.Sales.Backend.Presenters.CreateProduct;
-using NorthWind.Sales.Backend.Presenters.DeleteProduct;
-using NorthWind.Sales.Backend.Presenters.GetProductById;
-using NorthWind.Sales.Backend.Presenters.GetProducts;
-using NorthWind.Sales.Backend.Presenters.UpdateProduct;
+﻿using NorthWind.Sales.Backend.BusinessObjects.Interfaces.Customers.CreateCustomer;
+using NorthWind.Sales.Backend.BusinessObjects.Interfaces.Customers.DeleteCustomer;
+using NorthWind.Sales.Backend.BusinessObjects.Interfaces.Customers.GetCustomerById;
+using NorthWind.Sales.Backend.BusinessObjects.Interfaces.Customers.GetCustomers;
+using NorthWind.Sales.Backend.BusinessObjects.Interfaces.Customers.UpdateCustomer;
+using NorthWind.Sales.Backend.BusinessObjects.Interfaces.Products.CreateProduct;
+using NorthWind.Sales.Backend.BusinessObjects.Interfaces.Products.DeleteProduct;
+using NorthWind.Sales.Backend.BusinessObjects.Interfaces.Products.GetProductById;
+using NorthWind.Sales.Backend.BusinessObjects.Interfaces.Products.GetProducts;
+using NorthWind.Sales.Backend.BusinessObjects.Interfaces.Products.UpdateProduct;
+using NorthWind.Sales.Backend.Presenters.Customers.CreateCustomer;
+using NorthWind.Sales.Backend.Presenters.Customers.DeleteCustomer;
+using NorthWind.Sales.Backend.Presenters.Customers.GetCustomers;
+using NorthWind.Sales.Backend.Presenters.Customers.UpdateCustomer;
+using NorthWind.Sales.Backend.Presenters.Products.CreateProduct;
+using NorthWind.Sales.Backend.Presenters.Products.DeleteProduct;
+using NorthWind.Sales.Backend.Presenters.Products.GetProductById;
+using NorthWind.Sales.Backend.Presenters.Products.GetProducts;
+using NorthWind.Sales.Backend.Presenters.Products.UpdateProduct;
+using NorthWind.Sales.Backend.PresentersCustomer.GetCustomerById;
 
 namespace Microsoft.Extensions.DependencyInjection;
 public static class DependencyContainer
@@ -21,6 +30,12 @@ public static class DependencyContainer
         services.AddScoped<IDeleteProductOutputPort, DeleteProductPresenter>();
         services.AddScoped<IGetProductByIdOutputPort, GetProductByIdPresenter>();
         services.AddScoped<IGetProductsOutputPort, GetProductsPresenter>();
+
+        services.AddScoped<ICreateCustomerOutputPort, CreateCustomerPresenter>();
+        services.AddScoped<IUpdateCustomerOutputPort, UpdateCustomerPresenter>();
+        services.AddScoped<IDeleteCustomerOutputPort, DeleteCustomerPresenter>();
+        services.AddScoped<IGetCustomerByIdOutputPort, GetCustomerByIdPresenter>();
+        services.AddScoped<IGetCustomersOutputPort, GetCustomersPresenter>();
 
         return services;
     }

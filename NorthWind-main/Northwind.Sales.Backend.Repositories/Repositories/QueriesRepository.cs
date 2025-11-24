@@ -1,5 +1,7 @@
 ﻿using NorthWind.Sales.Backend.BusinessObjects.ValueObjects;
-using NorthWind.Sales.Entities.Dtos.GetProducts;
+using NorthWind.Sales.Entities.Dtos.Customers.GetCustomerById;
+using NorthWind.Sales.Entities.Dtos.Customers.GetCustomers;
+using NorthWind.Sales.Entities.Dtos.Products.GetProducts;
 
 namespace NorthWind.Sales.Backend.Repositories.Repositories
 {
@@ -156,6 +158,80 @@ namespace NorthWind.Sales.Backend.Repositories.Repositories
             .Select(p => new ProductUnitsInStock(
             p.Id, p.UnitsInStock));
             return await context.ToListAsync(Queryable);
+        }
+
+        // ========== CUSTOMERS ==========
+
+        public async Task<bool> CustomerExists(string customerId)
+        {
+            var queryable = context.Customers.Where(c => c.Id == customerId);
+            return await context.AnyAsync(queryable);
+        }
+
+        public async Task<bool> CustomerHasPendingOrders(string customerId)
+        {
+            var balance = await GetCustomerCurrentBalance(customerId);
+            return balance.HasValue && balance.Value > 0;
+        }
+
+        public async Task<CustomerDetailDto?> GetCustomerById(string customerId)
+        {
+            var queryable =
+                from c in context.Customers
+                where c.Id == customerId
+                select new CustomerDetailDto(
+                    c.Id,
+                    c.Name,
+                    c.CurrentBalance
+                );
+
+            return await context.FirstOrDefaultAync(queryable);
+        }
+
+        public async Task<CustomerPagedResultDto> GetCustomersPaged(GetCustomersQueryDto query)
+        {
+            var baseQuery = context.Customers.AsQueryable();
+
+            // filtro opcional por nombre
+            if (!string.IsNullOrWhiteSpace(query.SearchTerm))
+            {
+                var term = query.SearchTerm.ToLower();
+                baseQuery = baseQuery.Where(c => c.Name.ToLower().Contains(term));
+            }
+
+            var totalRecords = await context.CountAsync(baseQuery);
+
+            var ordered = query.OrderDescending
+                ? baseQuery.OrderByDescending(c => c.Name)
+                : baseQuery.OrderBy(c => c.Name);
+
+            var pagedQuery = ordered
+                .Skip((query.PageNumber - 1) * query.PageSize)
+                .Take(query.PageSize)
+                .Select(c => new CustomerListItemDto(
+                    c.Id,
+                    c.Name,
+                    c.CurrentBalance
+                ));
+
+            var customers = await context.ToListAsync(pagedQuery);
+
+            return new CustomerPagedResultDto(customers, totalRecords);
+        }
+
+        public async Task<bool> CustomerNameExists(string name)
+        {
+            var queryable = context.Customers
+                                   .Where(c => c.Name.ToLower() == name.ToLower());
+            return await context.AnyAsync(queryable);
+        }
+
+        public async Task<bool> CustomerNameExists(string name, string excludeCustomerId)
+        {
+            var queryable = context.Customers
+                                   .Where(c => c.Name.ToLower() == name.ToLower() &&
+                                               c.Id != excludeCustomerId);
+            return await context.AnyAsync(queryable);
         }
     }
 
