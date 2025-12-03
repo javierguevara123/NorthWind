@@ -54,4 +54,6 @@ public interface ICommandsRepository : IUnitOfWork
     Task UpdateCustomer(Customer customer);
     Task DeleteCustomer(string customerId);
     Task DeleteOrder(int orderId);
+    Task<List<Product>> GetProductsWithLock(List<int> productIds);
+    Task UpdateProductStock(int productId, short newStock);
 }

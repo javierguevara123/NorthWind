@@ -7,10 +7,10 @@ namespace NorthWind.Membership.Backend.Core.UseCases.UserManagement
         IMembershipService membershipService,
         IGetLockedOutUsersOutputPort presenter) : IGetLockedOutUsersInputPort
     {
-        public async Task Handle()
+        public async Task Handle(int pageNumber, int pageSize)
         {
-            var users = await membershipService.GetLockedOutUsers();
-            await presenter.Handle(users);
+            var pagedUsers = await membershipService.GetLockedOutUsers(pageNumber, pageSize);
+            await presenter.Handle(pagedUsers);
         }
     }
 }

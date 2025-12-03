@@ -9,6 +9,7 @@ using NorthWind.Sales.Backend.BusinessObjects.Specifications;
 using NorthWind.Sales.Backend.UseCases.Resources;
 using NorthWind.Transactions.Entities.Interfaces;
 using NorthWind.Validation.Entities.Interfaces;
+using NorthWind.Exceptions.Entities.Exceptions;
 
 namespace NorthWind.Sales.Backend.UseCases.Orders.CreateOrder;
 
@@ -59,59 +60,78 @@ internal class CreateOrderInteractor(ICreateOrderOutputPort outputPort,
                                      IDomainTransaction domainTransaction,
                                      IUserService userService) : ICreateOrderInputPort
 {
-
-  //  1).- El "Controller" le pasa los datos al "InputPort", esos "Datos" se pasan en un "Dto"
-  //       desde la UI y para recibir los datos utilizamos el método "Handle" y su parámetro.
-  public async Task Handle(CreateOrderDto orderDto)
-  {
+    public async Task Handle(CreateOrderDto orderDto)
+    {
         GuardUser.AgainstUnauthenticated(userService);
-
-
         await GuardModel.AgainstNotValid(modelValidatorHub, orderDto);
         await domainLogger.LogInformation(new DomainLog(CreateOrderMessages.StartingPurchaseOrderCreation, userService.UserName));
 
-
-        //  2).- Una vez que se recibe los datos necesarios para realizar el proceso (desde un "Dto" se mapea(transforma) a un objeto
-        //       de tipo "OrderAggregate" para construir la orden (maestro-detalle).
         OrderAggregate Order = OrderAggregate.From(orderDto);
+
         try
         {
-            // Iniciar la transacción
+            // 1. INICIAR LA TRANSACCIÓN
             domainTransaction.BeginTransaction();
 
-            //  3).- Guardar la orden (agregado).
+            // 2. CONCURRENCIA PESIMISTA: Obtener y Bloquear Productos (UPDLOCK)
+            // Esto asegura que nadie más pueda modificar estos productos mientras validamos y actualizamos.
+            var productIds = Order.OrderDetails.Select(d => d.ProductId).ToList();
+            var productsInDb = await repository.GetProductsWithLock(productIds);
+
+            // 3. VALIDAR STOCK Y ACTUALIZAR EN MEMORIA
+            foreach (var detail in Order.OrderDetails)
+            {
+                var product = productsInDb.FirstOrDefault(p => p.Id == detail.ProductId);
+
+                // Validación: ¿Existe el producto?
+                if (product == null)
+                {
+                    throw new ValidationException($"El producto con ID {detail.ProductId} no existe.");
+                }
+
+                // Validación: ¿Hay stock suficiente?
+                if (product.UnitsInStock < detail.Quantity)
+                {
+                    throw new ValidationException($"Stock insuficiente para el producto '{product.Name}'. Stock actual: {product.UnitsInStock}, Solicitado: {detail.Quantity}");
+                }
+
+                // Lógica de Negocio: Restar Stock
+                var nuevoStock = (short)(product.UnitsInStock - detail.Quantity);
+
+                // 4. PREPARAR ACTUALIZACIÓN EN EL REPOSITORIO
+                // Esto prepara el UPDATE en el contexto de EF Core
+                await repository.UpdateProductStock(product.Id, nuevoStock);
+            }
+
+            // 5. CREAR LA ORDEN (Prepara el INSERT en SQL)
             await repository.CreateOrder(Order);
 
-            //  4).- Confirmar los cambios en la base de datos y tratar todo como una unidad o
-            //       "Transacción", en este caso es un maestro/detalle, usando para esto el patron
-            //       "Unit Of Work" es decir como un "Commit".
+            // 6. GUARDAR TODOS LOS CAMBIOS (Unit of Work)
+            // Aquí se ejecutan los UPDATE de productos y el INSERT de la orden en una sola ida a la BD
             await repository.SaveChanges();
 
             await domainLogger.LogInformation(new DomainLog(string.Format(
-                                                                          CreateOrderMessages.PurchaseOrderCreatedTemplate,
-                                                                          Order.Id), userService.UserName));
+                CreateOrderMessages.PurchaseOrderCreatedTemplate, Order.Id), userService.UserName));
 
+            // 7. CONFIRMAR TRANSACCIÓN (Libera los bloqueos UPDLOCK)
+            domainTransaction.CommitTransaction();
 
-            //  5).- Enviar la respuesta al "OuputPort" que se ha creado la orden para que pase la
-            //       respuesta al "Presenter" y este lo formatee y luego lo pueda devolver al "Controller"
-            //       para que algún agente externo los utilice (por ejemplo, se puede utilizar en una
-            //       página web para mostrar la respuesta al usuario).
+            // 8. NOTIFICAR ÉXITO
             await outputPort.Handle(Order);
 
             if (new SpecialOrderSpecification().IsSatisfiedBy(Order))
             {
-               await domainEventHub.Raise(new SpecialOrderCreatedEvent(Order.Id, Order.OrderDetails.Count));
+                await domainEventHub.Raise(new SpecialOrderCreatedEvent(Order.Id, Order.OrderDetails.Count));
             }
-
-            // Aceptar la transacción
-            domainTransaction.CommitTransaction();
         }
-        catch
+        catch (Exception ex)
         {
-            // Cancelar la transacción
+            // 9. SI ALGO FALLA, DESHACER TODO
             domainTransaction.RollbackTransaction();
+
             string Information = string.Format(CreateOrderMessages.OrderCreationCancelledTemplate, Order.Id);
-            await domainLogger.LogInformation(new DomainLog(Information, userService.UserName));
+            // Loguear el error real para depuración
+            await domainLogger.LogInformation(new DomainLog($"{Information}. Error: {ex.Message}", userService.UserName));
             throw;
         }
     }

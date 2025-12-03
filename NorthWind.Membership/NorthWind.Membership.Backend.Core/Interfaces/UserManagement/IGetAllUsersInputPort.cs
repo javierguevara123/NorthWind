@@ -2,6 +2,6 @@
 {
     public interface IGetAllUsersInputPort
     {
-        Task Handle();
+        Task Handle(int pageNumber, int pageSize);
     }
 }

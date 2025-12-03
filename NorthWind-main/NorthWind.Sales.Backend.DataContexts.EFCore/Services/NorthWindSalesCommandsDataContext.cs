@@ -37,6 +37,11 @@ internal class NorthWindSalesCommandsDataContext(IOptions<DBOptions> dbOptions)
     public async Task AddOrderDetailsAsync(
         IEnumerable<OrderDetail> orderDetails) => await AddRangeAsync(orderDetails);
 
+    public new DbSet<TEntity> Set<TEntity>() where TEntity : class
+    {
+        return base.Set<TEntity>();
+    }
+
     //  Persiste todos los cambios en la base de datos en una sola transacción (unidad de trabajo).
     //public async Task SaveChangesAsync() => await base.SaveChangesAsync();
     public async Task SaveChangesAsync() => await GuardDBContext.AgainstSaveChangesErrorAsync(this);

@@ -1050,6 +1050,8 @@
       "NorthWind.Sales.Backend.Repositories/1.0.0": {
         "dependencies": {
           "Microsoft.Data.SqlClient": "6.1.0-preview1.25120.4",
+          "Microsoft.EntityFrameworkCore": "9.0.4",
+          "Microsoft.EntityFrameworkCore.Relational": "9.0.4",
           "Microsoft.Extensions.Configuration": "10.0.0-preview.4.25258.110",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.0-preview.3.25171.5",
           "Microsoft.Extensions.Options": "9.0.5",

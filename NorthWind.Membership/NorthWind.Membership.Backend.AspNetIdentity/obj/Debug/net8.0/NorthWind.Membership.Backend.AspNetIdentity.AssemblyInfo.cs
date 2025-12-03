@@ -13,11 +13,11 @@ using System.Reflection;
 
 [assembly: System.Reflection.AssemblyCompanyAttribute("NorthWind.Membership.Backend.AspNetIdentity")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
-[assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.6.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.6+cdea9799b2cd549eb638f70c497af7551338f141")]
+[assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.9.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.9+4ef1f60e99b5581d06ca6b2adb551357e79d0b27")]
 [assembly: System.Reflection.AssemblyProductAttribute("NorthWind.Membership.Backend.AspNetIdentity")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NorthWind.Membership.Backend.AspNetIdentity")]
-[assembly: System.Reflection.AssemblyVersionAttribute("1.0.6.0")]
+[assembly: System.Reflection.AssemblyVersionAttribute("1.0.9.0")]
 
 // Generado por la clase WriteCodeFragment de MSBuild.
 

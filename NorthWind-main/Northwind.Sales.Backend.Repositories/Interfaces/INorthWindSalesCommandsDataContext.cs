@@ -1,6 +1,6 @@
 ﻿
+using Microsoft.EntityFrameworkCore;
 using NorthWind.Sales.Backend.Repositories.Entities;
-using System.Collections.Generic;
 
 namespace NorthWind.Sales.Backend.Repositories.Interfaces;
 
@@ -16,6 +16,7 @@ public interface INorthWindSalesCommandsDataContext
     // ========== Métodos legacy (Orders - mantener compatibilidad) ==========
     Task AddOrderAsync(Order order);
     Task AddOrderDetailsAsync(IEnumerable<OrderDetail> orderDetails);
+    DbSet<TEntity> Set<TEntity>() where TEntity : class;
 
     // ========== Save ==========
     Task SaveChangesAsync();

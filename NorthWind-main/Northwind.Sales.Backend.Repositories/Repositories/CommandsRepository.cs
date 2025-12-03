@@ -1,6 +1,10 @@
 ﻿
+using Microsoft.EntityFrameworkCore;
 using NorthWind.Sales.Backend.BusinessObjects.Entities;
 using System.Diagnostics;
+
+using RepoEntities = NorthWind.Sales.Backend.Repositories.Entities;
+using BusinessEntities = NorthWind.Sales.Backend.BusinessObjects.Entities;
 
 namespace NorthWind.Sales.Backend.Repositories.Repositories;
 
@@ -141,6 +145,53 @@ internal class CommandsRepository(INorthWindSalesCommandsDataContext context) : 
 
         sw.Stop();
         Console.WriteLine($"🕒 Tiempo DeleteOrder en CommandsRepository: {sw.ElapsedMilliseconds} ms");
+
+        return Task.CompletedTask;
+    }
+
+    public async Task<List<BusinessEntities.Product>> GetProductsWithLock(List<int> productIds)
+    {
+        if (productIds == null || !productIds.Any())
+            return new List<BusinessEntities.Product>();
+
+        var parameterNames = Enumerable.Range(0, productIds.Count).Select(i => $"{{{i}}}").ToArray();
+        var sql = $"SELECT * FROM Products WITH (UPDLOCK, ROWLOCK) WHERE Id IN ({string.Join(",", parameterNames)})";
+
+        // CORRECCIÓN: Usar la entidad del repositorio (RepoEntities.Product)
+        var efProducts = await context.Set<RepoEntities.Product>()
+            .FromSqlRaw(sql, productIds.Cast<object>().ToArray())
+            .ToListAsync();
+
+        // Mapear de Entidad de Repositorio -> Entidad de Negocio
+        return efProducts.Select(e => new BusinessEntities.Product
+        {
+            Id = e.Id,
+            Name = e.Name,
+            UnitsInStock = e.UnitsInStock,
+            UnitPrice = e.UnitPrice
+        }).ToList();
+    }
+
+    public Task UpdateProductStock(int productId, short newStock)
+    {
+        // Acceder al DbSet de la entidad de persistencia
+        var dbSet = context.Set<RepoEntities.Product>();
+
+        // Buscar en la caché local (debería estar ahí gracias a GetProductsWithLock)
+        var entity = dbSet.Local.FirstOrDefault(e => e.Id == productId);
+
+        // Si no está en memoria, crear un stub y adjuntarlo
+        if (entity == null)
+        {
+            entity = new RepoEntities.Product { Id = productId };
+            dbSet.Attach(entity);
+        }
+
+        // Actualizar el valor
+        entity.UnitsInStock = newStock;
+
+        // Forzar el estado a modificado para asegurar el UPDATE
+        context.Update(entity);
 
         return Task.CompletedTask;
     }

@@ -5,7 +5,7 @@
     <version>1.0.8</version>
     <authors>NorthWind.Membership.Entities</authors>
     <description>Package Description</description>
-    <repository type="git" commit="cdea9799b2cd549eb638f70c497af7551338f141" />
+    <repository type="git" commit="4ef1f60e99b5581d06ca6b2adb551357e79d0b27" />
     <dependencies>
       <group targetFramework="net8.0">
         <dependency id="Microsoft.Extensions.DependencyInjection.Abstractions" version="9.0.8" exclude="Build,Analyzers" />
@@ -14,6 +14,6 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="D:\PROYECTOS_ESCRITORIO\ProyectoMoviles\Northwind\NorthWind.Membership\NorthWind.Membership.Entities\bin\Release\net8.0\NorthWind.Membership.Entities.dll" target="lib\net8.0\NorthWind.Membership.Entities.dll" />
+    <file src="D:\PROYECTOS_ESCRITORIO\ProyectoMoviles\Web\Northwind\NorthWind.Membership\NorthWind.Membership.Entities\bin\Release\net8.0\NorthWind.Membership.Entities.dll" target="lib\net8.0\NorthWind.Membership.Entities.dll" />
   </files>
 </package>

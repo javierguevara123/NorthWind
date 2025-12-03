@@ -2,6 +2,6 @@
 {
     public interface IGetLockedOutUsersInputPort
     {
-        Task Handle();
+        Task Handle(int pageNumber, int pageSize);
     }
 }

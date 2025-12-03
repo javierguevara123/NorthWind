@@ -7,10 +7,10 @@ namespace NorthWind.Membership.Backend.Core.UseCases.UserManagement
         IMembershipService membershipService,
         IGetAllUsersOutputPort presenter) : IGetAllUsersInputPort
     {
-        public async Task Handle()
+        public async Task Handle(int pageNumber, int pageSize)
         {
-            var users = await membershipService.GetAllUsers();
-            await presenter.Handle(users);
+            var pagedUsers = await membershipService.GetAllUsers(pageNumber, pageSize);
+            await presenter.Handle(pagedUsers);
         }
     }
 }

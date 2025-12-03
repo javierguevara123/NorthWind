@@ -4,6 +4,7 @@ using NorthWind.Membership.Backend.AspNetIdentity.Entities;
 using NorthWind.Membership.Backend.AspNetIdentity.Extensions;
 using NorthWind.Membership.Backend.Core.Dtos;
 using NorthWind.Membership.Backend.Core.Interfaces.Common;
+using NorthWind.Membership.Entities.Dtos.Common;
 using NorthWind.Membership.Entities.Dtos.UserManagement;
 using NorthWind.Membership.Entities.Dtos.UserRegistration;
 using NorthWind.Membership.Entities.UserLogin;
@@ -92,9 +93,21 @@ namespace NorthWind.Membership.Backend.AspNetIdentity.Services
             return await manager.IsLockedOutAsync(user);
         }
 
-        public async Task<IEnumerable<UserInfoDto>> GetAllUsers()
+        public async Task<PagedResultDto<UserInfoDto>> GetAllUsers(int pageNumber, int pageSize)
         {
-            var users = await manager.Users.ToListAsync();
+            // Validar parámetros
+            pageNumber = pageNumber < 1 ? 1 : pageNumber;
+            pageSize = pageSize < 1 ? 10 : pageSize;
+            pageSize = pageSize > 100 ? 100 : pageSize; // Límite máximo
+
+            var totalCount = await manager.Users.CountAsync();
+
+            var users = await manager.Users
+                .OrderBy(u => u.Email)
+                .Skip((pageNumber - 1) * pageSize)
+                .Take(pageSize)
+                .ToListAsync();
+
             var userInfoList = new List<UserInfoDto>();
 
             foreach (var user in users)
@@ -104,10 +117,11 @@ namespace NorthWind.Membership.Backend.AspNetIdentity.Services
 
                 userInfoList.Add(new UserInfoDto
                 {
+                    Id = user.Id,
                     Email = user.Email,
                     FirstName = user.FirstName,
                     LastName = user.LastName,
-                    Cedula = user.Cedula,  // ← NUEVO
+                    Cedula = user.Cedula,
                     IsLockedOut = isLockedOut,
                     LockoutEnd = user.LockoutEnd,
                     AccessFailedCount = user.AccessFailedCount,
@@ -115,13 +129,58 @@ namespace NorthWind.Membership.Backend.AspNetIdentity.Services
                 });
             }
 
-            return userInfoList;
+            return new PagedResultDto<UserInfoDto>
+            {
+                Items = userInfoList,
+                TotalCount = totalCount,
+                PageNumber = pageNumber,
+                PageSize = pageSize
+            };
         }
 
-        public async Task<IEnumerable<UserInfoDto>> GetLockedOutUsers()
+        public async Task<PagedResultDto<UserInfoDto>> GetLockedOutUsers(int pageNumber, int pageSize)
         {
-            var allUsers = await GetAllUsers();
-            return allUsers.Where(u => u.IsLockedOut);
+            pageNumber = pageNumber < 1 ? 1 : pageNumber;
+            pageSize = pageSize < 1 ? 10 : pageSize;
+            pageSize = pageSize > 100 ? 100 : pageSize;
+
+            var totalCount = await manager.Users
+                .Where(u => u.LockoutEnd != null && u.LockoutEnd > DateTimeOffset.UtcNow)
+                .CountAsync();
+
+            var lockedOutUsers = await manager.Users
+                .Where(u => u.LockoutEnd != null && u.LockoutEnd > DateTimeOffset.UtcNow)
+                .OrderBy(u => u.Email)
+                .Skip((pageNumber - 1) * pageSize)
+                .Take(pageSize)
+                .ToListAsync();
+
+            var userInfoList = new List<UserInfoDto>();
+
+            foreach (var user in lockedOutUsers)
+            {
+                var roles = await manager.GetRolesAsync(user);
+
+                userInfoList.Add(new UserInfoDto
+                {
+                    Email = user.Email,
+                    FirstName = user.FirstName,
+                    LastName = user.LastName,
+                    Cedula = user.Cedula,
+                    IsLockedOut = true,
+                    LockoutEnd = user.LockoutEnd,
+                    AccessFailedCount = user.AccessFailedCount,
+                    Roles = roles
+                });
+            }
+
+            return new PagedResultDto<UserInfoDto>
+            {
+                Items = userInfoList,
+                TotalCount = totalCount,
+                PageNumber = pageNumber,
+                PageSize = pageSize
+            };
         }
 
         public async Task<Result<IEnumerable<ValidationError>>> UnlockUser(string email)

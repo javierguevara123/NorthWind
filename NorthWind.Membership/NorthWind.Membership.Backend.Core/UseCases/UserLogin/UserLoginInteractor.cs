@@ -7,6 +7,8 @@ using NorthWind.Result.Entities;
 using NorthWind.Validation.Entities.Interfaces;
 using NorthWind.Validation.Entities.ValueObjects;
 
+// ... imports
+
 namespace NorthWind.Membership.Backend.Core.UseCases.UserLogin
 {
     internal class UserLoginInteractor(
@@ -25,28 +27,34 @@ namespace NorthWind.Membership.Backend.Core.UseCases.UserLogin
             }
             else
             {
-                // Verificar si el usuario está bloqueado ANTES de validar credenciales
+                // 1. Verificación PREVIA (Para usuarios ya bloqueados desde antes)
                 var isLockedOut = await membershipService.IsUserLockedOut(userData.Email);
 
                 if (isLockedOut)
                 {
-                    Result = new(
-                        [new ValidationError(
-                            nameof(userData.Email),
-                            UserLoginMessages.UserAccountLockedErrorMessage)
-                        ]);
+                    Result = new([new ValidationError(nameof(userData.Email), UserLoginMessages.UserAccountLockedErrorMessage)]);
                 }
                 else
                 {
+                    // Intentar login
                     var User = await membershipService.GetUserByCredentials(userData);
 
                     if (User == null)
                     {
-                        Result = new(
-                            [new ValidationError(
-                                nameof(userData.Password),
-                                UserLoginMessages.InvalidUserCredentialsErrorMessage)
-                            ]);
+                        // 2. VERIFICACIÓN POSTERIOR (CRÍTICO)
+                        // Si el login falló, verificamos si ESE fallo provocó el bloqueo inmediato.
+                        var isNowLocked = await membershipService.IsUserLockedOut(userData.Email);
+
+                        if (isNowLocked)
+                        {
+                            // Si acaba de bloquearse, mostramos el mensaje de bloqueo
+                            Result = new([new ValidationError(nameof(userData.Email), UserLoginMessages.UserAccountLockedErrorMessage)]);
+                        }
+                        else
+                        {
+                            // Si no está bloqueado, es solo error de contraseña
+                            Result = new([new ValidationError(nameof(userData.Password), UserLoginMessages.InvalidUserCredentialsErrorMessage)]);
+                        }
                     }
                     else
                     {

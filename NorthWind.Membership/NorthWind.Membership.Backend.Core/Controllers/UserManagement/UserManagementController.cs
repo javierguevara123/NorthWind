@@ -12,14 +12,16 @@ internal static class UserManagementController
     {
         // GET: Obtener todos los usuarios (Solo Admin y SuperUser)
         app.MapGet(Endpoints.GetAllUsers,
-            [Authorize(Roles = "Administrator,SuperUser")]
+    [Authorize(Roles = "Administrator,SuperUser")]
         async (IGetAllUsersInputPort inputPort,
-            IGetAllUsersOutputPort presenter) =>
-            {
-                await inputPort.Handle();
-                return presenter.Result;
-            })
-            .RequireAuthorization();
+    IGetAllUsersOutputPort presenter,
+    int pageNumber = 1,
+    int pageSize = 10) =>
+    {
+        await inputPort.Handle(pageNumber, pageSize);
+        return presenter.Result;
+    })
+    .RequireAuthorization();
 
         // GET: Obtener usuario por ID
         app.MapGet(Endpoints.GetUserById,
@@ -49,9 +51,11 @@ internal static class UserManagementController
         app.MapGet(Endpoints.GetLockedOutUsers,
             [Authorize(Roles = "Administrator,SuperUser")]
         async (IGetLockedOutUsersInputPort inputPort,
-            IGetLockedOutUsersOutputPort presenter) =>
+            IGetLockedOutUsersOutputPort presenter,
+            int pageNumber = 1,
+            int pageSize = 10) =>
             {
-                await inputPort.Handle();
+                await inputPort.Handle(pageNumber, pageSize);
                 return presenter.Result;
             })
             .RequireAuthorization();

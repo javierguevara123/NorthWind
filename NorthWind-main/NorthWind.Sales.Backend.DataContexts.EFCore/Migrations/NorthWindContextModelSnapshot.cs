@@ -217,13 +217,15 @@ namespace NorthWind.Sales.Backend.DataContexts.EFCore.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("NorthWind.Sales.Backend.Repositories.Entities.Product", null)
+                    b.HasOne("NorthWind.Sales.Backend.Repositories.Entities.Product", "Product")
                         .WithMany()
                         .HasForeignKey("ProductId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("Order");
+
+                    b.Navigation("Product");
                 });
 #pragma warning restore 612, 618
         }

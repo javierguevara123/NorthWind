@@ -1,4 +1,5 @@
 ﻿using NorthWind.Membership.Backend.Core.Dtos;
+using NorthWind.Membership.Entities.Dtos.Common;
 using NorthWind.Membership.Entities.Dtos.UserManagement;
 using NorthWind.Membership.Entities.Dtos.UserRegistration;
 using NorthWind.Membership.Entities.UserLogin;
@@ -18,8 +19,8 @@ namespace NorthWind.Membership.Backend.Core.Interfaces.Common
         Task<Result<IEnumerable<ValidationError>>> UnlockUser(string email);
 
         // Gestión de Usuarios y Roles
-        Task<IEnumerable<UserInfoDto>> GetAllUsers();
-        Task<IEnumerable<UserInfoDto>> GetLockedOutUsers();
+        Task<PagedResultDto<UserInfoDto>> GetAllUsers(int pageNumber, int pageSize);
+        Task<PagedResultDto<UserInfoDto>> GetLockedOutUsers(int pageNumber, int pageSize);
         Task<Result<IEnumerable<ValidationError>>> ChangeUserRole(string email, string newRole);
 
         // Update y Delete
@@ -36,7 +37,5 @@ namespace NorthWind.Membership.Backend.Core.Interfaces.Common
 
         // Inicialización
         Task InitializeRoles();
-
-        
     }
 }
