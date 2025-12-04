@@ -3,6 +3,22 @@
   "WorkspaceRootPath": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{74FA3518-FD67-485E-BA82-397C61C417B7}|NorthWind.Membership.Frontend.RazorViews\\NorthWind.Membership.Frontend.RazorViews.csproj|d:\\proyectos_escritorio\\proyectomoviles\\web\\northwind\\northwind.membership\\northwind.membership.frontend.razorviews\\dependencycontainer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74FA3518-FD67-485E-BA82-397C61C417B7}|NorthWind.Membership.Frontend.RazorViews\\NorthWind.Membership.Frontend.RazorViews.csproj|solutionrelative:northwind.membership.frontend.razorviews\\dependencycontainer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74FA3518-FD67-485E-BA82-397C61C417B7}|NorthWind.Membership.Frontend.RazorViews\\NorthWind.Membership.Frontend.RazorViews.csproj|d:\\proyectos_escritorio\\proyectomoviles\\web\\northwind\\northwind.membership\\northwind.membership.frontend.razorviews\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{74FA3518-FD67-485E-BA82-397C61C417B7}|NorthWind.Membership.Frontend.RazorViews\\NorthWind.Membership.Frontend.RazorViews.csproj|solutionrelative:northwind.membership.frontend.razorviews\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74FA3518-FD67-485E-BA82-397C61C417B7}|NorthWind.Membership.Frontend.RazorViews\\NorthWind.Membership.Frontend.RazorViews.csproj|d:\\proyectos_escritorio\\proyectomoviles\\web\\northwind\\northwind.membership\\northwind.membership.frontend.razorviews\\authenticationstateproviders\\jwtauthenticationstateprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74FA3518-FD67-485E-BA82-397C61C417B7}|NorthWind.Membership.Frontend.RazorViews\\NorthWind.Membership.Frontend.RazorViews.csproj|solutionrelative:northwind.membership.frontend.razorviews\\authenticationstateproviders\\jwtauthenticationstateprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74FA3518-FD67-485E-BA82-397C61C417B7}|NorthWind.Membership.Frontend.RazorViews\\NorthWind.Membership.Frontend.RazorViews.csproj|d:\\proyectos_escritorio\\proyectomoviles\\web\\northwind\\northwind.membership\\northwind.membership.frontend.razorviews\\httpmessagehandlers\\membershipbearertokenhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74FA3518-FD67-485E-BA82-397C61C417B7}|NorthWind.Membership.Frontend.RazorViews\\NorthWind.Membership.Frontend.RazorViews.csproj|solutionrelative:northwind.membership.frontend.razorviews\\httpmessagehandlers\\membershipbearertokenhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{182D16F4-EB2B-4179-AFD7-BC50CF255B55}|NorthWind.Membership.Entities\\NorthWind.Membership.Entities.csproj|d:\\proyectos_escritorio\\proyectomoviles\\web\\northwind\\northwind.membership\\northwind.membership.entities\\resources\\userloginmessages.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
       "RelativeMoniker": "D:0:0:{182D16F4-EB2B-4179-AFD7-BC50CF255B55}|NorthWind.Membership.Entities\\NorthWind.Membership.Entities.csproj|solutionrelative:northwind.membership.entities\\resources\\userloginmessages.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
     },
@@ -327,24 +343,12 @@
       "RelativeMoniker": "D:0:0:{12F63AD4-E5EF-4747-98D5-7D870E5DC9ED}|NorthWind.Membership.Backend.Core\\NorthWind.Membership.Backend.Core.csproj|solutionrelative:northwind.membership.backend.core\\interfaces\\userregistration\\iuserregistrationinputport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{74FA3518-FD67-485E-BA82-397C61C417B7}|NorthWind.Membership.Frontend.RazorViews\\NorthWind.Membership.Frontend.RazorViews.csproj|d:\\proyectos_escritorio\\proyectomoviles\\web\\northwind\\northwind.membership\\northwind.membership.frontend.razorviews\\dependencycontainer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{74FA3518-FD67-485E-BA82-397C61C417B7}|NorthWind.Membership.Frontend.RazorViews\\NorthWind.Membership.Frontend.RazorViews.csproj|solutionrelative:northwind.membership.frontend.razorviews\\dependencycontainer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{74FA3518-FD67-485E-BA82-397C61C417B7}|NorthWind.Membership.Frontend.RazorViews\\NorthWind.Membership.Frontend.RazorViews.csproj|d:\\proyectos_escritorio\\proyectomoviles\\web\\northwind\\northwind.membership\\northwind.membership.frontend.razorviews\\httpmessagehandlers\\membershipbearertokenhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{74FA3518-FD67-485E-BA82-397C61C417B7}|NorthWind.Membership.Frontend.RazorViews\\NorthWind.Membership.Frontend.RazorViews.csproj|solutionrelative:northwind.membership.frontend.razorviews\\httpmessagehandlers\\membershipbearertokenhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{74FA3518-FD67-485E-BA82-397C61C417B7}|NorthWind.Membership.Frontend.RazorViews\\NorthWind.Membership.Frontend.RazorViews.csproj|d:\\proyectos_escritorio\\proyectomoviles\\web\\northwind\\northwind.membership\\northwind.membership.frontend.razorviews\\northwind.membership.frontend.razorviews.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{74FA3518-FD67-485E-BA82-397C61C417B7}|NorthWind.Membership.Frontend.RazorViews\\NorthWind.Membership.Frontend.RazorViews.csproj|solutionrelative:northwind.membership.frontend.razorviews\\northwind.membership.frontend.razorviews.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{74FA3518-FD67-485E-BA82-397C61C417B7}|NorthWind.Membership.Frontend.RazorViews\\NorthWind.Membership.Frontend.RazorViews.csproj|d:\\proyectos_escritorio\\proyectomoviles\\web\\northwind\\northwind.membership\\northwind.membership.frontend.razorviews\\pages\\logindisplaycomponent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{74FA3518-FD67-485E-BA82-397C61C417B7}|NorthWind.Membership.Frontend.RazorViews\\NorthWind.Membership.Frontend.RazorViews.csproj|solutionrelative:northwind.membership.frontend.razorviews\\pages\\logindisplaycomponent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{74FA3518-FD67-485E-BA82-397C61C417B7}|NorthWind.Membership.Frontend.RazorViews\\NorthWind.Membership.Frontend.RazorViews.csproj|d:\\proyectos_escritorio\\proyectomoviles\\web\\northwind\\northwind.membership\\northwind.membership.frontend.razorviews\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{74FA3518-FD67-485E-BA82-397C61C417B7}|NorthWind.Membership.Frontend.RazorViews\\NorthWind.Membership.Frontend.RazorViews.csproj|solutionrelative:northwind.membership.frontend.razorviews\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{74FA3518-FD67-485E-BA82-397C61C417B7}|NorthWind.Membership.Frontend.RazorViews\\NorthWind.Membership.Frontend.RazorViews.csproj|d:\\proyectos_escritorio\\proyectomoviles\\web\\northwind\\northwind.membership\\northwind.membership.frontend.razorviews\\pages\\logoutpage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -377,10 +381,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{74FA3518-FD67-485E-BA82-397C61C417B7}|NorthWind.Membership.Frontend.RazorViews\\NorthWind.Membership.Frontend.RazorViews.csproj|d:\\proyectos_escritorio\\proyectomoviles\\web\\northwind\\northwind.membership\\northwind.membership.frontend.razorviews\\interfaces\\itokenstorage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{74FA3518-FD67-485E-BA82-397C61C417B7}|NorthWind.Membership.Frontend.RazorViews\\NorthWind.Membership.Frontend.RazorViews.csproj|solutionrelative:northwind.membership.frontend.razorviews\\interfaces\\itokenstorage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{74FA3518-FD67-485E-BA82-397C61C417B7}|NorthWind.Membership.Frontend.RazorViews\\NorthWind.Membership.Frontend.RazorViews.csproj|d:\\proyectos_escritorio\\proyectomoviles\\web\\northwind\\northwind.membership\\northwind.membership.frontend.razorviews\\authenticationstateproviders\\jwtauthenticationstateprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{74FA3518-FD67-485E-BA82-397C61C417B7}|NorthWind.Membership.Frontend.RazorViews\\NorthWind.Membership.Frontend.RazorViews.csproj|solutionrelative:northwind.membership.frontend.razorviews\\authenticationstateproviders\\jwtauthenticationstateprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{74FA3518-FD67-485E-BA82-397C61C417B7}|NorthWind.Membership.Frontend.RazorViews\\NorthWind.Membership.Frontend.RazorViews.csproj|d:\\proyectos_escritorio\\proyectomoviles\\web\\northwind\\northwind.membership\\northwind.membership.frontend.razorviews\\components\\userlogincomponent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -456,57 +456,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UserLoginMessages.resx",
-              "DocumentMoniker": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Backend.Core\\Resources\\UserLoginMessages.resx",
-              "RelativeDocumentMoniker": "NorthWind.Membership.Backend.Core\\Resources\\UserLoginMessages.resx",
-              "ToolTip": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Backend.Core\\Resources\\UserLoginMessages.resx",
-              "RelativeToolTip": "NorthWind.Membership.Backend.Core\\Resources\\UserLoginMessages.resx",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2025-12-03T03:37:06.197Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "UserRegistrationMessages.resx",
-              "DocumentMoniker": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Backend.Core\\Resources\\UserRegistrationMessages.resx",
-              "RelativeDocumentMoniker": "NorthWind.Membership.Backend.Core\\Resources\\UserRegistrationMessages.resx",
-              "ToolTip": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Backend.Core\\Resources\\UserRegistrationMessages.resx",
-              "RelativeToolTip": "NorthWind.Membership.Backend.Core\\Resources\\UserRegistrationMessages.resx",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2025-09-02T19:22:09.252Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "DependencyContainer.cs",
-              "DocumentMoniker": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Backend.Core\\DependencyContainer.cs",
-              "RelativeDocumentMoniker": "NorthWind.Membership.Backend.Core\\DependencyContainer.cs",
-              "ToolTip": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Backend.Core\\DependencyContainer.cs",
-              "RelativeToolTip": "NorthWind.Membership.Backend.Core\\DependencyContainer.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAAAE0AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-02T19:20:52.125Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "EndpointsContainer.cs",
-              "DocumentMoniker": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Backend.Core\\EndpointsContainer.cs",
-              "RelativeDocumentMoniker": "NorthWind.Membership.Backend.Core\\EndpointsContainer.cs",
-              "ToolTip": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Backend.Core\\EndpointsContainer.cs",
-              "RelativeToolTip": "NorthWind.Membership.Backend.Core\\EndpointsContainer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-02T19:26:59.763Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "UserLoginMessages.resx",
               "DocumentMoniker": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Entities\\Resources\\UserLoginMessages.resx",
               "RelativeDocumentMoniker": "NorthWind.Membership.Entities\\Resources\\UserLoginMessages.resx",
@@ -518,7 +468,105 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MembershipBearerTokenHandler.cs",
+              "DocumentMoniker": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Frontend.RazorViews\\HttpMessageHandlers\\MembershipBearerTokenHandler.cs",
+              "RelativeDocumentMoniker": "NorthWind.Membership.Frontend.RazorViews\\HttpMessageHandlers\\MembershipBearerTokenHandler.cs",
+              "ToolTip": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Frontend.RazorViews\\HttpMessageHandlers\\MembershipBearerTokenHandler.cs",
+              "RelativeToolTip": "NorthWind.Membership.Frontend.RazorViews\\HttpMessageHandlers\\MembershipBearerTokenHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-03T14:07:49.796Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "JWTAuthenticationStateProvider.cs",
+              "DocumentMoniker": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Frontend.RazorViews\\AuthenticationStateProviders\\JWTAuthenticationStateProvider.cs",
+              "RelativeDocumentMoniker": "NorthWind.Membership.Frontend.RazorViews\\AuthenticationStateProviders\\JWTAuthenticationStateProvider.cs",
+              "ToolTip": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Frontend.RazorViews\\AuthenticationStateProviders\\JWTAuthenticationStateProvider.cs",
+              "RelativeToolTip": "NorthWind.Membership.Frontend.RazorViews\\AuthenticationStateProviders\\JWTAuthenticationStateProvider.cs",
+              "ViewState": "AgIAABYAAACAmZmZmZktwCUAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-03T14:02:29.328Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Frontend.RazorViews\\_Imports.razor",
+              "RelativeDocumentMoniker": "NorthWind.Membership.Frontend.RazorViews\\_Imports.razor",
+              "ToolTip": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Frontend.RazorViews\\_Imports.razor",
+              "RelativeToolTip": "NorthWind.Membership.Frontend.RazorViews\\_Imports.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-02T20:17:51.643Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DependencyContainer.cs",
+              "DocumentMoniker": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Frontend.RazorViews\\DependencyContainer.cs",
+              "RelativeDocumentMoniker": "NorthWind.Membership.Frontend.RazorViews\\DependencyContainer.cs",
+              "ToolTip": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Frontend.RazorViews\\DependencyContainer.cs",
+              "RelativeToolTip": "NorthWind.Membership.Frontend.RazorViews\\DependencyContainer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-03T15:40:24.166Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "EndpointsContainer.cs",
+              "DocumentMoniker": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Backend.Core\\EndpointsContainer.cs",
+              "RelativeDocumentMoniker": "NorthWind.Membership.Backend.Core\\EndpointsContainer.cs",
+              "ToolTip": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Backend.Core\\EndpointsContainer.cs",
+              "RelativeToolTip": "NorthWind.Membership.Backend.Core\\EndpointsContainer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-02T19:26:59.763Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DependencyContainer.cs",
+              "DocumentMoniker": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Backend.Core\\DependencyContainer.cs",
+              "RelativeDocumentMoniker": "NorthWind.Membership.Backend.Core\\DependencyContainer.cs",
+              "ToolTip": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Backend.Core\\DependencyContainer.cs",
+              "RelativeToolTip": "NorthWind.Membership.Backend.Core\\DependencyContainer.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAAE0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-02T19:20:52.125Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UserRegistrationMessages.resx",
+              "DocumentMoniker": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Backend.Core\\Resources\\UserRegistrationMessages.resx",
+              "RelativeDocumentMoniker": "NorthWind.Membership.Backend.Core\\Resources\\UserRegistrationMessages.resx",
+              "ToolTip": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Backend.Core\\Resources\\UserRegistrationMessages.resx",
+              "RelativeToolTip": "NorthWind.Membership.Backend.Core\\Resources\\UserRegistrationMessages.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2025-09-02T19:22:09.252Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UserLoginMessages.resx",
+              "DocumentMoniker": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Backend.Core\\Resources\\UserLoginMessages.resx",
+              "RelativeDocumentMoniker": "NorthWind.Membership.Backend.Core\\Resources\\UserLoginMessages.resx",
+              "ToolTip": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Backend.Core\\Resources\\UserLoginMessages.resx",
+              "RelativeToolTip": "NorthWind.Membership.Backend.Core\\Resources\\UserLoginMessages.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2025-12-03T03:37:06.197Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "UserLoginPresenter.cs",
               "DocumentMoniker": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Backend.Core\\Presenters\\UserLogin\\UserLoginPresenter.cs",
               "RelativeDocumentMoniker": "NorthWind.Membership.Backend.Core\\Presenters\\UserLogin\\UserLoginPresenter.cs",
@@ -526,12 +574,11 @@
               "RelativeToolTip": "NorthWind.Membership.Backend.Core\\Presenters\\UserLogin\\UserLoginPresenter.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-03T02:37:09.964Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-03T02:37:09.964Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 10,
               "Title": "IMembershipService.cs",
               "DocumentMoniker": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Backend.Core\\Interfaces\\Common\\IMembershipService.cs",
               "RelativeDocumentMoniker": "NorthWind.Membership.Backend.Core\\Interfaces\\Common\\IMembershipService.cs",
@@ -539,12 +586,11 @@
               "RelativeToolTip": "NorthWind.Membership.Backend.Core\\Interfaces\\Common\\IMembershipService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-16T02:59:08.513Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-16T02:59:08.513Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 12,
               "Title": "MembershipService.cs",
               "DocumentMoniker": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Backend.AspNetIdentity\\Services\\MembershipService.cs",
               "RelativeDocumentMoniker": "NorthWind.Membership.Backend.AspNetIdentity\\Services\\MembershipService.cs",
@@ -552,12 +598,11 @@
               "RelativeToolTip": "NorthWind.Membership.Backend.AspNetIdentity\\Services\\MembershipService.cs",
               "ViewState": "AgIAAG8BAAAAAAAAAAAAAFcAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-14T20:18:32.298Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-14T20:18:32.298Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 14,
               "Title": "UserLoginInteractor.cs",
               "DocumentMoniker": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Backend.Core\\UseCases\\UserLogin\\UserLoginInteractor.cs",
               "RelativeDocumentMoniker": "NorthWind.Membership.Backend.Core\\UseCases\\UserLogin\\UserLoginInteractor.cs",
@@ -565,12 +610,11 @@
               "RelativeToolTip": "NorthWind.Membership.Backend.Core\\UseCases\\UserLogin\\UserLoginInteractor.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAAADwAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-03T02:31:30.57Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-03T02:31:30.57Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 13,
               "Title": "UserLoginController.cs",
               "DocumentMoniker": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Backend.Core\\Controllers\\UserLogin\\UserLoginController.cs",
               "RelativeDocumentMoniker": "NorthWind.Membership.Backend.Core\\Controllers\\UserLogin\\UserLoginController.cs",
@@ -578,12 +622,11 @@
               "RelativeToolTip": "NorthWind.Membership.Backend.Core\\Controllers\\UserLogin\\UserLoginController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-03T02:29:45.78Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-03T02:29:45.78Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
               "Title": "RoleSeeder.cs",
               "DocumentMoniker": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Backend.AspNetIdentity\\Services\\RoleSeeder.cs",
               "RelativeDocumentMoniker": "NorthWind.Membership.Backend.AspNetIdentity\\Services\\RoleSeeder.cs",
@@ -591,12 +634,11 @@
               "RelativeToolTip": "NorthWind.Membership.Backend.AspNetIdentity\\Services\\RoleSeeder.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAACsAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-14T20:45:17.13Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-14T20:45:17.13Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 15,
               "Title": "NorthWind.Membership.Backend.Core.csproj",
               "DocumentMoniker": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Backend.Core\\NorthWind.Membership.Backend.Core.csproj",
               "RelativeDocumentMoniker": "NorthWind.Membership.Backend.Core\\NorthWind.Membership.Backend.Core.csproj",
@@ -604,12 +646,11 @@
               "RelativeToolTip": "NorthWind.Membership.Backend.Core\\NorthWind.Membership.Backend.Core.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-12-01T03:41:20.021Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-01T03:41:20.021Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 16,
               "Title": "DependencyContainer.cs",
               "DocumentMoniker": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Backend.AspNetIdentity\\DependencyContainer.cs",
               "RelativeDocumentMoniker": "NorthWind.Membership.Backend.AspNetIdentity\\DependencyContainer.cs",
@@ -621,7 +662,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 17,
               "Title": "TokensDto.cs",
               "DocumentMoniker": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Entities\\UserLogin\\TokensDto.cs",
               "RelativeDocumentMoniker": "NorthWind.Membership.Entities\\UserLogin\\TokensDto.cs",
@@ -633,7 +674,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 18,
               "Title": "UserLogin.cs",
               "DocumentMoniker": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Entities\\UserLogin\\UserLogin.cs",
               "RelativeDocumentMoniker": "NorthWind.Membership.Entities\\UserLogin\\UserLogin.cs",
@@ -645,7 +686,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 19,
               "Title": "UpdateUserInteractor.cs",
               "DocumentMoniker": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Backend.Core\\UseCases\\UserManagement\\UpdateUserInteractor.cs",
               "RelativeDocumentMoniker": "NorthWind.Membership.Backend.Core\\UseCases\\UserManagement\\UpdateUserInteractor.cs",
@@ -657,7 +698,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 20,
               "Title": "UnlockUserInteractor.cs",
               "DocumentMoniker": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Backend.Core\\UseCases\\UserManagement\\UnlockUserInteractor.cs",
               "RelativeDocumentMoniker": "NorthWind.Membership.Backend.Core\\UseCases\\UserManagement\\UnlockUserInteractor.cs",
@@ -669,7 +710,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 21,
               "Title": "UserRegistrationDtoValidator.cs",
               "DocumentMoniker": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Entities\\Validators\\UserRegistration\\UserRegistrationDtoValidator.cs",
               "RelativeDocumentMoniker": "NorthWind.Membership.Entities\\Validators\\UserRegistration\\UserRegistrationDtoValidator.cs",
@@ -681,7 +722,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 22,
               "Title": "UpdateUserDtoValidator.cs",
               "DocumentMoniker": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Entities\\Validators\\UserManagement\\UpdateUserDtoValidator.cs",
               "RelativeDocumentMoniker": "NorthWind.Membership.Entities\\Validators\\UserManagement\\UpdateUserDtoValidator.cs",
@@ -693,7 +734,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 24,
               "Title": "GetLockedOutUsersInteractor.cs",
               "DocumentMoniker": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Backend.Core\\UseCases\\UserManagement\\GetLockedOutUsersInteractor.cs",
               "RelativeDocumentMoniker": "NorthWind.Membership.Backend.Core\\UseCases\\UserManagement\\GetLockedOutUsersInteractor.cs",
@@ -705,7 +746,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 23,
               "Title": "UserManagementController.cs",
               "DocumentMoniker": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Backend.Core\\Controllers\\UserManagement\\UserManagementController.cs",
               "RelativeDocumentMoniker": "NorthWind.Membership.Backend.Core\\Controllers\\UserManagement\\UserManagementController.cs",
@@ -717,7 +758,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 25,
               "Title": "IGetLockedOutUsersOutputPort.cs",
               "DocumentMoniker": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Backend.Core\\Interfaces\\UserManagement\\IGetLockedOutUsersOutputPort.cs",
               "RelativeDocumentMoniker": "NorthWind.Membership.Backend.Core\\Interfaces\\UserManagement\\IGetLockedOutUsersOutputPort.cs",
@@ -729,7 +770,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 26,
               "Title": "IGetLockedOutUsersInputPort.cs",
               "DocumentMoniker": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Backend.Core\\Interfaces\\UserManagement\\IGetLockedOutUsersInputPort.cs",
               "RelativeDocumentMoniker": "NorthWind.Membership.Backend.Core\\Interfaces\\UserManagement\\IGetLockedOutUsersInputPort.cs",
@@ -741,7 +782,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 27,
               "Title": "GetLockedOutUsersPresenter.cs",
               "DocumentMoniker": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Backend.Core\\Presenters\\UserManagement\\GetLockedOutUsersPresenter.cs",
               "RelativeDocumentMoniker": "NorthWind.Membership.Backend.Core\\Presenters\\UserManagement\\GetLockedOutUsersPresenter.cs",
@@ -753,7 +794,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 28,
               "Title": "GetAllUsersInteractor.cs",
               "DocumentMoniker": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Backend.Core\\UseCases\\UserManagement\\GetAllUsersInteractor.cs",
               "RelativeDocumentMoniker": "NorthWind.Membership.Backend.Core\\UseCases\\UserManagement\\GetAllUsersInteractor.cs",
@@ -765,7 +806,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 29,
               "Title": "IGetAllUsersOutputPort.cs",
               "DocumentMoniker": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Backend.Core\\Interfaces\\UserManagement\\IGetAllUsersOutputPort.cs",
               "RelativeDocumentMoniker": "NorthWind.Membership.Backend.Core\\Interfaces\\UserManagement\\IGetAllUsersOutputPort.cs",
@@ -777,7 +818,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 30,
               "Title": "IGetAllUsersInputPort.cs",
               "DocumentMoniker": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Backend.Core\\Interfaces\\UserManagement\\IGetAllUsersInputPort.cs",
               "RelativeDocumentMoniker": "NorthWind.Membership.Backend.Core\\Interfaces\\UserManagement\\IGetAllUsersInputPort.cs",
@@ -789,7 +830,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 31,
               "Title": "GetUserByIdInteractor.cs",
               "DocumentMoniker": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Backend.Core\\UseCases\\UserManagement\\GetUserByIdInteractor.cs",
               "RelativeDocumentMoniker": "NorthWind.Membership.Backend.Core\\UseCases\\UserManagement\\GetUserByIdInteractor.cs",
@@ -801,7 +842,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 32,
               "Title": "GetAllUsersPresenter.cs",
               "DocumentMoniker": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Backend.Core\\Presenters\\UserManagement\\GetAllUsersPresenter.cs",
               "RelativeDocumentMoniker": "NorthWind.Membership.Backend.Core\\Presenters\\UserManagement\\GetAllUsersPresenter.cs",
@@ -813,7 +854,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 33,
               "Title": "PagedResultDto.cs",
               "DocumentMoniker": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Entities\\Dtos\\Common\\PagedResultDto.cs",
               "RelativeDocumentMoniker": "NorthWind.Membership.Entities\\Dtos\\Common\\PagedResultDto.cs",
@@ -825,7 +866,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 34,
               "Title": "PaginationDto.cs",
               "DocumentMoniker": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Entities\\Dtos\\Common\\PaginationDto.cs",
               "RelativeDocumentMoniker": "NorthWind.Membership.Entities\\Dtos\\Common\\PaginationDto.cs",
@@ -837,7 +878,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 35,
               "Title": "DeleteUserInteractor.cs",
               "DocumentMoniker": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Backend.Core\\UseCases\\UserManagement\\DeleteUserInteractor.cs",
               "RelativeDocumentMoniker": "NorthWind.Membership.Backend.Core\\UseCases\\UserManagement\\DeleteUserInteractor.cs",
@@ -849,7 +890,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 36,
               "Title": "JwtService.cs",
               "DocumentMoniker": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Backend.Core\\Services\\JwtService.cs",
               "RelativeDocumentMoniker": "NorthWind.Membership.Backend.Core\\Services\\JwtService.cs",
@@ -861,7 +902,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 37,
               "Title": "IUserLoginInputPort.cs",
               "DocumentMoniker": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Backend.Core\\Interfaces\\UserLogin\\IUserLoginInputPort.cs",
               "RelativeDocumentMoniker": "NorthWind.Membership.Backend.Core\\Interfaces\\UserLogin\\IUserLoginInputPort.cs",
@@ -873,7 +914,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 38,
               "Title": "IUserLoginOutputPort.cs",
               "DocumentMoniker": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Backend.Core\\Interfaces\\UserLogin\\IUserLoginOutputPort.cs",
               "RelativeDocumentMoniker": "NorthWind.Membership.Backend.Core\\Interfaces\\UserLogin\\IUserLoginOutputPort.cs",
@@ -885,7 +926,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 39,
               "Title": "UserRegistrationController.cs",
               "DocumentMoniker": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Backend.Core\\Controllers\\UserRegistration\\UserRegistrationController.cs",
               "RelativeDocumentMoniker": "NorthWind.Membership.Backend.Core\\Controllers\\UserRegistration\\UserRegistrationController.cs",
@@ -897,7 +938,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 41,
               "Title": "Endpoints.cs",
               "DocumentMoniker": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Entities\\ValueObjects\\Endpoints.cs",
               "RelativeDocumentMoniker": "NorthWind.Membership.Entities\\ValueObjects\\Endpoints.cs",
@@ -909,7 +950,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 40,
               "Title": "DependencyContainer.cs",
               "DocumentMoniker": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Entities\\DependencyContainer.cs",
               "RelativeDocumentMoniker": "NorthWind.Membership.Entities\\DependencyContainer.cs",
@@ -921,7 +962,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 42,
               "Title": "LogoutResponse.cs",
               "DocumentMoniker": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Entities\\Responses\\LogoutResponse.cs",
               "RelativeDocumentMoniker": "NorthWind.Membership.Entities\\Responses\\LogoutResponse.cs",
@@ -933,7 +974,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 43,
               "Title": "LogoutDto.cs",
               "DocumentMoniker": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Entities\\Dtos\\UserManagement\\LogoutDto.cs",
               "RelativeDocumentMoniker": "NorthWind.Membership.Entities\\Dtos\\UserManagement\\LogoutDto.cs",
@@ -945,7 +986,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 44,
               "Title": "UnlockUserDto.cs",
               "DocumentMoniker": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Entities\\Dtos\\UserManagement\\UnlockUserDto.cs",
               "RelativeDocumentMoniker": "NorthWind.Membership.Entities\\Dtos\\UserManagement\\UnlockUserDto.cs",
@@ -957,7 +998,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 45,
               "Title": "UpdateUserDto.cs",
               "DocumentMoniker": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Entities\\Dtos\\UserManagement\\UpdateUserDto.cs",
               "RelativeDocumentMoniker": "NorthWind.Membership.Entities\\Dtos\\UserManagement\\UpdateUserDto.cs",
@@ -969,7 +1010,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 46,
               "Title": "UserInfoDto.cs",
               "DocumentMoniker": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Entities\\Dtos\\UserManagement\\UserInfoDto.cs",
               "RelativeDocumentMoniker": "NorthWind.Membership.Entities\\Dtos\\UserManagement\\UserInfoDto.cs",
@@ -981,7 +1022,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 47,
               "Title": "UserRegistrationDto.cs",
               "DocumentMoniker": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Entities\\Dtos\\UserRegistration\\UserRegistrationDto.cs",
               "RelativeDocumentMoniker": "NorthWind.Membership.Entities\\Dtos\\UserRegistration\\UserRegistrationDto.cs",
@@ -993,7 +1034,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 48,
               "Title": "LogoutInteractor.cs",
               "DocumentMoniker": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Backend.Core\\UseCases\\UserManagement\\LogoutInteractor.cs",
               "RelativeDocumentMoniker": "NorthWind.Membership.Backend.Core\\UseCases\\UserManagement\\LogoutInteractor.cs",
@@ -1005,7 +1046,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 49,
               "Title": "TokenBlacklistMiddleware.cs",
               "DocumentMoniker": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Backend.Core\\Middleware\\TokenBlacklistMiddleware.cs",
               "RelativeDocumentMoniker": "NorthWind.Membership.Backend.Core\\Middleware\\TokenBlacklistMiddleware.cs",
@@ -1017,7 +1058,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 50,
               "Title": "GetUserByIdPresenter.cs",
               "DocumentMoniker": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Backend.Core\\Presenters\\UserManagement\\GetUserByIdPresenter.cs",
               "RelativeDocumentMoniker": "NorthWind.Membership.Backend.Core\\Presenters\\UserManagement\\GetUserByIdPresenter.cs",
@@ -1029,7 +1070,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 51,
               "Title": "IGetUserByIdOutputPort.cs",
               "DocumentMoniker": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Backend.Core\\Interfaces\\UserManagement\\IGetUserByIdOutputPort.cs",
               "RelativeDocumentMoniker": "NorthWind.Membership.Backend.Core\\Interfaces\\UserManagement\\IGetUserByIdOutputPort.cs",
@@ -1041,7 +1082,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 52,
               "Title": "LogoutPresenter.cs",
               "DocumentMoniker": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Backend.Core\\Presenters\\UserManagement\\LogoutPresenter.cs",
               "RelativeDocumentMoniker": "NorthWind.Membership.Backend.Core\\Presenters\\UserManagement\\LogoutPresenter.cs",
@@ -1053,7 +1094,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 55,
               "Title": "TokenBlacklistService.cs",
               "DocumentMoniker": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Backend.Core\\Services\\TokenBlacklistService.cs",
               "RelativeDocumentMoniker": "NorthWind.Membership.Backend.Core\\Services\\TokenBlacklistService.cs",
@@ -1065,7 +1106,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 54,
               "Title": "UnlockUserPresenter.cs",
               "DocumentMoniker": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Backend.Core\\Presenters\\UserManagement\\UnlockUserPresenter.cs",
               "RelativeDocumentMoniker": "NorthWind.Membership.Backend.Core\\Presenters\\UserManagement\\UnlockUserPresenter.cs",
@@ -1077,7 +1118,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 53,
               "Title": "UpdateUserPresenter.cs",
               "DocumentMoniker": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Backend.Core\\Presenters\\UserManagement\\UpdateUserPresenter.cs",
               "RelativeDocumentMoniker": "NorthWind.Membership.Backend.Core\\Presenters\\UserManagement\\UpdateUserPresenter.cs",
@@ -1089,7 +1130,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 56,
               "Title": "ILogoutOutputPort.cs",
               "DocumentMoniker": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Backend.Core\\Interfaces\\UserManagement\\ILogoutOutputPort.cs",
               "RelativeDocumentMoniker": "NorthWind.Membership.Backend.Core\\Interfaces\\UserManagement\\ILogoutOutputPort.cs",
@@ -1101,7 +1142,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 57,
               "Title": "ILogoutInputPort.cs",
               "DocumentMoniker": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Backend.Core\\Interfaces\\UserManagement\\ILogoutInputPort.cs",
               "RelativeDocumentMoniker": "NorthWind.Membership.Backend.Core\\Interfaces\\UserManagement\\ILogoutInputPort.cs",
@@ -1113,7 +1154,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 58,
               "Title": "IUnlockUserOutputPort.cs",
               "DocumentMoniker": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Backend.Core\\Interfaces\\UserManagement\\IUnlockUserOutputPort.cs",
               "RelativeDocumentMoniker": "NorthWind.Membership.Backend.Core\\Interfaces\\UserManagement\\IUnlockUserOutputPort.cs",
@@ -1125,7 +1166,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 59,
               "Title": "IGetUserByIdInputPort.cs",
               "DocumentMoniker": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Backend.Core\\Interfaces\\UserManagement\\IGetUserByIdInputPort.cs",
               "RelativeDocumentMoniker": "NorthWind.Membership.Backend.Core\\Interfaces\\UserManagement\\IGetUserByIdInputPort.cs",
@@ -1137,7 +1178,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 60,
               "Title": "ChangeUserRoleInteractor.cs",
               "DocumentMoniker": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Backend.Core\\UseCases\\UserManagement\\ChangeUserRoleInteractor.cs",
               "RelativeDocumentMoniker": "NorthWind.Membership.Backend.Core\\UseCases\\UserManagement\\ChangeUserRoleInteractor.cs",
@@ -1149,7 +1190,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 61,
               "Title": "GetUserByIdDto.cs",
               "DocumentMoniker": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Entities\\Dtos\\UserManagement\\GetUserByIdDto.cs",
               "RelativeDocumentMoniker": "NorthWind.Membership.Entities\\Dtos\\UserManagement\\GetUserByIdDto.cs",
@@ -1161,7 +1202,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 62,
               "Title": "UserDto.cs",
               "DocumentMoniker": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Backend.Core\\Dtos\\UserDto.cs",
               "RelativeDocumentMoniker": "NorthWind.Membership.Backend.Core\\Dtos\\UserDto.cs",
@@ -1173,7 +1214,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 59,
+              "DocumentIndex": 63,
               "Title": "NorthWindUser.cs",
               "DocumentMoniker": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Backend.AspNetIdentity\\Entities\\NorthWindUser.cs",
               "RelativeDocumentMoniker": "NorthWind.Membership.Backend.AspNetIdentity\\Entities\\NorthWindUser.cs",
@@ -1185,7 +1226,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 60,
+              "DocumentIndex": 64,
               "Title": "UserRegistrationMessages.resx",
               "DocumentMoniker": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Entities\\Resources\\UserRegistrationMessages.resx",
               "RelativeDocumentMoniker": "NorthWind.Membership.Entities\\Resources\\UserRegistrationMessages.resx",
@@ -1196,7 +1237,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 61,
+              "DocumentIndex": 65,
               "Title": "IUpdateUserInputPort.cs",
               "DocumentMoniker": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Backend.Core\\Interfaces\\UserManagement\\IUpdateUserInputPort.cs",
               "RelativeDocumentMoniker": "NorthWind.Membership.Backend.Core\\Interfaces\\UserManagement\\IUpdateUserInputPort.cs",
@@ -1208,7 +1249,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 62,
+              "DocumentIndex": 66,
               "Title": "IDeleteUserOutputPort.cs",
               "DocumentMoniker": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Backend.Core\\Interfaces\\UserManagement\\IDeleteUserOutputPort.cs",
               "RelativeDocumentMoniker": "NorthWind.Membership.Backend.Core\\Interfaces\\UserManagement\\IDeleteUserOutputPort.cs",
@@ -1220,7 +1261,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 63,
+              "DocumentIndex": 67,
               "Title": "IDeleteUserInputPort.cs",
               "DocumentMoniker": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Backend.Core\\Interfaces\\UserManagement\\IDeleteUserInputPort.cs",
               "RelativeDocumentMoniker": "NorthWind.Membership.Backend.Core\\Interfaces\\UserManagement\\IDeleteUserInputPort.cs",
@@ -1232,7 +1273,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 64,
+              "DocumentIndex": 68,
               "Title": "UserCredentialsDtoValidator.cs",
               "DocumentMoniker": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Entities\\Validators\\UserLogin\\UserCredentialsDtoValidator.cs",
               "RelativeDocumentMoniker": "NorthWind.Membership.Entities\\Validators\\UserLogin\\UserCredentialsDtoValidator.cs",
@@ -1244,7 +1285,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 65,
+              "DocumentIndex": 69,
               "Title": "ChangeUserRoleDto.cs",
               "DocumentMoniker": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Entities\\Dtos\\UserManagement\\ChangeUserRoleDto.cs",
               "RelativeDocumentMoniker": "NorthWind.Membership.Entities\\Dtos\\UserManagement\\ChangeUserRoleDto.cs",
@@ -1256,7 +1297,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 66,
+              "DocumentIndex": 70,
               "Title": "UserRegistrationPresenter.cs",
               "DocumentMoniker": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Backend.Core\\Presenters\\UserRegistration\\UserRegistrationPresenter.cs",
               "RelativeDocumentMoniker": "NorthWind.Membership.Backend.Core\\Presenters\\UserRegistration\\UserRegistrationPresenter.cs",
@@ -1268,7 +1309,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 67,
+              "DocumentIndex": 71,
               "Title": "DeleteUserPresenter.cs",
               "DocumentMoniker": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Backend.Core\\Presenters\\UserManagement\\DeleteUserPresenter.cs",
               "RelativeDocumentMoniker": "NorthWind.Membership.Backend.Core\\Presenters\\UserManagement\\DeleteUserPresenter.cs",
@@ -1280,7 +1321,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 68,
+              "DocumentIndex": 72,
               "Title": "IUpdateUserOutputPort.cs",
               "DocumentMoniker": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Backend.Core\\Interfaces\\UserManagement\\IUpdateUserOutputPort.cs",
               "RelativeDocumentMoniker": "NorthWind.Membership.Backend.Core\\Interfaces\\UserManagement\\IUpdateUserOutputPort.cs",
@@ -1292,7 +1333,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 69,
+              "DocumentIndex": 73,
               "Title": "DeleteUserDto.cs",
               "DocumentMoniker": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Entities\\Dtos\\UserManagement\\DeleteUserDto.cs",
               "RelativeDocumentMoniker": "NorthWind.Membership.Entities\\Dtos\\UserManagement\\DeleteUserDto.cs",
@@ -1304,7 +1345,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 70,
+              "DocumentIndex": 74,
               "Title": "MembershipDBOptions.cs",
               "DocumentMoniker": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Backend.AspNetIdentity\\Options\\MembershipDBOptions.cs",
               "RelativeDocumentMoniker": "NorthWind.Membership.Backend.AspNetIdentity\\Options\\MembershipDBOptions.cs",
@@ -1316,7 +1357,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 71,
+              "DocumentIndex": 75,
               "Title": "IdentityErrorExtensions.cs",
               "DocumentMoniker": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Backend.AspNetIdentity\\Extensions\\IdentityErrorExtensions.cs",
               "RelativeDocumentMoniker": "NorthWind.Membership.Backend.AspNetIdentity\\Extensions\\IdentityErrorExtensions.cs",
@@ -1328,7 +1369,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 72,
+              "DocumentIndex": 76,
               "Title": "NorthWindMembershipContextFactory.cs",
               "DocumentMoniker": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Backend.AspNetIdentity\\DataContexts\\NorthWindMembershipContextFactory.cs",
               "RelativeDocumentMoniker": "NorthWind.Membership.Backend.AspNetIdentity\\DataContexts\\NorthWindMembershipContextFactory.cs",
@@ -1340,7 +1381,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 73,
+              "DocumentIndex": 77,
               "Title": "NorthWindMembershipContext.cs",
               "DocumentMoniker": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Backend.AspNetIdentity\\DataContexts\\NorthWindMembershipContext.cs",
               "RelativeDocumentMoniker": "NorthWind.Membership.Backend.AspNetIdentity\\DataContexts\\NorthWindMembershipContext.cs",
@@ -1352,7 +1393,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 74,
+              "DocumentIndex": 78,
               "Title": "ChangeUserRolePresenter.cs",
               "DocumentMoniker": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Backend.Core\\Presenters\\UserManagement\\ChangeUserRolePresenter.cs",
               "RelativeDocumentMoniker": "NorthWind.Membership.Backend.Core\\Presenters\\UserManagement\\ChangeUserRolePresenter.cs",
@@ -1364,7 +1405,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 75,
+              "DocumentIndex": 79,
               "Title": "IChangeUserRoleOutputPort.cs",
               "DocumentMoniker": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Backend.Core\\Interfaces\\UserManagement\\IChangeUserRoleOutputPort.cs",
               "RelativeDocumentMoniker": "NorthWind.Membership.Backend.Core\\Interfaces\\UserManagement\\IChangeUserRoleOutputPort.cs",
@@ -1376,7 +1417,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 76,
+              "DocumentIndex": 80,
               "Title": "IChangeUserRoleInputPort.cs",
               "DocumentMoniker": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Backend.Core\\Interfaces\\UserManagement\\IChangeUserRoleInputPort.cs",
               "RelativeDocumentMoniker": "NorthWind.Membership.Backend.Core\\Interfaces\\UserManagement\\IChangeUserRoleInputPort.cs",
@@ -1388,7 +1429,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 77,
+              "DocumentIndex": 81,
               "Title": "IUnlockUserInputPort.cs",
               "DocumentMoniker": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Backend.Core\\Interfaces\\UserManagement\\IUnlockUserInputPort.cs",
               "RelativeDocumentMoniker": "NorthWind.Membership.Backend.Core\\Interfaces\\UserManagement\\IUnlockUserInputPort.cs",
@@ -1400,7 +1441,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 78,
+              "DocumentIndex": 82,
               "Title": "JwtOptions.cs",
               "DocumentMoniker": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Backend.Core\\Options\\JwtOptions.cs",
               "RelativeDocumentMoniker": "NorthWind.Membership.Backend.Core\\Options\\JwtOptions.cs",
@@ -1412,7 +1453,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 79,
+              "DocumentIndex": 83,
               "Title": "IUserRegistrationOutputPort.cs",
               "DocumentMoniker": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Backend.Core\\Interfaces\\UserRegistration\\IUserRegistrationOutputPort.cs",
               "RelativeDocumentMoniker": "NorthWind.Membership.Backend.Core\\Interfaces\\UserRegistration\\IUserRegistrationOutputPort.cs",
@@ -1424,7 +1465,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 80,
+              "DocumentIndex": 84,
               "Title": "IUserRegistrationInputPort.cs",
               "DocumentMoniker": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Backend.Core\\Interfaces\\UserRegistration\\IUserRegistrationInputPort.cs",
               "RelativeDocumentMoniker": "NorthWind.Membership.Backend.Core\\Interfaces\\UserRegistration\\IUserRegistrationInputPort.cs",
@@ -1433,30 +1474,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-02T19:18:26.305Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 81,
-              "Title": "DependencyContainer.cs",
-              "DocumentMoniker": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Frontend.RazorViews\\DependencyContainer.cs",
-              "RelativeDocumentMoniker": "NorthWind.Membership.Frontend.RazorViews\\DependencyContainer.cs",
-              "ToolTip": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Frontend.RazorViews\\DependencyContainer.cs",
-              "RelativeToolTip": "NorthWind.Membership.Frontend.RazorViews\\DependencyContainer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-03T15:40:24.166Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 82,
-              "Title": "MembershipBearerTokenHandler.cs",
-              "DocumentMoniker": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Frontend.RazorViews\\HttpMessageHandlers\\MembershipBearerTokenHandler.cs",
-              "RelativeDocumentMoniker": "NorthWind.Membership.Frontend.RazorViews\\HttpMessageHandlers\\MembershipBearerTokenHandler.cs",
-              "ToolTip": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Frontend.RazorViews\\HttpMessageHandlers\\MembershipBearerTokenHandler.cs",
-              "RelativeToolTip": "NorthWind.Membership.Frontend.RazorViews\\HttpMessageHandlers\\MembershipBearerTokenHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-03T14:07:49.796Z"
             },
             {
               "$type": "Document",
@@ -1469,19 +1486,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 85,
-              "Title": "_Imports.razor",
-              "DocumentMoniker": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Frontend.RazorViews\\_Imports.razor",
-              "RelativeDocumentMoniker": "NorthWind.Membership.Frontend.RazorViews\\_Imports.razor",
-              "ToolTip": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Frontend.RazorViews\\_Imports.razor",
-              "RelativeToolTip": "NorthWind.Membership.Frontend.RazorViews\\_Imports.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-02T20:17:51.643Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 86,
+              "DocumentIndex": 87,
               "Title": "LogoutPage.razor",
               "DocumentMoniker": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Frontend.RazorViews\\Pages\\LogoutPage.razor",
               "RelativeDocumentMoniker": "NorthWind.Membership.Frontend.RazorViews\\Pages\\LogoutPage.razor",
@@ -1493,7 +1498,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 83,
+              "DocumentIndex": 85,
               "Title": "NorthWind.Membership.Frontend.RazorViews.csproj",
               "DocumentMoniker": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Frontend.RazorViews\\NorthWind.Membership.Frontend.RazorViews.csproj",
               "RelativeDocumentMoniker": "NorthWind.Membership.Frontend.RazorViews\\NorthWind.Membership.Frontend.RazorViews.csproj",
@@ -1501,12 +1506,11 @@
               "RelativeToolTip": "NorthWind.Membership.Frontend.RazorViews\\NorthWind.Membership.Frontend.RazorViews.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-09-03T15:42:19.106Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-03T15:42:19.106Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 84,
+              "DocumentIndex": 86,
               "Title": "LoginDisplayComponent.razor",
               "DocumentMoniker": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Frontend.RazorViews\\Pages\\LoginDisplayComponent.razor",
               "RelativeDocumentMoniker": "NorthWind.Membership.Frontend.RazorViews\\Pages\\LoginDisplayComponent.razor",
@@ -1518,7 +1522,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 87,
+              "DocumentIndex": 88,
               "Title": "LogoutPage.razor.cs",
               "DocumentMoniker": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Frontend.RazorViews\\Pages\\LogoutPage.razor.cs",
               "RelativeDocumentMoniker": "NorthWind.Membership.Frontend.RazorViews\\Pages\\LogoutPage.razor.cs",
@@ -1530,7 +1534,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 88,
+              "DocumentIndex": 89,
               "Title": "CommonMessages.resx",
               "DocumentMoniker": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Frontend.RazorViews\\Resources\\CommonMessages.resx",
               "RelativeDocumentMoniker": "NorthWind.Membership.Frontend.RazorViews\\Resources\\CommonMessages.resx",
@@ -1541,7 +1545,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 89,
+              "DocumentIndex": 90,
               "Title": "UserRegistrationPage.razor",
               "DocumentMoniker": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Frontend.RazorViews\\Pages\\UserRegistrationPage.razor",
               "RelativeDocumentMoniker": "NorthWind.Membership.Frontend.RazorViews\\Pages\\UserRegistrationPage.razor",
@@ -1553,7 +1557,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 90,
+              "DocumentIndex": 91,
               "Title": "UserLoginMessages.resx",
               "DocumentMoniker": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Frontend.RazorViews\\Resources\\UserLoginMessages.resx",
               "RelativeDocumentMoniker": "NorthWind.Membership.Frontend.RazorViews\\Resources\\UserLoginMessages.resx",
@@ -1564,7 +1568,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 91,
+              "DocumentIndex": 92,
               "Title": "UserLoginViewModel.cs",
               "DocumentMoniker": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Frontend.RazorViews\\ViewModels\\UserLogin\\UserLoginViewModel.cs",
               "RelativeDocumentMoniker": "NorthWind.Membership.Frontend.RazorViews\\ViewModels\\UserLogin\\UserLoginViewModel.cs",
@@ -1576,7 +1580,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 92,
+              "DocumentIndex": 93,
               "Title": "TokenLocalStorage.cs",
               "DocumentMoniker": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Frontend.RazorViews\\Services\\TokenLocalStorage.cs",
               "RelativeDocumentMoniker": "NorthWind.Membership.Frontend.RazorViews\\Services\\TokenLocalStorage.cs",
@@ -1588,7 +1592,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 93,
+              "DocumentIndex": 94,
               "Title": "ITokenStorage.cs",
               "DocumentMoniker": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Frontend.RazorViews\\Interfaces\\ITokenStorage.cs",
               "RelativeDocumentMoniker": "NorthWind.Membership.Frontend.RazorViews\\Interfaces\\ITokenStorage.cs",
@@ -1597,18 +1601,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-03T13:56:05.439Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 94,
-              "Title": "JWTAuthenticationStateProvider.cs",
-              "DocumentMoniker": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Frontend.RazorViews\\AuthenticationStateProviders\\JWTAuthenticationStateProvider.cs",
-              "RelativeDocumentMoniker": "NorthWind.Membership.Frontend.RazorViews\\AuthenticationStateProviders\\JWTAuthenticationStateProvider.cs",
-              "ToolTip": "D:\\PROYECTOS_ESCRITORIO\\ProyectoMoviles\\Web\\Northwind\\NorthWind.Membership\\NorthWind.Membership.Frontend.RazorViews\\AuthenticationStateProviders\\JWTAuthenticationStateProvider.cs",
-              "RelativeToolTip": "NorthWind.Membership.Frontend.RazorViews\\AuthenticationStateProviders\\JWTAuthenticationStateProvider.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-03T14:02:29.328Z"
             },
             {
               "$type": "Document",
