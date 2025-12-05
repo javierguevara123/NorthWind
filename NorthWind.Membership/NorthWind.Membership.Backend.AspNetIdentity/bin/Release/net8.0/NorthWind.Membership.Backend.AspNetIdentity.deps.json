@@ -6,7 +6,7 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v8.0": {
-      "NorthWind.Membership.Backend.AspNetIdentity/1.1.0": {
+      "NorthWind.Membership.Backend.AspNetIdentity/1.1.5": {
         "dependencies": {
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.1",
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.8",
@@ -1123,7 +1123,7 @@
     }
   },
   "libraries": {
-    "NorthWind.Membership.Backend.AspNetIdentity/1.1.0": {
+    "NorthWind.Membership.Backend.AspNetIdentity/1.1.5": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
