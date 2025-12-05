@@ -1,4 +1,5 @@
-﻿
+﻿using NorthWind.Sales.Backend.Controllers.Logs;
+
 namespace Microsoft.AspNetCore.Builder;
 public static class EndpointsContainer
 {
@@ -9,6 +10,8 @@ public static class EndpointsContainer
         app.UseMembershipEndpoints();
         app.UseProductsController();
         app.UseCustomersController();
+        app.UseLogsController();
+        app.MapControllers();
 
         return app;
     }
