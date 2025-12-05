@@ -9,7 +9,7 @@ namespace NorthWind.Sales.Backend.DataContexts.EFCore.DataContexts
 
         public DbSet<DomainLog> DomainLogs { get; set; }
 
-        // NUEVO DBSET
+        // NUEVO DBSETA
         public DbSet<ErrorLog> ErrorLogs { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

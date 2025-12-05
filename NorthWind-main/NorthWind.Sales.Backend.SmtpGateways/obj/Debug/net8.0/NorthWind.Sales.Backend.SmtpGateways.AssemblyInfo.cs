@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NorthWind.Sales.Backend.SmtpGateways")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d4bcf5b7970d0281ca60a040178e3eb127704a7b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dcc3fa4cae1233de609865bffb20a2e7fe19a22f")]
 [assembly: System.Reflection.AssemblyProductAttribute("NorthWind.Sales.Backend.SmtpGateways")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NorthWind.Sales.Backend.SmtpGateways")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -14,11 +14,12 @@ public class Order
   public string ShipCity { get; set; }
   public string ShipCountry { get; set; }
   public string ShipPostalCode { get; set; }
+  public string EmployeeId { get; set; }
 
-  //  Aqui implementamos reglas de negocio.
-  //  NOTA: Estos valores se pasan por defecto por lo tanto no es necesario suministrarlos
-  //        en el Dto.
-  public ShippingType ShippingType { get; set; } = ShippingType.Road;
+    //  Aqui implementamos reglas de negocio.
+    //  NOTA: Estos valores se pasan por defecto por lo tanto no es necesario suministrarlos
+    //        en el Dto.
+    public ShippingType ShippingType { get; set; } = ShippingType.Road;
   public DiscountType DiscountType { get; set; } = DiscountType.Percentage;
   public double Discount { get; set; } = 10;
   public DateTime OrderDate { get; set; } = DateTime.Now;

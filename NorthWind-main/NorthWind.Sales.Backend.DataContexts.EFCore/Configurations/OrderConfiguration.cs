@@ -24,6 +24,9 @@ IEntityTypeConfiguration<Order>
         builder.HasOne<Customer>()
  .WithMany()
  .HasForeignKey(o => o.CustomerId);
+        builder.Property(o => o.EmployeeId)
+        .IsRequired()       // Opcional: si siempre debe tener un usuario
+        .HasMaxLength(100);
 
     }
 }

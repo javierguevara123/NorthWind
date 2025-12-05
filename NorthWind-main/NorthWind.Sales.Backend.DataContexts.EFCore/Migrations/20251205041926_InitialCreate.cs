@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace NorthWind.Sales.Backend.DataContexts.EFCore.Migrations
 {
     /// <inheritdoc />
-    public partial class AddProductAndCustomer : Migration
+    public partial class InitialCreate : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -24,6 +24,23 @@ namespace NorthWind.Sales.Backend.DataContexts.EFCore.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Customers", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "ErrorLogs",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Message = table.Column<string>(type: "nvarchar(4000)", maxLength: 4000, nullable: false),
+                    StackTrace = table.Column<string>(type: "nvarchar(max)", maxLength: 8000, nullable: false),
+                    Source = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
+                    User = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
+                    Date = table.Column<DateTime>(type: "datetime2", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_ErrorLogs", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -52,6 +69,7 @@ namespace NorthWind.Sales.Backend.DataContexts.EFCore.Migrations
                     ShipCity = table.Column<string>(type: "nvarchar(15)", maxLength: 15, nullable: false),
                     ShipCountry = table.Column<string>(type: "nvarchar(15)", maxLength: 15, nullable: false),
                     ShipPostalCode = table.Column<string>(type: "nvarchar(10)", maxLength: 10, nullable: false),
+                    EmployeeId = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
                     ShippingType = table.Column<int>(type: "int", nullable: false),
                     DiscountType = table.Column<int>(type: "int", nullable: false),
                     Discount = table.Column<double>(type: "float", nullable: false),
@@ -130,6 +148,9 @@ namespace NorthWind.Sales.Backend.DataContexts.EFCore.Migrations
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.DropTable(
+                name: "ErrorLogs");
+
             migrationBuilder.DropTable(
                 name: "OrderDetails");
 

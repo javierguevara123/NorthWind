@@ -68,6 +68,8 @@ internal class CreateOrderInteractor(ICreateOrderOutputPort outputPort,
 
         OrderAggregate Order = OrderAggregate.From(orderDto);
 
+        Order.EmployeeId = userService.UserName;
+
         try
         {
             // 1. INICIAR LA TRANSACCIÓN

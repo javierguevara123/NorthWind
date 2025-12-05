@@ -12,8 +12,8 @@ using NorthWind.Sales.Backend.DataContexts.EFCore.DataContexts;
 namespace NorthWind.Sales.Backend.DataContexts.EFCore.Migrations
 {
     [DbContext(typeof(NorthWindContext))]
-    [Migration("20251203044528_CorrectionOrders")]
-    partial class CorrectionOrders
+    [Migration("20251205041926_InitialCreate")]
+    partial class InitialCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -44,6 +44,11 @@ namespace NorthWind.Sales.Backend.DataContexts.EFCore.Migrations
 
                     b.Property<int>("DiscountType")
                         .HasColumnType("int");
+
+                    b.Property<string>("EmployeeId")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
                     b.Property<DateTime>("OrderDate")
                         .HasColumnType("datetime2");
@@ -117,6 +122,42 @@ namespace NorthWind.Sales.Backend.DataContexts.EFCore.Migrations
                             CurrentBalance = 100m,
                             Name = "Antonio Moreno Taquería"
                         });
+                });
+
+            modelBuilder.Entity("NorthWind.Sales.Backend.Repositories.Entities.ErrorLog", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("Date")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Message")
+                        .IsRequired()
+                        .HasMaxLength(4000)
+                        .HasColumnType("nvarchar(4000)");
+
+                    b.Property<string>("Source")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<string>("StackTrace")
+                        .IsRequired()
+                        .HasMaxLength(8000)
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("User")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("ErrorLogs", (string)null);
                 });
 
             modelBuilder.Entity("NorthWind.Sales.Backend.Repositories.Entities.OrderDetail", b =>
