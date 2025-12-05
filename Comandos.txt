@@ -11,3 +11,5 @@ dotnet pack -o "D:\PROYECTOS_ESCRITORIO\ProyectoMoviles\Web\Northwind\NorthWind.
 Add-Migration  AddRolesAndLockout -s NorthWind.Membership.Backend.AspNetIdentity -p NorthWind.Membership.Backend.AspNetIdentity
 Update-Database -s NorthWind.Membership.Backend.AspNetIdentity -p NorthWind.Membership.Backend.AspNetIdentity
 
+----------------------------
+Add-Migration InitialCreate -p NorthWind.Sales.Backend.DataContexts.EFCore -s Northwind.Sales.WebApi -c NorthWindDomainLogsContext

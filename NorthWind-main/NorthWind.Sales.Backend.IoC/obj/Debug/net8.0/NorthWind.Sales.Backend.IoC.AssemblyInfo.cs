@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NorthWind.Sales.Backend.IoC")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dcc3fa4cae1233de609865bffb20a2e7fe19a22f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2e0c7955b1e7cf877844566284f4a5645e37a045")]
 [assembly: System.Reflection.AssemblyProductAttribute("NorthWind.Sales.Backend.IoC")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NorthWind.Sales.Backend.IoC")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
