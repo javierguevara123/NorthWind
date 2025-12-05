@@ -5,30 +5,29 @@ namespace NorthWind.Sales.Backend.DataContexts.EFCore.DataContexts
 {
     internal class NorthWindDomainLogsContext : DbContext
     {
+        // Constructor existente...
         public NorthWindDomainLogsContext(DbContextOptions<NorthWindDomainLogsContext> options) : base(options) { }
 
         public DbSet<DomainLog> DomainLogs { get; set; }
+
+        // NUEVO DBSETA
         public DbSet<ErrorLog> ErrorLogs { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            // IMPORTANTE: No usar ApplyConfigurationsFromAssembly aquí,
-            // porque cargaría las configuraciones de Order, Product, Customer, etc.
+            // ERROR COMÚN:
+            // modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
+            // ^ Esto carga TODAS las configuraciones (Orders, Products, etc.), lo cual NO queremos aquí.
 
-            // 1. Aplicar configuración específica para ErrorLogs
+            // SOLUCIÓN:
+            // Aplicar explícitamente SOLO las configuraciones que pertenecen a este contexto.
+
+            // 1. Configuración de ErrorLogs (tienes el archivo ErrorLogConfiguration)
             modelBuilder.ApplyConfiguration(new ErrorLogConfiguration());
 
-            // 2. La tabla DomainLogs se mapeará por convención (Entity Framework default)
-            // ya que no tienes un archivo DomainLogConfiguration.cs específico.
-            // Si quisieras personalizarla, lo harías así:
-            /*
-            modelBuilder.Entity<DomainLog>(entity => 
-            {
-                entity.HasKey(e => e.Id);
-                // otras reglas...
-            });
-            */
+            // 2. Configuración de DomainLogs
+            // Si no tienes una clase "DomainLogConfiguration" separada y usas convenciones por defecto, 
+            // Entity Framework configurará la tabla basándose en la clase DomainLog automáticamente.
         }
     }
-
 }
